@@ -1,2 +1,2 @@
-# percussion-farms
-A local urban farm cultivating produce for POC
+# Percussion Farms!
+Website for an urban farm located in Central Seattle and Auburn
