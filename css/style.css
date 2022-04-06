@@ -1,0 +1,24 @@
+/* Styles all elements */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+nav .head * {
+	display: inline-block;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+nav .head {
+	height: 60px;
+	width: 100%;
+}
+
+nav * {
+	padding: 5px;
+}
+.links a img {
+	height: 40px;
+	vertical-align: middle;
+}
