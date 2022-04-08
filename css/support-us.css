@@ -1,0 +1,38 @@
+.top-image-text {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.text {
+    /* background: url("img/fruit-and-veggies.jpg") no-repeat fixed center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-175%, -175%);
+}
+
+/* Styles all elements - copied from style.css*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+nav .head * {
+	display: inline-block;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+nav .head {
+	height: 60px;
+	width: 100%;
+}
+
+nav * {
+	padding: 5px;
+}
+.links a img {
+	height: 40px;
+	vertical-align: middle;
+}
