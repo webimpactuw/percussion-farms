@@ -12,27 +12,51 @@
     transform: translate(-175%, -175%);
 }
 
-/* Styles all elements - copied from style.css*/
+/* Styles all elements */
 * {
-	box-sizing: border-box;
+	font-family: sans-serif;
 	margin: 0;
 }
 
-nav .head * {
-	display: inline-block;
-	font-size: 30px;
-	vertical-align: middle;
-}
-
-nav .head {
-	height: 60px;
+.head {
+	height: 70px;
 	width: 100%;
 }
 
-nav * {
-	padding: 5px;
+.head * {
+	display: inline-block;
+	padding: 10px 8px 0px;
+	vertical-align: text-top;
+	font-size: 30px;
+	font-weight: bold;
 }
-.links a img {
+
+.links {
+	display: block;
+	height: 50px;
+}
+
+.links a:nth-child(-n+5) {
+	position: relative;
+	top: 10px;
+	padding: 13px 10px 13px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+.links a:nth-child(n+6) * {
 	height: 40px;
-	vertical-align: middle;
+	margin: 0px 25px 0px 0px;
+	float: right;
+	border-radius: 8px;
+	background: #778b48;
+	font-size: 20px;
+	color: white;
+}
+
+.links a:hover {
+	text-decoration: none;
+	color: white;
+	background: #778b48;
 }
