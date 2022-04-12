@@ -1,24 +1,43 @@
 /* Styles all elements */
 * {
 	box-sizing: border-box;
+	font-family: sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
-nav .head * {
+nav *:not(.cart, img) {
+	padding: 5px 8px;
+	font-weight: bold;
+	color: black;
+}
+
+.head * {
 	display: inline-block;
 	font-size: 30px;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
-nav .head {
+.head {
 	height: 60px;
 	width: 100%;
 }
 
-nav * {
-	padding: 5px;
-}
-.links a img {
+.links * {
 	height: 40px;
-	vertical-align: middle;
+	font-size: 20px;
+}
+
+.links {
+	height: 50px;
+}
+
+.links a:hover {
+	text-decoration: none;
+}
+
+.links button, .cart {
+	vertical-align: top;
+	float: right;
+	margin: 0px 8px;
 }
