@@ -46,3 +46,14 @@
 	color: white;
 	background: #4b2e83;
 }
+
+.rowpics {
+	display: flex;
+	flex-flow: row nowrap;
+	height: 300px;
+}
+
+.rowpics > img {
+	flex: 1, 1, auto;
+	max-width: 50%;
+}
