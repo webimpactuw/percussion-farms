@@ -46,3 +46,19 @@
 	color: white;
 	background: #778b48;
 }
+
+.mission-statement {
+	background-color: #352762;
+	color: white;
+}
+
+.collection-of-images {
+	height: 400px;
+	background-color: #778b48;
+	display: flex;
+}
+
+.collection-of-images img {
+	/* vertical-align: middle; */
+	width: 25%;
+}
