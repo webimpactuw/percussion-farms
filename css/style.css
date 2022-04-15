@@ -1,6 +1,6 @@
 /* Styles all elements */
 * {
-	font-family: sans-serif;
+	font-family: roboto;
 	margin: 0;
 }
 
@@ -14,7 +14,6 @@
 	padding: 10px 8px 0px;
 	vertical-align: text-top;
 	font-size: 30px;
-	font-weight: bold;
 }
 
 .links {
@@ -27,7 +26,6 @@
 	top: 10px;
 	padding: 13px 10px 13px 15px;
 	font-size: 20px;
-	font-weight: bold;
 	color: black;
 }
 
@@ -59,13 +57,16 @@
 }
 
 .pictures img {
-	/* vertical-align: middle; */
 	width: 25%;
 }
 
 .order {
 	background-color: #D8AD2A;
 	color: white;
+}
+
+.order h2 {
+    padding: 20px;
 }
 
 .order img {
@@ -78,89 +79,44 @@
 
 .support h2 {
 	background-color: #768C4A;
+    padding: 1vh;
 	color: white;
 }
 
+.support-container {
+    background-color: #D8AD2A;   
+}
+
+
 .support img {
 	width: 25%;
+    display: inline-block;
 }
 
-.newsletter-subscribe {
-    color: #313437;
-    background-color: #ffffff;
-    padding: 55px 74px
+.support-content {
+    display: inline-block;
 }
 
-.newsletter-subscribe p {
-    color: #7d8285;
-    line-height: 1.5
+.newsletter {
+    background-color: #f6f6f6;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-.newsletter-subscribe h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    padding-top: 0;
-    margin-top: 0;
-    color: inherit
+.newsletter-container {
+    margin: auto;
+    width: 60%;
+
 }
 
-.newsletter-subscribe .intro {
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto 25px
+
+.newsletter-text {
+    width: 100%;
+    background-color: rgba(196, 196, 196, .5);
 }
 
-.newsletter-subscribe .intro p {
-    margin-bottom: 35px
+.newsletter-text {
+
+
 }
 
-.newsletter-subscribe form {
-    justify-content: center
-}
-
-.newsletter-subscribe form .form-control {
-    background: #eff1f4;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    outline: none;
-    color: inherit;
-    text-indent: 9px;
-    height: 45px;
-    margin-right: 10px;
-    min-width: 250px
-}
-
-.newsletter-subscribe form .btn {
-    padding: 16px 32px;
-    border: none;
-    background: none;
-    box-shadow: none;
-    text-shadow: none;
-    opacity: 0.9;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 0.4px;
-    line-height: 1
-}
-
-.newsletter-subscribe form .btn:hover {
-    opacity: 1
-}
-
-.newsletter-subscribe form .btn:active {
-    transform: translateY(1px)
-}
-
-.newsletter-subscribe form .btn-primary {
-    background-color: #055ada !important;
-    color: #fff;
-    outline: none !important
-}
-
-body {
-    background: #eee
-}
