@@ -1,6 +1,6 @@
 /* Styles all elements */
 * {
-	font-family: sans-serif;
+	font-family: Verdana;
 	margin: 0;
 }
 
@@ -14,21 +14,22 @@
 	padding: 10px 8px 0px;
 	vertical-align: text-top;
 	font-size: 30px;
-	font-weight: bold;
 }
 
 .links {
 	display: block;
 	height: 50px;
+	font-size: 0px;
 }
 
 .links a:nth-child(-n+5) {
 	position: relative;
 	top: 10px;
-	padding: 13px 10px 13px 15px;
+	padding: 15px;
 	font-size: 20px;
-	font-weight: bold;
 	color: black;
+	transition: 0.3s;
+	font-size: 20px;
 }
 
 .links a:nth-child(n+6) * {
@@ -45,4 +46,38 @@
 	text-decoration: none;
 	color: white;
 	background: #778b48;
+}
+
+@media only screen and (max-width: 800px) {
+	.links {
+		height: auto;
+	}
+	.links * {
+		display: block;
+	}
+}
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
 }
