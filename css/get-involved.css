@@ -46,3 +46,14 @@
 	color: white;
 	background: #4b2e83;
 }
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 25%;
+	padding: 5px;
+}
+
+
