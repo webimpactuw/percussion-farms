@@ -46,3 +46,38 @@
 	color: white;
 	background: #778b48;
 }
+
+/* Header above */
+
+/* ADD STYLES HERE */
+
+
+
+
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
