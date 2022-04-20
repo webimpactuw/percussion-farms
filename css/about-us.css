@@ -47,6 +47,8 @@
 	background: #778b48;
 }
 
+/* Header above */
+
 #rowpics {
 	display: flex;
 	flex-flow: row nowrap;
