@@ -45,9 +45,16 @@
 	background: #778b48;
 }
 
+.pic {
+	width: 100%;
+	height: 75vh;
+	object-fit: cover;
+}
+
 .mission-statement {
 	background-color: #352762;
 	color: white;
+	padding: 3rem;
 }
 
 .pictures {
@@ -58,6 +65,7 @@
 
 .pictures img {
 	width: 25%;
+	object-fit: cover;
 }
 
 .order {
@@ -66,36 +74,46 @@
 }
 
 .order h2 {
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .order img {
 	width: 100%;
+	height: 100vh;
+	object-fit: cover;
 }
 
-.support {
-	display: flexbox;
+.place-order {
+	padding: 3rem;
 }
 
 .support h2 {
 	background-color: #768C4A;
-    padding: 1vh;
+    padding: 1.5rem;
 	color: white;
 }
 
 .support-container {
-    background-color: #D8AD2A;   
+    background-color: #D8AD2A;
+}
+
+.item {
+    display: flex;
+	justify-content: center;
+}
+
+.item-image {
+	height: 50vh;
+	width: auto;
+}
+
+.item-image img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
 }
 
 
-.support img {
-	width: 25%;
-    display: inline-block;
-}
-
-.support-content {
-    display: inline-block;
-}
 
 .newsletter {
     background-color: #f6f6f6;
@@ -109,14 +127,8 @@
 
 }
 
-
 .newsletter-text {
     width: 100%;
     background-color: rgba(196, 196, 196, .5);
-}
-
-.newsletter-text {
-
-
 }
 
