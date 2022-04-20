@@ -49,6 +49,18 @@
 
 /* Header above */
 
+.shop-image {
+	margin-left: 25%;
+}
+
+.column {
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	justify-content: space-between;
+}
+
 .top-image-text {
     position: relative;
     text-align: left;
@@ -70,11 +82,22 @@
 }
 
 .banner {
-	background-color: #D8AD2A;
-	padding: 1vh;
+	padding: 1.25vh;
+	color: white;
 	/* text-align: center; */
 }
 
+.yellow {
+	background-color: #D8AD2A;
+}
+
+.green {
+	background-color: #768C4A;
+}
+
+.purple {
+	background-color: #352762;
+}
 
 
 /* Footer below */
