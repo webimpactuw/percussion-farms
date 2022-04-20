@@ -46,3 +46,60 @@
 	color: white;
 	background: #778b48;
 }
+
+/* Header above */
+
+.top-image-text {
+    position: relative;
+    text-align: left;
+	background-image: url("../img/fruit-and-veggies.jpg");
+    position: relative;
+	width:100%;
+	height: 70vh;
+}
+
+.text {
+	color:white;
+    padding-left: 25vh;
+	padding-top: 25vh;
+    /* transform: translate(-175%, -175%); */
+}
+
+.support-options {
+	text-align: center;
+}
+
+.banner {
+	background-color: #D8AD2A;
+	padding: 1vh;
+	/* text-align: center; */
+}
+
+
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}

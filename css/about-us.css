@@ -46,3 +46,102 @@
 	color: white;
 	background: #778b48;
 }
+
+/* Header above */
+
+#rowpics {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#rowpics img {
+	flex: 1, 1, auto;
+	max-width: 25%;
+}
+
+#mission, #team h2, #history, #newsletter {
+	text-align: center;
+	justify-content: center;
+}
+
+#mission button, #newsletter input, #team h2, #history {
+	color: white;
+}
+
+#mission, #history, #team, #values, #history h2 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#values {
+	background-color: #352762;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+}
+
+#team h2 {
+	background-color: #768C4A;
+}
+
+#teamblock {
+	display: flex;
+}
+
+#mission button, #history h2 {
+	background-color: #D8AD2A;
+}
+
+#newsletter input {
+	background-color: #768C4A;
+}
+
+button, #newsletter input {
+	box-shadow: 5px 10px;
+	border-radius: 12px;
+}
+
+#history div {
+	position: relative;
+	color: white;
+}
+
+#history div img {
+	width: 100%;
+	height: auto;
+}
+
+#history div p {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
