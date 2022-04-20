@@ -47,15 +47,13 @@
 	background: #778b48;
 }
 
-<<<<<<< HEAD
 .pic {
 	width: 100%;
 	height: 75vh;
 	object-fit: cover;
 }
-=======
+
 /* Header above */
->>>>>>> f0730033a51329c2ecc5292207ccc3152a5f0824
 
 .mission-statement {
 	background-color: #352762;
@@ -138,3 +136,29 @@
     background-color: rgba(196, 196, 196, .5);
 }
 
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
