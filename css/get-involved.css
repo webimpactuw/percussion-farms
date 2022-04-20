@@ -49,10 +49,11 @@
 
 .row {
 	display: flex;
+	flex-flow: row nowrap;
 }
 
-.column {
-	flex: 25%;
+.row img {
+	max-width: 25%;
 	padding: 5px;
 }
 
