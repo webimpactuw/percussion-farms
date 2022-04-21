@@ -96,45 +96,37 @@
 	color: white;
 }
 
-.support-container {
-    /* background-color: #D8AD2A; */
-	margin: 5vh 0px;
-}
-
 .item {
     display: flex;
 	padding: 1rem;
 	justify-content: center;
+	gap: 3vw;
+
 }
 
 .item-image {
-	height: 20vh;
-	width: auto;
+	width: 30%;
+	flex-grow: .5;
 }
-
-.item-image img {
-	max-height: 100%;
-	max-width: 100%;
-	object-fit: contain;
-}
-
-
 
 .newsletter {
-    background-color: #f6f6f6;
-    background-attachment: fixed;
-    background-position: center center;
+    display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: #C6C6C6;
+	padding: 3rem;
 }
 
 .newsletter-container {
     margin: auto;
     width: 60%;
-
 }
 
 .newsletter-text {
     width: 100%;
-    background-color: rgba(196, 196, 196, .5);
+	height: 40px;
+	padding: 1rem;
+    background-color: rgb(202, 164, 164, .5);
 }
 
 /* Footer below */
