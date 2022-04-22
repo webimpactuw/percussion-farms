@@ -52,6 +52,7 @@
 #rowpics {
 	display: flex;
 	flex-flow: row nowrap;
+	max-height: 10%;
 }
 
 #rowpics img {
@@ -85,8 +86,25 @@
 	background-color: #768C4A;
 }
 
-#teamblock {
+#teamblock, .member {
 	display: flex;
+}
+
+#teamblock {
+	flex-direction: column;
+}
+
+ .member {
+	flex-direction: row;
+	max-height:50%;
+}
+
+.member {
+	padding: 10px 20px 10px 20px;
+}
+
+.member img {
+	height:50%;
 }
 
 #mission button, #history h2 {

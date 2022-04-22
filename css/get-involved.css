@@ -49,7 +49,18 @@
 
 /* Header above */
 
-/* ADD STYLES HERE */
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.row img {
+	max-width: 25%;
+	padding: 5px;
+}
+
+
+
 
 
 

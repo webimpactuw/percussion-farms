@@ -48,6 +48,30 @@
 }
 
 /* Header above */
+p {
+	margin: 0;
+}
+
+.header {
+	font-size: large;
+	font-weight: bold;
+}
+
+.option {
+	width: 25vw;
+}
+
+.shop-image {
+	margin-left: 25%;
+}
+
+.column {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: space-between;
+}
 
 .top-image-text {
     position: relative;
@@ -69,12 +93,27 @@
 	text-align: center;
 }
 
+.center-support {
+	margin-left: 25%;
+}
+
 .banner {
-	background-color: #D8AD2A;
-	padding: 1vh;
+	padding: 2vh;
+	color: white;
 	/* text-align: center; */
 }
 
+.yellow {
+	background-color: #D8AD2A;
+}
+
+.green {
+	background-color: #768C4A;
+}
+
+.purple {
+	background-color: #352762;
+}
 
 
 /* Footer below */
