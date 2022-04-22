@@ -34,28 +34,29 @@
         <div class="top-image-text">
             <!-- <a><img src="img/fruit-and-veggies.jpg" alt="fruit and veggies" height="500" width="100%"></a> -->
             <div class="text">
-                <h2>Support Us</h2> <!-- header -->
+                <h2 style="font-weight: bold;">Support Us</h2> <!-- header -->
                 <p>text text donations are invaluable to our community text text</p>
-                <a>Donate</a> <!-- use CSS to make this look like a button -->
+                <br/>
+                <button class="btn btn-outline-light">Donate</button>
             </div>
         </div>
-
-        <!-- Tip: Use <hr> to create a horizontal line -->
-
-        <p>------------------------------------------------------------------------------</p>
         <!-- TODO: make these two placed next to each other in some CSS layout-->
         <div class="support-options">
-            <p>Statement about appreciating support</p>
+            <br/>
+            <p style="padding: 2vh">Statement about appreciating support</p>
             <div class="options">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="gofundme">
-                            <a href="https://www.gofundme.com/f/percussionfarms">GoFundMe</a>
+                <div class="row center-support">
+                    <div class="column option">
+                        <img src="img/grey-image.png" alt="image placeholder" style="height: 30vh">
+                        <div class="purple banner">
+                            <a href="https://www.gofundme.com/f/percussionfarms" style="width: 30vw;">GoFundMe</a>
                             <p>description</p>
                         </div> 
                     </div>
-                    <div class="col-sm">
-                        <div class="amazon-wishlist"s>
+                    <div class="column option">
+                        <img src="img/grey-image.png" alt="image placeholder" style="height: 30vh">
+                        <div class="purple banner">
+                            <!-- TODO: make the whole purple banner clickable -->
                             <a>Amazon Wishlist</a>
                             <p>description</p>
                         </div>
@@ -63,34 +64,34 @@
                 </div>
             </div>
         </div>
-        <p>------------------------------------------------------------------------------</p>
-        <!-- <div class="order">
-            <div class="banner">
-                <p class="text-center">Our fresh produce from the farm!</p>
-            </div>
-            // Image
-            <p>info about produce</p>
-            <p>description of spreadsheet</p>
-            <a>place order</a>
-        </div> -->
         <div class="order text-center">
-            <h2 class="banner">Order Fresh Produce from the farm!</h2>
-            <img src="https://via.placeholder.com/2022" alt="list of products and prices">
-            <p class="banner">description of spread sheet, some description of spread sheet, description of 
-               spread sheet, description of spread sheet.
-            </p>
-            <button>place Order</button>
-          </div>
-        <p>------------------------------------------------------------------------------</p>
+            <p class="header yellow banner">Order Fresh Produce from the farm!</p>
+            <img src="https://via.placeholder.com/2022" alt="list of products and prices" style="width: 100vw">
+            <div class="yellow banner">
+                <p>description of spread sheet, some description of spread sheet, 
+                    description of spread sheet, description of spread sheet.</p>
+                <br/>
+                <button class="btn btn-outline-light">Place Order</button>
+                <br/>
+            </div>
+        </div>
         <div class="shop">
-            <p>Shop</p>
-            <!-- Image -->
-            <p>Tote Bag</p>
-            <p>description, we value your purchases</p>
-            <p>Details:</p>
-            <p>Size - XX</p>
-            <p>Color - XX</p>
-            <a>Add to Cart</a>
+            <p class="green banner text-center" style="font-weight: bold;">Shop</p>
+            <div class="row">
+                <div class="column shop-image">
+                    <img src="img/grey-image.png" alt="image placeholder" style="width: 30vw; height: 30vh">
+                </div>
+                <div class="column">
+                    <div>
+                        <p>Tote Bag</p>
+                        <p>description, we value your purchases</p>
+                        <p>Details:</p>
+                        <p>Size - XX</p>
+                        <p>Color - XX</p>
+                        <a>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </content>
     <footer>
