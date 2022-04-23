@@ -48,6 +48,8 @@
 	background: #778b48;
 }
 
+/* Header above */
+
 .pic {
 	width: 100%;
 	height: 75vh;
@@ -154,4 +156,100 @@ footer {
 
 .filler {
 	width: 10vw;
+}
+
+/* Popup Menu */
+
+.donate {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 250ms ease-in-out;
+  z-index: 10;
+  background-color: white;
+  width: 400px;
+  max-width: 80vw;
+  height: 500px;
+  max-height: 80vh;
+}
+
+.donate.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+  cursor: pointer;
+  background: none;
+  color: red;
+  float: right;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.popup-head {
+	font-weight: 900;
+}
+
+.donate-body p {
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.donate-body .num {
+	width: 45%;
+	height: 40px;
+	margin: 2%;
+	background: #352762;
+	border-radius: 5px;
+	color: white;
+}
+
+.amounts {
+	margin-bottom: 20px;
+}
+
+.donate-body input {
+	background: lightgrey;
+	height: 40px;
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.donate-submit {
+	background: #778b48;
+	color: white;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+	
+.middle {
+	margin: 10%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }

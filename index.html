@@ -17,6 +17,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script defer src="js/script.js"></script>
   <title>
     Percussion Farms
   </title>
@@ -109,7 +110,7 @@
               are used for, why we appreciate donations.
             </p>
             <p>disclaimers</p>
-            <button>Donate</button>
+            <button data-open="#donate">Donate</button>
           </div>
         </div>
         <div class="item">
@@ -127,6 +128,31 @@
         </div>
       </div>
     </div>
+
+    <!-- Donation Overlay -->
+    <div id="overlay"></div>
+    <div class="donate" id="donate">
+      <button data-close class="close-button">&times;</button>
+      <div class="donate-body">
+        <div class="middle">
+          <p class="popup-head"> We appreciate your support! </p>
+          <p> Lorem ipsum dolor sit amet, consect adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Sit amet cursus sit amet dictum sit amet justo. 
+          </p>
+          <div class="amounts">
+            <button class="num" value="5">$5</button>
+            <button class="num" value="10">$10</button>
+            <button class="num" value="15">$15</button>
+            <button class="num" value="20">$20</button>
+          </div>
+          <input type="text" inputmode="numeric" 
+          pattern="\d*" placeholder="$0.00"></input><br>
+          <button class="donate-submit">Donate</button>
+        </div>
+      </div>
+    </div>
+    <!-- End of Overlay -->
 
     <form action="action_page.php" class="newsletter text-center">
       <div class="newsletter-container">
