@@ -40,6 +40,7 @@
 	background: #778b48;
 	font-size: 20px;
 	color: white;
+  	cursor: pointer;
 }
 
 .links a:hover {
@@ -187,47 +188,6 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.popup-head {
-	font-weight: 900;
-}
-
-.donate-body p {
-	font-size: 18px;
-	line-height: 1.2;
-}
-
-.donate-body .num {
-	width: 45%;
-	height: 40px;
-	margin: 2%;
-	background: #352762;
-	border-radius: 5px;
-	color: white;
-}
-
-.amounts {
-	margin-bottom: 20px;
-}
-
-.donate-body input {
-	background: lightgrey;
-	height: 40px;
-	width: 97%;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.donate-submit {
-	background: #778b48;
-	color: white;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5px;
-	padding: 5px 10px
-}
 	
 .middle {
 	margin: 10%;
@@ -237,14 +197,56 @@ footer {
 	font-size: 16px;
 }
 
+.middle p:not(.popup-head) {
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.popup-head {
+	font-weight: 900;
+	font-size: 19px;
+}
+
+.donate-body .num {
+	width: 48%;
+	height: 40px;
+	margin: 5px 0px;
+	background: #352762;
+	border-radius: 5px;
+	color: white;
+  	cursor: pointer;
+}
+
+.amounts {
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.donate-body input {
+	background: lightgrey;
+	height: 40px;
+	width: 100%;
+}
+
+.donate-submit {
+	background: #778b48;
+	color: white;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 5px 10px;
+  	cursor: pointer;
+}
+
 #overlay {
   position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
   opacity: 0;
   transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: rgba(0, 0, 0, .5);
   pointer-events: none;
 }
