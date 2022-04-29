@@ -2,6 +2,16 @@ const openDonation = document.querySelectorAll('[data-open]');
 const closeDonation = document.querySelectorAll('[data-close]');
 const overlay = document.getElementById('overlay');
 
+function calc() {
+  const final = parseFloat(document.querySelector('input').value);
+  console.log(final + " is of type: " + typeof final);
+  if (isNaN(final)) {
+    alert("Please enter a valid dollar amount!");
+  } else {
+    alert("You will be donating $" + final);
+  }
+}
+
 // Open donation popup
 openDonation.forEach(button => {
   button.addEventListener('click', () => {
@@ -12,8 +22,8 @@ openDonation.forEach(button => {
 
 // Outside click to close
 overlay.addEventListener('click', () => {
-  const donates = document.querySelectorAll('.donate.active')
-  donates.forEach(donate => {
+  const donate = document.querySelectorAll('.donate.active')
+  donate.forEach(donate => {
     closePopup(donate)
   });
 });
