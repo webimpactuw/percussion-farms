@@ -14,8 +14,8 @@ openPopup.forEach(button => {
 // Exit button to close
 closePopup.forEach(button => {
   button.addEventListener('click', () => {
-    const pop = button.closest('.clear')
-    close(pop)
+    const pop = document.querySelector(button.dataset.close);
+    close(pop);
   });
 });
 
@@ -23,29 +23,47 @@ closePopup.forEach(button => {
 overlay.addEventListener('click', () => {
   const pop = document.querySelectorAll('.popup');
   pop.forEach(pop => {
-    close(pop)
+    close(pop);
   });
 });
 
 // Obtain input value, send to PayPal
 calculate.addEventListener('click', () => {
   const final = parseFloat(document.querySelector('input').value);
-  console.log(final + " is of type: " + typeof final);
-  if (isNaN(final)) {
-    alert("Please enter a valid dollar amount!");
-  } else {
-    alert("You will be donating $" + final);
-  }
+  console.log(final)
 });
 
 function open(element) {
-  if (element == null) return
-  element.classList.add('popup')
-  overlay.classList.add('popup')
+  if (element == null) return;
+  element.classList.add('popup');
+  overlay.classList.add('popup');
 };
 
 function close(element) {
-  if (element == null) return
-  element.classList.remove('popup')
-  overlay.classList.remove('popup')
+  if (element == null) return;
+  element.classList.remove('popup');
+  overlay.classList.remove('popup');
+};
+
+// Checks for valid inputs
+function checkInput() {
+  let amount = document.getElementById("amount").value;
+  amount = parseFloat(amount);
+  if (isNaN(amount)) return;
+
+  amount = amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'); 
+  amount = "$" + amount.toLocaleString('en-US');
+  document.getElementById("amount").value = amount;
+};
+
+// Clears input on click
+function clearInput() {
+  document.getElementById("amount").value = "";
+}
+
+// Checks for valid keypresses
+function filterKeys(event) {
+  var charCode = (event.which) ? event.which : event.keyCode;
+  return !(charCode != 46 && charCode > 31 && 
+    (charCode < 48 || charCode > 57));
 };

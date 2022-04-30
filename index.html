@@ -175,14 +175,15 @@
 
     <!-- Donation Overlay -->
     <div id="overlay"></div>
-    <div class="donate-body clear" id="donate">
+    <div class="popup-body donate-body clear" id="donate">
       <button data-close="#donate" class="close-button">&times;</button>
       <div class="donate-mid">
         <p class="donate-head"> We appreciate your support! </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Fusce tincidunt, nisl vel ultricies aliquam, lacus felis 
+          posuere turpis, sit amet varius nunc diam at ipsum. Nam ac 
+          commodo purus. Donec at orci rhoncus, iaculis ipsum gravida, 
+          eleifend magna. 
         </p>
         <div class="amounts">
           <button class="num" value="5">$5</button>
@@ -191,18 +192,33 @@
           <button class="num" value="20">$20</button>
         </div>
         <!--<p>$</p>-->
-        <input type="text" inputmode="numeric" 
-        pattern="\d?\d\.\d\d" placeholder="0.00" 
-        style="float:right;"></input><br>
+        <input type="text" inputmode="numeric" class="donate-input"
+        placeholder="$0.00" id="amount" data-amount = "0" onblur="checkInput()" 
+        onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
         <button id="submit-donate" class="donate-submit">Donate</button>
       </div>
     </div>
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div class="cart-body" id="cart">
+    <div class="popup-body cart-body" id="cart">
       <button data-close="#cart" class="close-button">&times;</button>
-      <h1>Hello</h1>
+      <div class="cart-mid">
+        <p class="cart-head bold"> YOUR CART </p>
+        <table class="cart-total">
+          <tr>
+            <td>Item 1</td>
+          </tr>
+          <tr>
+            <td>Item 2</td>
+          </tr>
+          <tr>
+            <td>Item 3</td>
+          </tr>
+        </table>
+        <p class="bold">Subtotal: </p>
+        <p class="bold">TOTAL: </p>
+      </div>
     </div>
     <!-- End of Overlay -->
 
