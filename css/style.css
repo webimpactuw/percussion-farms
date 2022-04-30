@@ -172,9 +172,11 @@ footer {
 
 .donate-body {
   width: 400px;
-  max-width: 80vw;
   height: 480px;
+  max-width: 80vw;
   max-height: 80vh;
+  min-width: 20vh;
+  min-height: 40vh;
 }
 
 .donate-body.popup {
@@ -202,6 +204,8 @@ footer {
 .donate-body .num {
 	width: 48%;
 	height: 40px;
+	/* TODO:  Implement responsive changes;
+	/* min-height: 5vh; */
 	margin: 5px 0px;
 	background: #352762;
 	border-radius: 5px;
@@ -217,10 +221,17 @@ footer {
 	flex-wrap: wrap;
 }
 
+.donate-field p {
+	display: inline-block;
+	font-size: 300px;
+}
+
 .donate-input {
+	display: inline-block;
+	font-size: 16px;
 	background: lightgrey;
 	height: 40px;
-	width: 100%;
+	width: 95%;
 	margin-bottom: 20px;
 }
 
@@ -252,10 +263,6 @@ footer {
 	font-weight: bold;
 	font-size: 25px;
 	text-align: center;
-}
-
-.bold {
-	font-weight: bold;
 }
 
 .cart-mid {	
