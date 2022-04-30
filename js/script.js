@@ -1,8 +1,34 @@
-const openDonation = document.querySelectorAll('[data-open]');
-const closeDonation = document.querySelectorAll('[data-close]');
+const openPopup = document.querySelectorAll('[data-open]');
+const closePopup = document.querySelectorAll('[data-close]');
 const overlay = document.getElementById('overlay');
+const calculate = document.getElementById('submit-donate');
 
-function calc() {
+// Open donation popup
+openPopup.forEach(button => {
+  button.addEventListener('click', () => {
+    const pop = document.querySelector(button.dataset.open);
+    open(pop);
+  });
+});
+
+// Exit button to close
+closePopup.forEach(button => {
+  button.addEventListener('click', () => {
+    const pop = button.closest('.clear')
+    close(pop)
+  });
+});
+
+// Outside click to close donate
+overlay.addEventListener('click', () => {
+  const pop = document.querySelectorAll('.popup');
+  pop.forEach(pop => {
+    close(pop)
+  });
+});
+
+// Obtain input value, send to PayPal
+calculate.addEventListener('click', () => {
   const final = parseFloat(document.querySelector('input').value);
   console.log(final + " is of type: " + typeof final);
   if (isNaN(final)) {
@@ -10,40 +36,16 @@ function calc() {
   } else {
     alert("You will be donating $" + final);
   }
-}
-
-// Open donation popup
-openDonation.forEach(button => {
-  button.addEventListener('click', () => {
-    const donate = document.querySelector(button.dataset.open)
-    openPopup(donate)
-  });
 });
 
-// Outside click to close
-overlay.addEventListener('click', () => {
-  const donate = document.querySelectorAll('.donate.active')
-  donate.forEach(donate => {
-    closePopup(donate)
-  });
-});
-
-// Exit button to close
-closeDonation.forEach(button => {
-  button.addEventListener('click', () => {
-    const donate = button.closest('.donate')
-    closePopup(donate)
-  });
-});
-
-function openPopup(element) {
+function open(element) {
   if (element == null) return
-  donate.classList.add('active')
-  overlay.classList.add('active')
+  element.classList.add('popup')
+  overlay.classList.add('popup')
 };
 
-function closePopup(element) {
+function close(element) {
   if (element == null) return
-  donate.classList.remove('active')
-  overlay.classList.remove('active')
+  element.classList.remove('popup')
+  overlay.classList.remove('popup')
 };

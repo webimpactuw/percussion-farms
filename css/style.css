@@ -32,12 +32,21 @@
 	font-size: 20px;
 }
 
-.links a:nth-child(n+6) * {
+.links button {
 	height: 40px;
 	margin: 0px 25px 0px 0px;
 	float: right;
 	border-radius: 8px;
 	background: #778b48;
+	font-size: 20px;
+	color: white;
+  	cursor: pointer;
+}
+
+.links img {	
+	height: 40px;
+	margin: 0px 25px 0px 0px;
+	float: right;
 	font-size: 20px;
 	color: white;
   	cursor: pointer;
@@ -159,37 +168,27 @@ footer {
 	width: 10vw;
 }
 
-/* Popup Menu */
+/* Donate Popup */
 
-.donate {
+.donate-body {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 250ms ease-in-out;
+  transition: 300ms ease-in-out;
   z-index: 10;
   background-color: white;
   width: 400px;
   max-width: 80vw;
-  height: 500px;
+  height: 480px;
   max-height: 80vh;
 }
 
-.donate.active {
+.donate-body.popup {
   transform: translate(-50%, -50%) scale(1);
 }
-
-.close-button {
-  cursor: pointer;
-  background: none;
-  color: red;
-  float: right;
-  border: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 	
-.middle {
+.donate-mid {
 	margin: 10%;
 	height: auto;
 	display: flex;
@@ -197,12 +196,12 @@ footer {
 	font-size: 16px;
 }
 
-.middle p:not(.popup-head) {
+.donate-mid p:not(.donate-head) {
 	font-size: 16px;
 	line-height: 1.2;
 }
 
-.popup-head {
+.donate-head {
 	font-weight: 900;
 	font-size: 19px;
 }
@@ -242,6 +241,38 @@ footer {
   	cursor: pointer;
 }
 
+/* Cart Popup */
+
+.cart-body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 250ms ease-in-out;
+  z-index: 10;
+  background-color: white;
+  width: 400px;
+  max-width: 80vw;
+  height: 480px;
+  max-height: 80vh;
+}
+
+.cart-body.popup {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* General Popup Styling */
+
+.close-button {
+  cursor: pointer;
+  background: none;
+  color: red;
+  float: right;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 #overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -251,7 +282,7 @@ footer {
   pointer-events: none;
 }
 
-#overlay.active {
+#overlay.popup {
   opacity: 1;
   pointer-events: all;
 }
