@@ -18,6 +18,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script defer src="js/script.js"></script>
+  <script defer src="js/cart.js"></script>
   <title>
     Percussion Farms
   </title>
@@ -206,21 +207,20 @@
     <div class="popup-body cart-body" id="cart">
       <button data-close="#cart" class="close-button">&times;</button>
       <p class="cart-head"> YOUR CART </p>
-      <div class="cart-mid">
+      <div class="cart-mid"></div>
+      <p value=0 id="cart-total">TOTAL: </p> 
+      <div class="cart-footer">        
+        <button data-id="1">Add Tote Bag to Cart</button>
+        <button data-id="2">Add T-Shirt to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button>
+        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
+        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
       </div>
-      <p class="bold">TOTAL: </p>
+
+      <!-- MISCELLANOUS TESTING BUTTONS -->
+
     </div>
     <!-- End of Overlay -->
-
-    <!-- Item Template -->    
-    <template id="item-template">
-    <div class="item-container">
-      <div class="item-name"></div>
-      <button class="item-delete">X</button>
-      <input class="item-count" type="number" min="0"/>
-    </div>
-    </template>
-    <!-- End of Template -->
 
 </body>
 
