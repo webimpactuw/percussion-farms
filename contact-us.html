@@ -30,47 +30,54 @@
         </div>                
     </nav>
 
-    <header>
-        <h2><center> Questions, Comments, or Concerns? </center> </h2>
-        <p>
-            text appreciate feedback etc text text text
-        </p>
-    </header>
-    <div id="contact us">
-
-        <h4><center> Contact Us</center></h4>
-        <!-- add block + background color-->
+    <div>
+        <img src="img/placeholder.jpeg" class="background-img" alt="questions, comments, or concerns">
+        <div class="overlap-text">
+            <h2>Questions, Comment, or Concerns?</h2>
+            <p>text appreciate feedback interacting with community members text text us text text text</p>
+        </div>
     </div>
 
-    <div>
-        <form action="test.htm" method="post" >
-            Name<br>
-            <p><input id="name" type="text" Required="required"></p>
-            Email<br>
-            <p><input id="email" type="email" Required="required"></p>
-            What is this regarding?<br>
-           <p> <select>
-               <option value="blank"></option>
-               <option value=”food”>food</option>
-                <option value=”donations”>donations </option>
-                <option value=”volunteering”>volunteering</option>
-            </select></p>
-            How did you hear about us?<br>
-            <p><select>
-                <option value="blank"></option>
-                <option value=”email”>email</option>
-                <option value=”friend”>friend </option>
-                <option value=”google-search”>google search</option>
-            </select></p>
-            Comment:<br>
-            <p><textarea id="comment" rows="5" cols="50" Required="required" ></textarea></p>
-            May we contact you in the future?<br>
-            <p><select>
-                <option value="blank"></option>
-                <option value="yes">yes </option>
-                <option value="no">no </option>
-            </select></p>
-            <input id="submit" type="submit">
+    <div class="mission-statement text-center">
+        <h2>Contact Us</h2>
+        <p>To reach Percussion Farms, please fill out the form below and we will get back to you 
+            as soon as we're able.
+        </p>
+    </div>
+
+    <div class="form-container row align-items-center">
+        <form>
+            <div class="form-group">
+                <label for="fname" class="control-label">Name</label>
+                <input name="fname" id="fname" class="form-control" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="femail" class="control-label">Email</label>
+                <input name="femail" id="femail" class="form-control" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="ftopic" class="control-label">What is this regarding?</label>
+                <select name="ftopic" id="ftopic" class="form-control">
+                    <option value="a">a</option>
+                    <option vaue="b">b</option>
+                    <option value="c">c</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fcomment" class="control-label">Comment</label>
+                <input name="fcomment" id="fcomment" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="fcontact" class="control-label">May we contact you in the future?</label>
+                <select name="fcontact" id="fcontact" class="form-control">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button>Submit</button>
+            </div>
         </form>
     </div>
     
