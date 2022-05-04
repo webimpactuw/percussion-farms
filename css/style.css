@@ -263,6 +263,7 @@ footer {
 	font-weight: bold;
 	font-size: 25px;
 	text-align: center;
+	margin: 1rem 0 1rem;
 }
 
 .cart-mid {	
@@ -273,7 +274,7 @@ footer {
 	font-size: 16px;
 }
 
-.cart-total {
+.cart-mid {
 	height: 300px;
 	border: 2px solid black;
 	margin-bottom: 10px;

@@ -205,24 +205,22 @@
     <!-- Cart Overlay -->
     <div class="popup-body cart-body" id="cart">
       <button data-close="#cart" class="close-button">&times;</button>
+      <p class="cart-head"> YOUR CART </p>
       <div class="cart-mid">
-        <p class="cart-head"> YOUR CART </p>
-        <table class="cart-total">
-          <tr>
-            <td>Item 1</td>
-          </tr>
-          <tr>
-            <td>Item 2</td>
-          </tr>
-          <tr>
-            <td>Item 3</td>
-          </tr>
-        </table>
-        <p class="bold">Subtotal: </p>
-        <p class="bold">TOTAL: </p>
       </div>
+      <p class="bold">TOTAL: </p>
     </div>
     <!-- End of Overlay -->
+
+    <!-- Item Template -->    
+    <template id="item-template">
+    <div class="item-container">
+      <div class="item-name"></div>
+      <button class="item-delete">X</button>
+      <input class="item-count" type="number" min="0"/>
+    </div>
+    </template>
+    <!-- End of Template -->
 
 </body>
 
