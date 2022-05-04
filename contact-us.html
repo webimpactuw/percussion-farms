@@ -45,31 +45,40 @@
         </p>
     </div>
 
-    <div class="form-container row align-items-center">
+    <div class="form-container">
         <form>
             <div class="form-group">
                 <label for="fname" class="control-label">Name</label>
-                <input name="fname" id="fname" class="form-control" type="text" value="">
+                <input name="fname" id="fname" class="form-control w-25" type="text" value="">
             </div>
             <div class="form-group">
                 <label for="femail" class="control-label">Email</label>
-                <input name="femail" id="femail" class="form-control" type="text" value="">
+                <input name="femail" id="femail" class="form-control w-25" type="text" value="">
             </div>
             <div class="form-group">
                 <label for="ftopic" class="control-label">What is this regarding?</label>
-                <select name="ftopic" id="ftopic" class="form-control">
+                <select name="ftopic" id="ftopic" class="form-control w-25">
                     <option value="a">a</option>
                     <option vaue="b">b</option>
                     <option value="c">c</option>
                 </select>
             </div>
             <div class="form-group">
+                <label for="fnotice" class="control-label">How did you hear about us?</label>
+                <select name="fnotice" id="fnotice" class="form-control w-25">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="fcomment" class="control-label">Comment</label>
-                <input name="fcomment" id="fcomment" class="form-control" type="text">
+                <textarea for="fcomment" id="fcomment" class="form-control w-50"
+                style="resize: none; height: 25vh;"></textarea>
             </div>
             <div class="form-group">
                 <label for="fcontact" class="control-label">May we contact you in the future?</label>
-                <select name="fcontact" id="fcontact" class="form-control">
+                <select name="fcontact" id="fcontact" class="form-control" style="width: fit-content;">
                     <option value="yes">yes</option>
                     <option value="no">no</option>
                 </select>

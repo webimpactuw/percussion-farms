@@ -94,9 +94,13 @@
 
 .form-container {
 	background-color: #F0F0F0;
-	padding: 10px;
+	padding: 2rem;
+	/* margin: 40px 20px; */
 	width: 90%;
+	margin: 50px auto;
 }
+
+
 
 
 /* Footer below */
