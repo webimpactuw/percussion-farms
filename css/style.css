@@ -122,7 +122,7 @@
 }
 
 .newsletter {
-    display: flex;
+  display: flex;
 	flex-direction: column;
 	gap: 2rem;
 	background-color: #C6C6C6;
@@ -145,13 +145,12 @@
 
 footer {
 	background: #352762;
-	display: block;
 	height: auto;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
 	color: white;
-	padding: 30px 30px 100px;
+	padding: 30px;
 }
 
 .address, .contact {
@@ -351,4 +350,51 @@ footer {
 #overlay.popup {
   opacity: 1;
   pointer-events: all;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 850px) {
+  .links a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .links img {
+  	margin: 20px 20vw;
+  }
+
+  .links button {
+  	width: 45%;
+  	margin: 20px 0px;
+  }
+
+  .links {
+  	height: 360px;
+  }
+
+  footer {
+  	display: block;
+  }
+
+  .address, .contact {
+  	display: block;
+  	width: 100vw;
+  }
+
+  .address p, .contact p {
+  	display: block;
+  	margin-bottom: 20px;
+  	margin-right: 20px;
+  }
+
+  .filler {
+  	height: 10px;
+  }
+
+  html {
+  	overflow-x: hidden;
+  }
 }
