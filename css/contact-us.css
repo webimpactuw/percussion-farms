@@ -1,5 +1,8 @@
+400 lines (334 sloc)  5.2 KB
+   
 * {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
 	margin: 0;
 }
 
@@ -12,7 +15,7 @@
 	display: inline-block;
 	padding: 10px 8px 0px;
 	vertical-align: text-top;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .links {
@@ -31,7 +34,7 @@
 	font-size: 20px;
 }
 
-.links a:nth-child(n+6) * {
+.links button {
 	height: 40px;
 	margin: 0px 25px 0px 0px;
 	float: right;
@@ -39,6 +42,16 @@
 	background: #778b48;
 	font-size: 20px;
 	color: white;
+  	cursor: pointer;
+}
+
+.links img {	
+	height: 40px;
+	margin: 0px 25px 0px 0px;
+	float: right;
+	font-size: 20px;
+	color: white;
+  	cursor: pointer;
 }
 
 .links a:hover {
@@ -51,6 +64,54 @@
 
 /* ADD STYLES HERE */
 
+/* .background-img {
+	width: 100%;
+	height: 20vh;
+	object-fit: cover;
+} */
+
+.background-img {
+	width: 100%;
+	height: 75vh;
+	object-fit: cover;
+}
+
+.overlap-text{
+	position: absolute;
+	color: white;
+	top: 40%;
+	right: 21%;
+	text-align: left;
+}
+
+.overlap-text h2 {
+	font-size: 36px;
+	font-size: 3rem;
+}
+
+.overlap-text p {
+	font-size: 1.5rem;
+}
+
+.mission-statement {
+	background-color: #352762;
+	color: white;
+	padding: 3rem;
+}
+
+.mission-statement p {
+	margin-top: 30px;
+	font-size: 18px;
+	font-size: 1.2rem;
+}
+
+.form-container {
+	background-color: #F0F0F0;
+	padding: 2rem;
+	/* margin: 40px 20px; */
+	width: 90%;
+	margin: 50px auto;
+}
 
 
 

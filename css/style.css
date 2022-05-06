@@ -1,4 +1,4 @@
-* {
+   * {
 	font-family: Verdana, sans-serif;
 	font-size: 15px;
 	margin: 0;
@@ -58,7 +58,23 @@
 	background: #778b48;
 }
 
-/* Header above */
+/* header above */
+
+.overlap-text{
+	color: white;
+	top: 30%;
+	right: 30%;
+	text-align: left;
+}
+
+.overlap-text h2 {
+	font-size: 36px;
+	font-size: 3rem;
+}
+
+.overlap-text p {
+	font-size: 1.5rem;
+}
 
 .pic {
 	width: 100%;
@@ -70,6 +86,22 @@
 	background-color: #352762;
 	color: white;
 	padding: 3rem;
+}
+
+.mission-statement p {
+	font-size: 18px;
+	font-size: 1.2rem;
+}
+
+.btn, .newsletter-submit {
+	margin-top: 2rem;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	border-radius: 8px;
+	font-size: 1.5rem;
+	font-size: 18px;
+	/* box-shadow: 2px 2px rgba(200, 200, 200, .5); */
 }
 
 .pictures {
@@ -102,6 +134,10 @@
 	padding: 3rem;
 }
 
+.place-order p {
+	font-size: 1.5rem;
+}
+
 .support h2 {
 	background-color: #768C4A;
     padding: 1.5rem;
@@ -110,23 +146,39 @@
 
 .item {
     display: flex;
-	padding: 1rem;
-	justify-content: center;
+	/* padding: 1rem; */
+	justify-content: left;
 	gap: 3vw;
-
+	height: fit-content;
+	margin: 5vh 5vw;
 }
 
 .item-image {
-	width: 30%;
-	flex-grow: .5;
+	width: 500px;
+}
+
+.item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.item-button {
+	background-color: rgba(216, 173, 42, .8);
+	width: fit-content;
 }
 
 .newsletter {
-  display: flex;
+    display: flex;
 	flex-direction: column;
-	gap: 2rem;
-	background-color: #C6C6C6;
+	gap: 1.5rem;
+	background-color: rgb(198, 198, 198, .3);
 	padding: 3rem;
+}
+
+.newsletter h3 {
+	margin-bottom: 2rem;
+	font-weight: bold;
 }
 
 .newsletter-container {
@@ -138,7 +190,18 @@
     width: 100%;
 	height: 40px;
 	padding: 1rem;
+	border-width: 1px;
     background-color: rgb(202, 164, 164, .5);
+}
+
+.newsletter-submit {
+	border: none;
+}
+
+.newsletter-submit {
+	margin: 0;
+	padding: 6px 12px;
+	background-color: #768C4A;
 }
 
 /* Footer below */
