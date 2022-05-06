@@ -1,5 +1,6 @@
 * {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
 	margin: 0;
 }
 
@@ -12,7 +13,7 @@
 	display: inline-block;
 	padding: 10px 8px 0px;
 	vertical-align: text-top;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .links {
@@ -31,7 +32,7 @@
 	font-size: 20px;
 }
 
-.links a:nth-child(n+6) * {
+.links button {
 	height: 40px;
 	margin: 0px 25px 0px 0px;
 	float: right;
@@ -39,6 +40,16 @@
 	background: #778b48;
 	font-size: 20px;
 	color: white;
+  	cursor: pointer;
+}
+
+.links img {	
+	height: 40px;
+	margin: 0px 25px 0px 0px;
+	float: right;
+	font-size: 20px;
+	color: white;
+  	cursor: pointer;
 }
 
 .links a:hover {
@@ -47,12 +58,12 @@
 	background: #778b48;
 }
 
-/* Header above */
+/* header above */
 
-.row {
+/* .row {
 	display: flex;
 	flex-flow: row nowrap;
-}
+} */
 
 .row img {
 	max-width: 25%;
