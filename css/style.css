@@ -100,7 +100,7 @@
 <<<<<<< HEAD
 .mission-statement p {
 	font-size: 18px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .btn, .newsletter-submit {
@@ -163,10 +163,10 @@
     display: flex;
 <<<<<<< HEAD
 	/* padding: 1rem; */
-	justify-content: center;
+	justify-content: left;
 	gap: 3vw;
 	height: fit-content;
-	margin: 5vh 0;
+	margin: 5vh 5vw;
 }
 
 .item-image {
@@ -181,7 +181,7 @@
 
 .item-button {
 	background-color: rgba(216, 173, 42, .8);
-	/* width: 20%; */
+	width: fit-content;
 }
 
 .newsletter {
@@ -230,6 +230,10 @@
 <<<<<<< HEAD
 	border-width: 1px;
     background-color: rgb(202, 164, 164, .5);
+}
+
+.newsletter-submit {
+	border: none;
 }
 
 .newsletter-submit {

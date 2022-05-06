@@ -51,6 +51,54 @@
 
 /* ADD STYLES HERE */
 
+/* .background-img {
+	width: 100%;
+	height: 20vh;
+	object-fit: cover;
+} */
+
+.background-img {
+	width: 100%;
+	height: 75vh;
+	object-fit: cover;
+}
+
+.overlap-text{
+	position: absolute;
+	color: white;
+	top: 40%;
+	right: 21%;
+	text-align: left;
+}
+
+.overlap-text h2 {
+	font-size: 36px;
+	font-size: 3rem;
+}
+
+.overlap-text p {
+	font-size: 1.5rem;
+}
+
+.mission-statement {
+	background-color: #352762;
+	color: white;
+	padding: 3rem;
+}
+
+.mission-statement p {
+	margin-top: 30px;
+	font-size: 18px;
+	font-size: 1.2rem;
+}
+
+.form-container {
+	background-color: #F0F0F0;
+	padding: 2rem;
+	/* margin: 40px 20px; */
+	width: 90%;
+	margin: 50px auto;
+}
 
 
 
