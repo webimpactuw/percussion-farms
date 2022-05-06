@@ -50,17 +50,18 @@
 /* Header above */
 
 .imgRow {
-	display: block;
+  /* display: flex; */
 	font-size: 0;
 	/* flex-flow: row nowrap; */
-	/* max-width: 100%; */
-	height: 200px;
+  /* max-width: 10%; */
+	/* height: 200px; */
 }
 
 .imgRow img {
 	/* flex: 1, 1, auto; */
-	height: 200px;
-	width: 25vw;
+	object-fit: cover;
+	/* height: 200px; */
+	width: 25%;
 }
 
 .Volunteer {
@@ -70,7 +71,13 @@
 	color: white;
 	height: 250px;
 }
-
+.Volunteer button {
+	color: white;
+	background-color: transparent;
+	border: white;
+	cursor: pointer;
+	outline: auto;
+}
 .project {
 	display: flex;
 	justify-content: center;
@@ -158,6 +165,14 @@
 	background: #D8AD2A;
 	color: white;
 	height: 200px;
+}
+
+.Donate button {
+	color: white;
+	background-color: transparent;
+	border: white;
+	cursor: pointer;
+	outline: auto;
 }
 
 .newsletter {
