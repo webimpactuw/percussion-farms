@@ -52,12 +52,15 @@
 #rowpics {
 	display: flex;
 	flex-flow: row nowrap;
-	max-height: 10%;
 }
 
 #rowpics img {
 	flex: 1, 1, auto;
 	max-width: 25%;
+}
+
+#mission {
+	height: 200px;
 }
 
 #mission, #team h2, #history, #newsletter {
@@ -77,9 +80,24 @@
 #values {
 	background-color: #352762;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row nowrap;
 	justify-content: space-evenly;
 	color: white;
+	height:200px;
+}
+
+.value {
+	display: flex;
+	flex-flow: row nowrap;
+	max-height: 50%;
+}
+
+.value img {
+	max-height: 50%;
+}
+
+.value p {
+	flex-flow: column;
 }
 
 #team h2 {
@@ -118,6 +136,10 @@
 button, #newsletter input {
 	box-shadow: 5px 10px;
 	border-radius: 12px;
+}
+
+#history {
+	height: 200px;
 }
 
 #history div {
