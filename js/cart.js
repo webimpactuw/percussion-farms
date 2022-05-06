@@ -44,13 +44,13 @@ var pf_cart = {
       pf_cart.items = {};
     } else {
       // DEBUG **************************
-      for (let i in pf_cart.items) {
-        console.log('Item: ' + pf_cart.items[i]);
-      }
+      // for (let i in pf_cart.items) {
+      //   console.log('Item: ' + pf_cart.items[i]);
+      // }
 
       pf_cart.items = JSON.parse(pf_cart.items);
     }
-  },  
+  },
 
   // Cart creation
   init:  () => {
@@ -67,9 +67,6 @@ var pf_cart = {
         empty = false; 
       }
     }
-
-    // DEBUG **************************
-    console.log('EMPTY IS: ' + empty);
 
     output = '';
     let total = 0, subtotal = 0;
@@ -136,6 +133,10 @@ var pf_cart = {
 
     alert('Implement CHECKOUT!');
     /*
+    fetch('SERVER_SCRIPT') {
+  
+      resp => // promise
+    }
     var data = new FormData();
     data.append(‘cart’, JSON.stringify(cart.items));
     data.append(‘products’, JSON.stringify(products));
