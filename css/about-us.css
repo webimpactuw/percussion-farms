@@ -52,6 +52,10 @@
 #rowpics {
 	display: flex;
 	flex-flow: row nowrap;
+<<<<<<< HEAD
+=======
+	max-height: 10%;
+>>>>>>> main
 }
 
 #rowpics img {
@@ -59,10 +63,13 @@
 	max-width: 25%;
 }
 
+<<<<<<< HEAD
 #mission {
 	height: 200px;
 }
 
+=======
+>>>>>>> main
 #mission, #team h2, #history, #newsletter {
 	text-align: center;
 	justify-content: center;
@@ -80,6 +87,7 @@
 #values {
 	background-color: #352762;
 	display: flex;
+<<<<<<< HEAD
 	flex-direction: row nowrap;
 	justify-content: space-evenly;
 	color: white;
@@ -98,6 +106,11 @@
 
 .value p {
 	flex-flow: column;
+=======
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+>>>>>>> main
 }
 
 #team h2 {
@@ -138,10 +151,13 @@ button, #newsletter input {
 	border-radius: 12px;
 }
 
+<<<<<<< HEAD
 #history {
 	height: 200px;
 }
 
+=======
+>>>>>>> main
 #history div {
 	position: relative;
 	color: white;

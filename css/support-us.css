@@ -1,0 +1,144 @@
+* {
+	font-family: Verdana;
+	margin: 0;
+}
+
+.head {
+	height: 70px;
+	width: 100%;
+}
+
+.head * {
+	display: inline-block;
+	padding: 10px 8px 0px;
+	vertical-align: text-top;
+	font-size: 30px;
+}
+
+.links {
+	display: block;
+	height: 50px;
+	font-size: 0px;
+}
+
+.links a:nth-child(-n+5) {
+	position: relative;
+	top: 10px;
+	padding: 15px;
+	font-size: 20px;
+	color: black;
+	transition: 0.3s;
+	font-size: 20px;
+}
+
+.links a:nth-child(n+6) * {
+	height: 40px;
+	margin: 0px 25px 0px 0px;
+	float: right;
+	border-radius: 8px;
+	background: #778b48;
+	font-size: 20px;
+	color: white;
+}
+
+.links a:hover {
+	text-decoration: none;
+	color: white;
+	background: #778b48;
+}
+
+/* Header above */
+p {
+	margin: 0;
+}
+
+.header {
+	font-size: large;
+	font-weight: bold;
+}
+
+.option {
+	width: 25vw;
+}
+
+.shop-image {
+	margin-left: 25%;
+}
+
+.column {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+.top-image-text {
+    position: relative;
+    text-align: left;
+	background-image: url("../img/fruit-and-veggies.jpg");
+    position: relative;
+	width:100%;
+	height: 70vh;
+}
+
+.text {
+	color:white;
+    padding-left: 25vh;
+	padding-top: 25vh;
+    /* transform: translate(-175%, -175%); */
+}
+
+.support-options {
+	text-align: center;
+}
+
+.center-support {
+	margin-left: 25%;
+}
+
+.banner {
+	padding: 2vh;
+	color: white;
+	/* text-align: center; */
+}
+
+.yellow {
+	background-color: #D8AD2A;
+}
+
+.green {
+	background-color: #768C4A;
+}
+
+.purple {
+	background-color: #352762;
+}
+
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
