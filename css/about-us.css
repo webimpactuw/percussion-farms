@@ -1,0 +1,203 @@
+* {
+	font-family: Verdana;
+	margin: 0;
+}
+
+.head {
+	height: 70px;
+	width: 100%;
+}
+
+.head * {
+	display: inline-block;
+	padding: 10px 8px 0px;
+	vertical-align: text-top;
+	font-size: 30px;
+}
+
+.links {
+	display: block;
+	height: 50px;
+	font-size: 0px;
+}
+
+.links a:nth-child(-n+5) {
+	position: relative;
+	top: 10px;
+	padding: 15px;
+	font-size: 20px;
+	color: black;
+	transition: 0.3s;
+	font-size: 20px;
+}
+
+.links a:nth-child(n+6) * {
+	height: 40px;
+	margin: 0px 25px 0px 0px;
+	float: right;
+	border-radius: 8px;
+	background: #778b48;
+	font-size: 20px;
+	color: white;
+}
+
+.links a:hover {
+	text-decoration: none;
+	color: white;
+	background: #778b48;
+}
+
+/* Header above */
+
+#rowpics {
+	display: flex;
+	flex-flow: row nowrap;
+<<<<<<< HEAD
+=======
+	max-height: 10%;
+>>>>>>> main
+}
+
+#rowpics img {
+	flex: 1, 1, auto;
+	max-width: 25%;
+}
+
+<<<<<<< HEAD
+#mission {
+	height: 200px;
+}
+
+=======
+>>>>>>> main
+#mission, #team h2, #history, #newsletter {
+	text-align: center;
+	justify-content: center;
+}
+
+#mission button, #newsletter input, #team h2, #history {
+	color: white;
+}
+
+#mission, #history, #team, #values, #history h2 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#values {
+	background-color: #352762;
+	display: flex;
+<<<<<<< HEAD
+	flex-direction: row nowrap;
+	justify-content: space-evenly;
+	color: white;
+	height:200px;
+}
+
+.value {
+	display: flex;
+	flex-flow: row nowrap;
+	max-height: 50%;
+}
+
+.value img {
+	max-height: 50%;
+}
+
+.value p {
+	flex-flow: column;
+=======
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+>>>>>>> main
+}
+
+#team h2 {
+	background-color: #768C4A;
+}
+
+#teamblock, .member {
+	display: flex;
+}
+
+#teamblock {
+	flex-direction: column;
+}
+
+ .member {
+	flex-direction: row;
+	max-height:50%;
+}
+
+.member {
+	padding: 10px 20px 10px 20px;
+}
+
+.member img {
+	height:50%;
+}
+
+#mission button, #history h2 {
+	background-color: #D8AD2A;
+}
+
+#newsletter input {
+	background-color: #768C4A;
+}
+
+button, #newsletter input {
+	box-shadow: 5px 10px;
+	border-radius: 12px;
+}
+
+<<<<<<< HEAD
+#history {
+	height: 200px;
+}
+
+=======
+>>>>>>> main
+#history div {
+	position: relative;
+	color: white;
+}
+
+#history div img {
+	width: 100%;
+	height: auto;
+}
+
+#history div p {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	display: block;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: white;
+	padding: 30px 30px 100px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
