@@ -57,7 +57,6 @@
 	color: white;
 	background: #778b48;
 }
-
 /* header above */
 
 .background-img {
@@ -65,6 +64,7 @@
 	height: 75vh;
 	object-fit: cover;
 }
+
 
 .overlap-text{
 	color: white;
@@ -82,13 +82,14 @@
 	font-size: 1.5rem;
 }
 
-.mission-statement {
+/* mission statement */
+.contact-us {
 	background-color: #352762;
 	color: white;
 	padding: 3rem;
 }
 
-.mission-statement p {
+.contact-us p {
 	margin-top: 30px;
 	font-size: 18px;
 	font-size: 1.2rem;
@@ -100,6 +101,45 @@
 	/* margin: 40px 20px; */
 	width: 90%;
 	margin: 50px auto;
+}
+
+/* form input */
+
+.form-container input,
+.form-container select {
+	width: 400px;
+}
+
+#fcomment {
+	width: 600px;
+	resize: none;
+	height: 25vh;
+}
+
+#fcontact {
+	width: fit-content;
+}
+
+/* media queries */
+@media (max-width: 750px) {
+	#fcomment {
+		width: 100%;
+	}
+}
+
+@media (max-width: 525px) {
+	.form-container input,
+	.form-container select {
+		width: 100%;
+	}
+}
+
+/* success message pop up */
+#success-message {
+	font-size: 400px;
+	border: 2px black solid;
+	width: fit-content;
+	padding: 5px;
 }
 
 /* Footer below */
@@ -126,6 +166,13 @@ footer {
 
 .filler {
 	width: 10vw;
+}
+
+.form-group button {
+	padding: 5px 10px;
+	border: 2.5px black solid;
+	border-radius: 10%;
+	box-shadow: 0px 3px rgba(0, 0, 0, .20);
 }
 
 /* Donate Popup */
