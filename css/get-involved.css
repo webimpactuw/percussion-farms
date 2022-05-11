@@ -1,54 +1,3 @@
-* {
-	font-family: Verdana;
-	margin: 0;
-}
-
-.head {
-	height: 70px;
-	width: 100%;
-}
-
-.head * {
-	display: inline-block;
-	padding: 10px 8px 0px;
-	vertical-align: text-top;
-	font-size: 30px;
-}
-
-.links {
-	display: block;
-	height: 50px;
-	font-size: 0px;
-}
-
-.links a:nth-child(-n+5) {
-	position: relative;
-	top: 10px;
-	padding: 15px;
-	font-size: 20px;
-	color: black;
-	transition: 0.3s;
-	font-size: 20px;
-}
-
-.links a:nth-child(n+6) * {
-	height: 40px;
-	margin: 0px 25px 0px 0px;
-	float: right;
-	border-radius: 8px;
-	background: #778b48;
-	font-size: 20px;
-	color: white;
-}
-
-.links a:hover {
-	text-decoration: none;
-	color: white;
-	background: #778b48;
-}
-
-/* Header above */
-
 .imgRow {
   /* display: flex; */
 	font-size: 0;
@@ -62,6 +11,7 @@
 	object-fit: cover;
 	/* height: 200px; */
 	width: 25%;
+	height: 400px;
 }
 
 .Volunteer {
@@ -71,6 +21,7 @@
 	color: white;
 	height: 250px;
 }
+
 .Volunteer button {
 	color: white;
 	background-color: transparent;
@@ -159,6 +110,10 @@
 	padding-top: 20px;
 }
 
+.maximg {
+	max-width: 500px;
+}
+
 .Donate {
 	text-align: center;
 	padding-top: 30px;
@@ -175,53 +130,55 @@
 	outline: auto;
 }
 
+.btn, .newsletter-submit {
+	margin-top: 2rem;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	border-radius: 8px;
+	font-size: 1.5rem;
+	font-size: 18px;
+	box-shadow: 0px 3px rgba(100, 100, 100, .5);
+}
+
 .newsletter {
-	display: flex;
+    display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1.5rem;
+	background-color: rgb(198, 198, 198, .3);
 	padding: 3rem;
 }
 
+.newsletter h3 {
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
 .newsletter-container {
-	margin: auto;
-	width: 60%;
+    margin: auto;
+    width: 60%;
 }
 
 .newsletter-text {
-	width: 100%;
+    width: 100%;
 	height: 40px;
 	padding: 1rem;
-	background-color: #C6C6C6;
+	border-width: 1px;
+    background-color: rgb(202, 164, 164, .5);
 }
 
-
-
-
-
-
-/* Footer below */
-
-footer {
-	background: #352762;
-	display: block;
-	height: auto;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
-	color: white;
-	padding: 30px 30px 100px;
+.newsletter-submit {
+	border: none;
 }
 
-.address, .contact {
-	width: 20vw;
-	height: 70%;
-	margin: 10px;
+.newsletter-submit {
+	margin: 0;
+	padding: 6px 12px;
+	background-color: #768C4A;
 }
 
-.contact {
-	width: 30vw;
-}
+/* Media Queries */
 
-.filler {
-	width: 10vw;
+@media only screen and (max-width: 850px) {
+  
 }
