@@ -1,3 +1,8 @@
+/* highlight current page
+.current-page {
+	font-weight: bold;
+} */
+
 /* carousel caption */
 .overlap-text{
 	color: white;
@@ -153,6 +158,8 @@
 	padding: 6px 12px;
 	background-color: #768C4A;
 }
+
+
 
 /* Media Queries */
 
