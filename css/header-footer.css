@@ -7,15 +7,21 @@
 /* Header Styling */
 
 .head {
-	height: 70px;
+	height: 80px;
 	width: 100%;
 }
 
 .head * {
 	display: inline-block;
-	padding: 10px 8px 0px;
+	padding: 12px 0px 0px;
 	vertical-align: text-top;
 	font-size: 35px;
+}
+
+.head img {
+	display: inline-block;
+	height: 90%;
+	padding: 10px 10px 0px;
 }
 
 .links {

@@ -32,6 +32,13 @@
 	padding: 3rem;
 }
 
+.carousel-indicators li {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 0px 7px;
+}
+
 .mission-statement p {
 	font-size: 18px;
 	font-size: 1.2rem;
