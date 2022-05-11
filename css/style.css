@@ -1,5 +1,4 @@
 /* carousel caption */
-
 .overlap-text{
 	color: white;
 	top: 30%;
@@ -24,8 +23,14 @@
 	object-fit: cover;
 }
 
-/* mission statement */
+/* carousel indicators */
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+  }
 
+/* mission statement */
 .mission-statement {
 	background-color: #352762;
 	color: white;

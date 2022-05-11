@@ -4,6 +4,7 @@
 	object-fit: cover;
 }
 
+
 .overlap-text{
 	color: white;
 	top: 30%;
@@ -20,13 +21,14 @@
 	font-size: 1.5rem;
 }
 
-.mission-statement {
+/* mission statement */
+.contact-us {
 	background-color: #352762;
 	color: white;
 	padding: 3rem;
 }
 
-.mission-statement p {
+.contact-us p {
 	margin-top: 30px;
 	font-size: 18px;
 	font-size: 1.2rem;
@@ -40,8 +42,261 @@
 	margin: 50px auto;
 }
 
-/* Media Queries */
+/* form input */
 
-@media only screen and (max-width: 850px) {
-  
+.form-container input,
+.form-container select {
+	width: 400px;
 }
+
+#fcomment {
+	width: 600px;
+	resize: none;
+	height: 25vh;
+}
+
+#fcontact {
+	width: fit-content;
+}
+
+/* media queries */
+@media (max-width: 750px) {
+	#fcomment {
+		width: 100%;
+	}
+}
+
+@media (max-width: 525px) {
+	.form-container input,
+	.form-container select {
+		width: 100%;
+	}
+}
+
+/* success message pop up */
+#success-message {
+	font-size: 400px;
+	border: 2px black solid;
+	width: fit-content;
+	padding: 5px;
+}
+
+/* Footer below */
+
+footer {
+	background: #352762;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	color: white;
+	padding: 30px;
+}
+
+.address, .contact {
+	width: 20vw;
+	height: 70%;
+	margin: 10px;
+}
+
+.contact {
+	width: 30vw;
+}
+
+.filler {
+	width: 10vw;
+}
+
+.form-group button {
+	padding: 5px 10px;
+	border: 2.5px black solid;
+	border-radius: 10%;
+	box-shadow: 0px 3px rgba(0, 0, 0, .20);
+}
+
+/* Donate Popup */
+
+.donate-body {
+  width: 400px;
+  height: 480px;
+  max-width: 80vw;
+  max-height: 80vh;
+  min-width: 20vh;
+  min-height: 40vh;
+}
+
+.donate-body.popup {
+  transform: translate(-50%, -50%) scale(1);
+}
+	
+.donate-mid {
+	margin: 8%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+.donate-mid p:not(.donate-head) {
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.donate-head {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.donate-body .num {
+	width: 48%;
+	height: 40px;
+	/* TODO:  Implement responsive changes;
+	/* min-height: 5vh; */
+	margin: 5px 0px;
+	background: #352762;
+	border-radius: 5px;
+	color: white;
+  	cursor: pointer;
+}
+
+.amounts {
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.donate-field p {
+	display: inline-block;
+	font-size: 300px;
+}
+
+.donate-input {
+	display: inline-block;
+	font-size: 16px;
+	background: lightgrey;
+	height: 40px;
+	width: 95%;
+	margin-bottom: 20px;
+}
+
+.donate-submit {
+	background: #778b48;
+	color: white;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 5px 10px;
+  	cursor: pointer;
+}
+
+/* Cart Popup */
+
+.cart-body {
+  width: 500px;
+  max-width: 80vw;
+  height: 570px;
+  max-height: 80vh;
+}
+
+.cart-body.popup {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cart-head {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	margin: 1rem 0 1rem;
+}
+
+.cart-mid {	
+	margin: 5%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+.cart-mid {
+	height: 185px;
+	border: 2px solid black;
+	margin-bottom: 10px;
+}
+
+.cart-item {
+	font-size: 18px;
+	padding: 8px;
+	margin: 8px 8px 0px;	
+  border-collapse: collapse;
+	border: 3px solid grey;
+	background: lightgreen;
+	text-align: center;
+}
+
+.empty {
+	background: lightgrey;
+	height: 100%;
+	margin: 8px;
+}
+
+#cart-total {
+	text-align: center;
+}
+
+.cart-footer * {
+	display: block;
+	width: 80%;
+	padding: 2px;
+	margin: 10px auto;
+	font-size: 20px;
+}
+
+.cart-mid b {
+	font-size: 20px;
+}
+
+.cart-footer .small {
+	width: 30%;
+	padding: 5px 0px;
+}
+
+/* General Popup Styling */
+
+.popup-body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 250ms ease-in-out;
+  z-index: 10;
+  background-color: white;
+}
+
+.close-button {
+  cursor: pointer;
+  background: none;
+  color: red;
+  float: right;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, .6);
+  pointer-events: none;
+}
+
+#overlay.popup {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Media Queries */

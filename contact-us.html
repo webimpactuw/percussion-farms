@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/contact-us.css">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
-    <title> Percussion Farms </title>
+    <script src="js/contact-us.js"></script>
+    <title>Percussion Farms</title>
 </head>
 <body>
     <nav>
-    <div class="head">
-      <img src="img/favicon.ico"> <!-- Will replace w/ logo.png -->
-      <p>Percussion Farms</p>
-    </div>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="support-us.html">Support Us</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="contact-us.html">Contact Us</a>
-      <img data-open="#cart" src="img/cart.png"></img>
-      <button data-open="#donate">Donate</button>
-    </div>
+        <div class="head">            
+            <img src="img/favicon.ico"> <!-- Will replace w/ logo.png -->
+            <p>Percussion Farms</p>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="support-us.html">Support Us</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="contact-us.html">Contact Us</a>
+            <img data-open="#cart" src="img/cart.png">
+            <button data-open="#donate">Donate</button>
+        </div>                
     </nav>
-    <div>
+
+    <div class="carousel-item active">
         <img src="img/temp_veg1.jpg" class="background-img" alt="questions, comments, or concerns">
         <div class="overlap-text carousel-caption">
             <h2>Questions, Comment, or Concerns?</h2>
@@ -46,7 +49,7 @@
         </div>
     </div>
 
-    <div class="mission-statement text-center">
+    <div class="contact-us text-center">
         <h2>Contact Us</h2>
         <p>To reach Percussion Farms, please fill out the form below and we will get back to you 
             as soon as we're able.
@@ -54,18 +57,19 @@
     </div>
 
     <div class="form-container">
-        <form>
+        <form id="contact-form">
             <div class="form-group">
                 <label for="fname" class="control-label">Name</label>
-                <input name="fname" id="fname" class="form-control w-25" type="text" value="">
+                <input name="fname" id="fname" class="form-control" type="text" value="" required>
             </div>
             <div class="form-group">
                 <label for="femail" class="control-label">Email</label>
-                <input name="femail" id="femail" class="form-control w-25" type="text" value="">
+                <input name="femail" id="femail" class="form-control" type="email" value="" required>
             </div>
             <div class="form-group">
                 <label for="ftopic" class="control-label">What is this regarding?</label>
-                <select name="ftopic" id="ftopic" class="form-control w-25">
+                <select name="ftopic" id="ftopic" class="form-control" required>
+                    <option value=""></option>
                     <option value="a">a</option>
                     <option vaue="b">b</option>
                     <option value="c">c</option>
@@ -73,7 +77,8 @@
             </div>
             <div class="form-group">
                 <label for="fnotice" class="control-label">How did you hear about us?</label>
-                <select name="fnotice" id="fnotice" class="form-control w-25">
+                <select name="fnotice" id="fnotice" class="form-control" required>
+                    <option value=""></option>
                     <option value="a">a</option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -81,46 +86,50 @@
             </div>
             <div class="form-group">
                 <label for="fcomment" class="control-label">Comment</label>
-                <textarea for="fcomment" id="fcomment" class="form-control w-50"
-                style="resize: none; height: 25vh;"></textarea>
+                <textarea name="fcomment" id="fcomment" class="form-control" required></textarea>
             </div>
             <div class="form-group">
                 <label for="fcontact" class="control-label">May we contact you in the future?</label>
-                <select name="fcontact" id="fcontact" class="form-control" style="width: fit-content;">
+                <select name="fcontact" id="fcontact" class="form-control" required>
+                    <option value=""></option>
                     <option value="yes">yes</option>
                     <option value="no">no</option>
                 </select>
             </div>
 
+            <div id="success-message" class="form-group" style="display: none;">
+                <p>Thank you! <br>
+                    Your message has been successful sent. Percussion farms will contact you soon!
+                </p>
+            </div>
             <div class="form-group">
-                <button>Submit</button>
+                <button name="fsubmit" onclick="temp()">Submit</button>
             </div>
         </form>
     </div>
-    
-    <!-- Page Footer -->
-    </content>
-    <footer>
-        <div class="address">
-            <p>#1: Address Line</p>
-            <p>Address Information</p>
-        </div>
-        <div class="address">
-            <p>#2: Address Line</p>
-            <p>Address Information</p>
-        </div>
-        <div class="address">
-            <p>#3: Address Line</p>
-            <p>Address Information</p>
-        </div>
-        <div class="filler"></div>
-        <div class="contact">
-            <p>percussionfarms@email.com</p>
-            <p>Phone: xxx-xxx-xxxx</p>
-            <p>percussionfarms@email.com</p>
-            <p>Phone: xxx-xxx-xxxx</p>
-        </div>
-    </footer>
+   <!-- Page Footer -->
+</content>
+<footer>
+      <div class="address">
+          <p>#1: Address Line</p>
+          <p>Address Information</p>
+      </div>
+      <div class="address">
+          <p>#2: Address Line</p>
+          <p>Address Information</p>
+      </div>
+      <div class="address">
+          <p>#3: Address Line</p>
+          <p>Address Information</p>
+      </div>
+      <div class="filler"></div>
+      <div class="contact">
+          <p>percussionfarms@email.com</p>
+          <p>Phone: xxx-xxx-xxxx</p>
+          <p>percussionfarms@email.com</p>
+          <p>Phone: xxx-xxx-xxxx</p>
+      </div>
+  </footer>
 
     <!-- Donation Overlay -->
     <div id="overlay"></div>
