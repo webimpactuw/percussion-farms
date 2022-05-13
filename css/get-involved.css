@@ -22,6 +22,14 @@
 	height: 250px;
 }
 
+.volunteerTitle {
+	padding-bottom: 20px;
+}
+
+.volunteerContent {
+	padding-bottom: 20px;
+}
+
 .Volunteer button {
 	color: white;
 	background-color: transparent;
@@ -39,22 +47,31 @@
 }
 
 .project1 {
-	display: flex;
+	/* display: flex;
 	padding: 1rem;
 	justify-content: center;
-	gap: 1vw;
+	gap: 1vw; */
+	display: flex;
+	justify-content: left;
+	gap: 3vw;
+	height: fit-content;
+	margin: 5vh 5vw;
 }
 
 .project1inner{
-	padding: 10px;
+	/* padding: 10px;
 	max-width: 500px;
 	width: 30%;
-	flex-grow: .5;
+	flex-grow: .5; */
+	width: 500px;
 }
 
 .contentProj1 {
-	flex: 1;
-	padding: 1rem;
+	/* flex: 1;
+	padding: 1rem; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .desProj1 {
@@ -64,45 +81,44 @@
 
 .project2 {
 	display: flex;
-	padding: 1rem;
-	justify-content: center;
-	gap: 1vw;
+	justify-content: left;
+	gap: 3vw;
+	height: fit-content;
+	margin: 5vh 5vw;
 }
 
 .project2inner{
-	padding: 10px;
-	max-width: 500px;
-	width: 30%;
-	flex-grow: .5;
+	width: 500px;
 }
 
 .contentProj2 {
-	flex: 1;
-	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .desProj2 {
 	flex: 1;
 	padding-top: 20px;
+	justify-content: space-between;
 }
 
 .project3 {
 	display: flex;
-	padding: 1rem;
-	justify-content: center;
-	gap: 1vw;
+	justify-content: left;
+	gap: 3vw;
+	height: fit-content;
+	margin: 5vh 5vw;
 }
 
 .project3inner{
-	padding: 10px;
-	max-width: 500px;
-	width: 30%;
-	flex-grow: .5;
+	width: 500px;
 }
 
 .contentProj3 {
-	flex: 1;
-	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .desProj3 {
@@ -110,9 +126,9 @@
 	padding-top: 20px;
 }
 
-.maximg {
+/* .maximg {
 	max-width: 500px;
-}
+} */
 
 .Donate {
 	text-align: center;
@@ -120,6 +136,10 @@
 	background: #D8AD2A;
 	color: white;
 	height: 200px;
+}
+
+.DonateContent {
+	padding-bottom: 15px;
 }
 
 .Donate button {
@@ -180,5 +200,5 @@
 /* Media Queries */
 
 @media only screen and (max-width: 850px) {
-  
+
 }
