@@ -28,16 +28,25 @@
 	display: block;
 	height: 50px;
 	font-size: 0px;
+	color: white;
 }
 
-.links a:nth-child(-n+5) {
+.links a {
 	position: relative;
 	top: 10px;
 	padding: 15px;
 	font-size: 20px;
-	color: black;
 	transition: 0.3s;
 	font-size: 20px;
+}
+
+.links a:not(.current) {
+	color: black;
+}
+
+.links .current {
+	color: white;
+	background: #778b48;
 }
 
 .links button {
