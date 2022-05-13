@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/support-us.css">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
@@ -52,16 +53,16 @@
         <div class="support-options">
             <br/>
             <p style="padding: 2vh">Statement about appreciating support</p>
-            <div class="options"><!-- TODO: if screen < certain width, make this class="column center-support" or just "center-support" instead of "row"-->
-                <div class="row center-support">
-                    <div class="column option">
+            <div class="options"><!-- TODO: fix the sizing for this for small width screen size -->
+                <div class="item center-support">
+                    <div class="item-content option">
                         <img src="img/grey-image.png" alt="image placeholder" style="height: 30vh">
-                            <button class="purple banner" style="border: none; text-align: left;">
-                                <p>GoFundMe</p>
-                                <p>description</p>
+                            <button class="purple banner" style="border: none">
+                                <p style="text-align: left;">GoFundMe</p>
+                                <p style="text-align: left;">description</p>
                             </button>
                     </div>
-                    <div class="column option">
+                    <div class="item-content option">
                         <img src="img/grey-image.png" alt="image placeholder" style="height: 30vh">
                         <button class="purple banner" style="border: none; text-align: left;">
                             <p>Amazon Wishlist</p>
@@ -73,7 +74,7 @@
         </div>
         <div class="order text-center">
             <p class="header yellow banner">Order Fresh Produce from the farm!</p>
-            <img src="img/menu.png" alt="list of products and prices" style="width: 100vw">
+            <img src="img/menu.png" alt="list of products and prices">
             <div class="yellow banner">
                 <p>description of spread sheet, some description of spread sheet, 
                     description of spread sheet, description of spread sheet.</p>
@@ -84,23 +85,45 @@
         </div>
         <div class="shop">
             <p class="green banner text-center" style="font-weight: bold;">Shop</p>
-            <div class="row">
-                <div class="column shop-image">
-                    <img src="img/temp_hands.jpg" alt="image placeholder" style="width: 30vw; height: 30vh">
-                </div>
-                <div class="column">
-                    <div>
-                        <p>Tote Bag</p>
+            <div class="support">
+                <div class="support-container">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/temp_hands.jpg" class="img-fluid" alt="image of donation">
+                    </div>
+                    <div class="item-content">
+                        <h3>Tote bag</h3>
                         <p>description, we value your purchases</p>
                         <p>Details:</p>
                         <p>Size - XX</p>
                         <p>Color - XX</p>
-                        <button class="btn btn-danger">Place Order</button>
+                        <button type="button" class="btn red-button">Place Order</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
     </content>
+
+    <form action="action_page.php" class="newsletter text-center">
+        <div class="newsletter-container">
+            <h3>Subscribe to Our Newsletter!</h3>
+            <p class="text-left">text about why you should subscribe to our newsletter, text about why you should
+              subscribe to our newsletter, text about why you should subscribe to our newsletter.
+              text about why you should subscribe to our newsletter, text about why you should
+              subscribe to our newsletter, text about why you should subscribe to our newsletter.
+            </p>
+        </div>
+
+        <div class="newsletter-container">
+            <input class="newsletter-text" type="text" placeholder="Email" required>
+        </div>
+
+        <div class="newsletter-container">
+            <input class="newsletter-submit" type="submit" value="Subscribe">
+        </div>
+
+    </form>
 
     <!-- Page Footer -->
     </content>
