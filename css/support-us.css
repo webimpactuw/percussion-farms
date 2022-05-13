@@ -54,6 +54,15 @@ p {
 	/* text-align: center; */
 }
 
+.clickable-banner {
+	border: none;
+	text-align: left;
+	color: white;
+	padding: 1vh;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
 .yellow {
 	background-color: #D8AD2A;
 }
@@ -117,5 +126,8 @@ p {
 		justify-content: space-between;
 	}
 
-	
+	.option {
+		width: 50vw;
+		height: 100%;
+	}	
 }
