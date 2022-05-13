@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
 * {
-	font-family: Verdana, sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 15px;
 	margin: 0;
 }
@@ -28,16 +30,25 @@
 	display: block;
 	height: 50px;
 	font-size: 0px;
+	color: white;
 }
 
-.links a:nth-child(-n+5) {
+.links a {
 	position: relative;
 	top: 10px;
 	padding: 15px;
 	font-size: 20px;
-	color: black;
 	transition: 0.3s;
 	font-size: 20px;
+}
+
+.links a:not(.current) {
+	color: black;
+}
+
+.links .current {
+	color: white;
+	background: #778b48;
 }
 
 .links button {
