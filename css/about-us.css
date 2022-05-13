@@ -1,3 +1,7 @@
+body {
+  font-family: verdana, sans-serif;
+}
+
 #rowpics {
 	height: 400px;
 	background-color: #778b48;
@@ -34,17 +38,45 @@
 	flex-direction: row nowrap;
 	justify-content: space-evenly;
 	color: white;
-	height:200px;
+	height:300px;
 }
 
 .value {
-	display: flex;
-	flex-flow: row nowrap;
-	max-height: 50%;
+  display: flex;
+  flex-flow: column;
+  width: 33%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+}
+
+.value-header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value-header img {
+  height: 100%;
+}
+
+.value-header h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.value .text-container {
+  width: 100%;
+  word-wrap: break-word;
+  height: 50%;
+  text-align: center;
 }
 
 .value img {
-	max-height: 50%;
+    height: 100%;
 }
 
 .value p {
@@ -53,6 +85,8 @@
 
 #team h2 {
 	background-color: #768C4A;
+  height: 80px;
+  justify-content: center;
 }
 
 #teamblock, .member {
@@ -61,20 +95,22 @@
 
 #teamblock {
 	flex-direction: column;
-}
-
- .member {
-	flex-direction: row;
-	max-height:50%;
+  height: 500px;
+  padding: 50px 50px 50px 50px;
 }
 
 .member {
-	padding: 10px 20px 10px 20px;
+	flex-direction: row;
+	height: 50%;
 }
 
 .member img {
-	height: 400px;
-	width:  500px;
+  height: 100%;
+}
+
+.member .text-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #mission button, #history h2 {
@@ -115,7 +151,7 @@
 }
 
 .newsletter {
-    display: flex;
+  display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	background-color: rgb(198, 198, 198, .3);
@@ -153,5 +189,5 @@
 /* Media Queries */
 
 @media only screen and (max-width: 850px) {
-  
+
 }
