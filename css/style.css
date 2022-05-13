@@ -1,17 +1,12 @@
-/* highlight current page
-.current-page {
-	font-weight: bold;
-} */
+
 
 /* carousel caption */
 .overlap-text{
-	background-color: rgba(0, 0, 0, .5);
 	color: white;
 	top: 30%;
 	right: 30%;
 	text-align: left;
 	height: fit-content;
-	padding: 10px;
 }
 
 .overlap-text h2 {
@@ -21,6 +16,10 @@
 
 .overlap-text p {
 	font-size: 1.5rem;
+}
+
+.fade {
+
 }
 
 /* carousel pictures */
@@ -63,15 +62,17 @@
 }
 
 .pictures {	
-	height: 400px;
+	height: fit-content;
 	background-color: #778b48;
 	display: flex;
 }
 
 .pictures img {
-	width: 25%;
 	object-fit: cover;
+	width: 25%;
 }
+
+
 
 .order {
 	background-color: #D8AD2A;
@@ -127,6 +128,17 @@
 	border: none;
 }
 
+@media screen and (max-width: 576px) {
+	.item {
+		flex-direction: column;
+
+	}
+
+	.item-image {
+		width: auto;
+	}
+}
+
 .newsletter {
     display: flex;
 	flex-direction: column;
@@ -165,8 +177,23 @@
 
 
 
-/* Media Queries */
+/* Media Queries @768px and @ 576*/
+@media screen and (max-width: 768px) {
+	.pictures {
+		flex-wrap: wrap;
+	}
 
-@media only screen and (max-width: 850px) {
-  
+	.pictures img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.pictures {
+		display: block;
+	}
+
+	.pictures img {
+		width: 100%;
+	}
 }
