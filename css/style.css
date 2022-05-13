@@ -1,14 +1,12 @@
-/* highlight current page
-.current-page {
-	font-weight: bold;
-} */
-
 /* carousel caption */
 .overlap-text{
+	background-color: rgba(0, 0, 0, .5);
 	color: white;
 	top: 30%;
 	right: 30%;
 	text-align: left;
+	height: fit-content;
+	padding: 10px;
 }
 
 .overlap-text h2 {
@@ -30,9 +28,10 @@
 
 /* carousel indicators */
 .carousel-indicators li {
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 	border-radius: 100%;
+	margin: 0px 7px;
   }
 
 /* mission statement */
@@ -40,13 +39,6 @@
 	background-color: #352762;
 	color: white;
 	padding: 3rem;
-}
-
-.carousel-indicators li {
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  margin: 0px 7px;
 }
 
 .mission-statement p {

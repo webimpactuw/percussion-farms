@@ -7,19 +7,17 @@
 }
 
 .imgRow img {
-	/* flex: 1, 1, auto; */
 	object-fit: cover;
-	/* height: 200px; */
 	width: 25%;
 	height: 400px;
 }
 
 .Volunteer {
 	text-align: center;
-	padding-top: 40px;
+	padding: 3rem;
 	background: #352762;
 	color: white;
-	height: 250px;
+	height: auto;
 }
 
 .volunteerTitle {
@@ -27,6 +25,9 @@
 }
 
 .volunteerContent {
+	text-align: center;
+	width: 60%;
+	margin: auto;
 	padding-bottom: 20px;
 }
 
@@ -47,10 +48,6 @@
 }
 
 .project1 {
-	/* display: flex;
-	padding: 1rem;
-	justify-content: center;
-	gap: 1vw; */
 	display: flex;
 	justify-content: left;
 	gap: 3vw;
@@ -59,16 +56,10 @@
 }
 
 .project1inner{
-	/* padding: 10px;
-	max-width: 500px;
-	width: 30%;
-	flex-grow: .5; */
 	width: 500px;
 }
 
 .contentProj1 {
-	/* flex: 1;
-	padding: 1rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -126,20 +117,18 @@
 	padding-top: 20px;
 }
 
-/* .maximg {
-	max-width: 500px;
-} */
-
 .Donate {
 	text-align: center;
-	padding-top: 30px;
+	padding: 3rem;
 	background: #D8AD2A;
 	color: white;
-	height: 200px;
+	height: auto;
 }
 
 .DonateContent {
 	padding-bottom: 15px;
+	width: 60%;
+	margin: auto;
 }
 
 .Donate button {
