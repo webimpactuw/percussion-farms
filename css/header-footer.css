@@ -114,8 +114,11 @@ footer {
   }
 
   .links img {
+	  /* justify-items: center; */
+	  /* margin-top: 20px; */
+	  /* margin-left: 20vw; */
 	  /* margin: 20px; */
-  	/* margin: 20px 20vw; */
+  	margin: 20px;
   }
 
   .links button {
