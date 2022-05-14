@@ -16,11 +16,18 @@
 	font-size: 1.5rem;
 }
 
-/* carousel pictures */
+/* fade background */
+.background-fade {
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
 
+/* carousel pictures */
 .pic {
 	width: 100%;
-	height: 75vh;
+	height: 700px;
 	object-fit: cover;
 }
 
@@ -56,7 +63,7 @@
 }
 
 .pictures {	
-	height: fit-content;
+	height: auto;
 	background-color: #778b48;
 	display: flex;
 }
@@ -65,8 +72,6 @@
 	object-fit: cover;
 	width: 25%;
 }
-
-
 
 .order {
 	background-color: #D8AD2A;
@@ -180,6 +185,10 @@
 	.pictures img {
 		width: 50%;
 	}
+
+	.newsletter-container {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -188,6 +197,14 @@
 	}
 
 	.pictures img {
+		width: 100%;
+	}
+	
+	head, body, html {
+		font-size: 12px;
+	}
+
+	.newsletter-container {
 		width: 100%;
 	}
 }
