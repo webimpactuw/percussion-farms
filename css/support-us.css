@@ -81,6 +81,17 @@ p {
 	border: none;
 }
 
+.fresh-sheet {
+	height: 600px;
+	overflow: auto;
+}
+
+.fresh-sheet img {
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+}
+
 .newsletter {
     display: flex;
 	flex-direction: column;
