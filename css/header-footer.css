@@ -59,7 +59,7 @@
 	background: #778b48;
 	font-size: 20px;
 	color: white;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .links img {	
@@ -68,7 +68,7 @@
 	float: right;
 	font-size: 20px;
 	color: white;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .links a:hover {
@@ -103,24 +103,27 @@ footer {
 	width: 10vw;
 }
 
-.dubvelopers {
+.dubvelopers {	
 	background: #352762;
 	display: block;
-	height: 70px;
+	height: 60px;
 	text-align: center;
-	border: 2px dashed white;
 }
 
 .dubvelopers p {
+	background: #634ab5;
 	font-size: 20px;
 	color: white;
-	padding: 20px;
+	padding: 7px;
 	margin: auto;
+	width: 40%;
+	min-width: 400px;
+	border: 8px outset #826ec4;
 }
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .links a {
     display: block;
     text-align: center;
@@ -129,7 +132,12 @@ footer {
   }
 
   .links img {
-  	margin: 20px 20vw;
+  	height: 50px;
+  	padding: 0px 5vw;
+  	margin: 15px 15vw;
+  	border: 5px outset grey;
+		border-radius: 8px;
+		/*background: #778b48;*/
   }
 
   .links button {
@@ -144,6 +152,17 @@ footer {
 	.newsletter-container {
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.dubvelopers {
+		width: 100%;
+	}
+
+	.dubvelopers p {
+		width: 100%;
+	}
 
   footer {
   	display: block;
@@ -151,7 +170,7 @@ footer {
 
   .address, .contact {
   	display: block;
-  	width: 100vw;
+  	width: 100%;
   }
 
   .address p, .contact p {

@@ -1,3 +1,92 @@
+/* fade background */
+.background-fade {
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+/* Text overlay */
+.overlap-text{
+	color: white;
+	top: 25%;
+	left: 10%;
+	text-align: left;
+	height: fit-content;
+}
+
+.description {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.overlap-text h2 {
+	font-size: 3rem;
+}
+
+.overlap-text p {
+	font-size: 1.5rem;
+}
+
+.fresh-desc {
+	font-size: 18px;
+}
+
+.btn, .newsletter-submit {
+	margin-top: 2rem;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	border-radius: 8px;
+	font-size: 18px;
+	box-shadow: 0px 3px rgba(100, 100, 100, .5);
+}
+
+.item {
+    display: flex;
+	/* padding: 1rem; */
+	justify-content: left;
+	gap: 3vw;
+	height: fit-content;
+	margin: 5vh 5vw;
+}
+
+.item {
+    display: flex;
+	/* padding: 1rem; */
+	justify-content: left;
+	gap: 3vw;
+	height: fit-content;
+	margin: 5vh 5vw;
+}
+
+.item-image {
+	width: 500px;
+}
+
+.item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* carousel pictures */
+.pic {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+/* carousel indicators */
+.carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	margin: 0px 7px;
+}
+
+/* ------------------ */
+
 p {
 	margin: 0;
 }
@@ -8,7 +97,7 @@ p {
 }
 
 .option {
-	width: 25vw;
+	width: 350px;
 	height: 100%;
 }
 
@@ -45,7 +134,10 @@ p {
 }
 
 .center-support {
-	margin-left: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .banner {
@@ -58,9 +150,11 @@ p {
 	border: none;
 	text-align: left;
 	color: white;
+	width: 100%;
 	padding: 1vh;
 	padding-right: 10px;
 	padding-left: 10px;
+  	cursor: pointer;
 }
 
 .yellow {
@@ -130,7 +224,7 @@ p {
 
 /* Media Queries */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
 	.item {
 		display: flex;
 		flex-direction: column;
@@ -138,7 +232,13 @@ p {
 	}
 
 	.option {
-		width: 50vw;
+		width: 400px;
 		height: 100%;
 	}	
+
+	.center-support {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
