@@ -1,5 +1,4 @@
 .imgRow {
-  /* display: flex; */
 	font-size: 0;
 	/* flex-flow: row nowrap; */
   /* max-width: 10%; */
@@ -17,18 +16,18 @@
 	padding: 3rem;
 	background: #352762;
 	color: white;
-	height: auto;
+	/* height: auto; */
 }
 
-.volunteerTitle {
-	padding-bottom: 20px;
-}
-
-.volunteerContent {
-	text-align: center;
+.Volunteer p {
+	/* text-align: center;
 	width: 60%;
 	margin: auto;
 	padding-bottom: 30px;
+	font-size: 1.5rem; */
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
 }
 
 .Volunteer button {
@@ -37,6 +36,7 @@
 	border: white;
 	cursor: pointer;
 	outline: auto;
+	margin-top:2rem;
 }
 .project {
 	display: flex;
@@ -44,19 +44,22 @@
 	align-items: center;
 	background: #778b48;
 	color: white;
-	height: 100px;
+	/* height: 100px; */
+	padding:1.5rem;
 }
 
 .project1 {
 	display: flex;
 	justify-content: left;
+	flex-basis: 25px;
 	gap: 3vw;
 	height: fit-content;
 	margin: 5vh 5vw;
 }
 
 .project1inner{
-	width: 500px;
+	/* width: auto; */
+	flex: 0 0 30%;
 }
 
 .contentProj1 {
@@ -67,54 +70,7 @@
 
 .desProj1 {
 	flex: 1;
-	padding-top: 20px;
-}
-
-.project2 {
-	display: flex;
-	justify-content: left;
-	gap: 3vw;
-	height: fit-content;
-	margin: 5vh 5vw;
-}
-
-.project2inner{
-	width: 500px;
-}
-
-.contentProj2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.desProj2 {
-	flex: 1;
-	padding-top: 20px;
-	justify-content: space-between;
-}
-
-.project3 {
-	display: flex;
-	justify-content: left;
-	gap: 3vw;
-	height: fit-content;
-	margin: 5vh 5vw;
-}
-
-.project3inner{
-	width: 500px;
-}
-
-.contentProj3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.desProj3 {
-	flex: 1;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .Donate {
@@ -122,17 +78,12 @@
 	padding: 3rem;
 	background: #D8AD2A;
 	color: white;
-	height: auto;
+	/* height: auto; */
 }
 
-.DonateContent {
-	padding-bottom: 20px;
-	width: 60%;
-	margin: auto;
-}
-
-.DonateContent p {
-	padding-bottom: 20px;
+.Donate p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .Donate button {
@@ -141,6 +92,7 @@
 	border: white;
 	cursor: pointer;
 	outline: auto;
+	margin-top:2rem;
 }
 
 .btn, .newsletter-submit {
@@ -191,6 +143,18 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 576px) {
+	.imgRow {
+		display: block;
+	}
+	.imgRow img {
+		width: 100%;
+	}
+	.project1 {
+		flex-direction: column;
+	}
+	.project1inner{
+		width: auto;
+	}
 
 }
