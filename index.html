@@ -38,7 +38,8 @@
       <a href="support-us.html">Support Us</a>
       <a href="get-involved.html">Get Involved</a>
       <a href="contact-us.html">Contact Us</a>
-      <img data-open="#cart" src="img/cart.png"></img>
+      <!-- data-open="#cart"  -->
+      <img onclick="openCart()" src="img/cart.png"></img>
       <button data-open="#donate">Donate</button>
     </div>
     </nav>
@@ -174,8 +175,9 @@
 
     </form>
 
-    <!-- Page Footer -->
     </content>
+
+    <!-- Page Footer -->
     <footer>
         <div class="address">
             <p>#1: Address Line</p>
@@ -214,10 +216,10 @@
             eleifend magna. 
             </p>
             <div class="amounts">
-                <button class="num" value="5">$5</button>
-                <button class="num" value="10">$10</button>
-                <button class="num" value="15">$15</button>
-                <button class="num" value="20">$20</button>
+                <button class="num" value="5" onclick="setValue(5)">$5</button>
+                <button class="num" value="10" onclick="setValue(10)">$10</button>
+                <button class="num" value="15" onclick="setValue(15)">$15</button>
+                <button class="num" value="20" onclick="setValue(20)">$20</button>
             </div>
             <div class="donate-field">
                 <p class="dollar">$</p>
@@ -226,29 +228,36 @@
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
             </div>        
             <button id="submit-donate" class="donate-submit">Donate</button>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	            <input type="hidden" name="item_name_1" value="Donation">
+	            <input type="hidden" name="amount_1" value="1">
+	            <input type="hidden" name="quantity_1" value="1">
+	            <input type="hidden" name="item_number_1" value="">
+	        <input type="hidden" name="shipping_1" value="0.00"><input type="hidden" name="no_shipping" value="2"><input type="image" src="https://percussionfarms.org/wp-content/plugins/wordpress-simple-paypal-shopping-cart/images/paypal_checkout_EN.png" name="submit" class="wp_cart_checkout_button wp_cart_checkout_button_1" style="" alt="Make payments with PayPal - it\'s fast, free and secure!"><input type="hidden" name="return" value="https://percussionfarms.org/thank-you/?reset_wp_cart=1"><input type="hidden" name="cancel_return" value="https://percussionfarms.org/donate/"><input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1">
+            <input type="hidden" name="business" value="percussionfarms@gmail.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="upload" value="1">
+            <input type="hidden" name="rm" value="2">
+            <input type="hidden" name="charset" value="utf-8">
+            <input type="hidden" name="bn" value="TipsandTricks_SP"><input type="hidden" name="custom" value="wp_cart_id%3D3002%26ip%3D205.175.106.85"></form>
         </div>
     </div>
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div class="popup-body cart-body" id="cart">
-        <button data-close="#cart" class="close-button">&times;</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total">TOTAL: </p> 
-        <div class="cart-footer">        
-            <button data-id="1">Add Tote Bag to Cart</button>
-            <button data-id="2">Add T-Shirt to Cart</button>
-            <button data-id="3">Add Water Bottle to Cart</button>
-            <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-            <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
-        </div>
-
-        <!-- MISCELLANOUS TESTING BUTTONS -->
-
+        <button data-id="1">Add Tote Bag to Cart</button>
+        <button data-id="2">Add T-Shirt to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button>
+        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
+        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
     </div>
     <!-- End of Overlay -->
-
 </body>
 
 </html>

@@ -125,6 +125,8 @@
       </div>
 
     </form>
+    
+    </content>
 
     <footer>
         <div class="address">
@@ -157,48 +159,42 @@
         <button data-close="#donate" class="close-button">&times;</button>
         <div class="donate-mid">
             <p class="donate-head"> We appreciate your support! </p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Fusce tincidunt, nisl vel ultricies aliquam, lacus felis
-            posuere turpis, sit amet varius nunc diam at ipsum. Nam ac
-            commodo purus. Donec at orci rhoncus, iaculis ipsum gravida,
-            eleifend magna.
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Fusce tincidunt, nisl vel ultricies aliquam, lacus felis 
+            posuere turpis, sit amet varius nunc diam at ipsum. Nam ac 
+            commodo purus. Donec at orci rhoncus, iaculis ipsum gravida, 
+            eleifend magna. 
             </p>
             <div class="amounts">
-                <button class="num" value="5">$5</button>
-                <button class="num" value="10">$10</button>
-                <button class="num" value="15">$15</button>
-                <button class="num" value="20">$20</button>
+                <button class="num" value="5" onclick="setValue(5)">$5</button>
+                <button class="num" value="10" onclick="setValue(10)">$10</button>
+                <button class="num" value="15" onclick="setValue(15)">$15</button>
+                <button class="num" value="20" onclick="setValue(20)">$20</button>
             </div>
             <div class="donate-field">
                 <p class="dollar">$</p>
                 <input type="text" inputmode="numeric" class="donate-input"
-                placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()"
+                placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()" 
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
-            </div>
+            </div>        
             <button id="submit-donate" class="donate-submit">Donate</button>
         </div>
     </div>
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div class="popup-body cart-body" id="cart">
-        <button data-close="#cart" class="close-button">&times;</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total">TOTAL: </p>
-        <div class="cart-footer">
-            <button data-id="1">Add Tote Bag to Cart</button>
-            <button data-id="2">Add T-Shirt to Cart</button>
-            <button data-id="3">Add Water Bottle to Cart</button>
-            <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-            <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
-        </div>
-
-        <!-- MISCELLANOUS TESTING BUTTONS -->
-
+        <p value=0 id="cart-total">TOTAL: </p> 
+        <button data-id="1">Add Tote Bag to Cart</button>
+        <button data-id="2">Add T-Shirt to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button>
+        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
+        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
     </div>
     <!-- End of Overlay -->
-    </content>
 
 </body>
 

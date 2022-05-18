@@ -110,27 +110,29 @@
             </div>
         </form>
     </div>
-   <!-- Page Footer -->
+    
     </content>
+
+   <!-- Page Footer -->
     <footer>
         <div class="address">
             <p>#1: Address Line</p>
             <p>Address Information</p>
         </div>
         <div class="address">
-            <p>#2: Address Line</p>           
-            <p>Address Information</p>            
+            <p>#2: Address Line</p>
+            <p>Address Information</p>
         </div>
         <div class="address">
-            <p>#3: Address Line</p>           
-            <p>Address Information</p>            
+            <p>#3: Address Line</p>
+            <p>Address Information</p>
         </div>
-            <div class="filler"></div>
+        <div class="filler"></div>
         <div class="contact">
-            <p>percussionfarms@email.com</p>          
-            <p>Phone: xxx-xxx-xxxx</p>            
-            <p>percussionfarms@email.com</p>          
-            <p>Phone: xxx-xxx-xxxx</p>            
+            <p>percussionfarms@email.com</p>
+            <p>Phone: xxx-xxx-xxxx</p>
+            <p>percussionfarms@email.com</p>
+            <p>Phone: xxx-xxx-xxxx</p>
         </div>
     </footer>
     <div class="dubvelopers">
@@ -150,10 +152,10 @@
             eleifend magna. 
             </p>
             <div class="amounts">
-                <button class="num" value="5">$5</button>
-                <button class="num" value="10">$10</button>
-                <button class="num" value="15">$15</button>
-                <button class="num" value="20">$20</button>
+                <button class="num" value="5" onclick="setValue(5)">$5</button>
+                <button class="num" value="10" onclick="setValue(10)">$10</button>
+                <button class="num" value="15" onclick="setValue(15)">$15</button>
+                <button class="num" value="20" onclick="setValue(20)">$20</button>
             </div>
             <div class="donate-field">
                 <p class="dollar">$</p>
@@ -167,21 +169,16 @@
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div class="popup-body cart-body" id="cart">
-        <button data-close="#cart" class="close-button">&times;</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total">TOTAL: </p> 
-        <div class="cart-footer">        
-            <button data-id="1">Add Tote Bag to Cart</button>
-            <button data-id="2">Add T-Shirt to Cart</button>
-            <button data-id="3">Add Water Bottle to Cart</button>
-            <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-            <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
-        </div>
-
-        <!-- MISCELLANOUS TESTING BUTTONS -->
-
+        <button data-id="1">Add Tote Bag to Cart</button>
+        <button data-id="2">Add T-Shirt to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button>
+        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
+        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
     </div>
     <!-- End of Overlay -->
 
