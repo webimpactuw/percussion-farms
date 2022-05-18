@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
+
 * {
-	font-family: Verdana, sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 15px;
 	margin: 0;
 }
@@ -57,7 +59,7 @@
 	background: #778b48;
 	font-size: 20px;
 	color: white;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .links img {	
@@ -66,7 +68,7 @@
 	float: right;
 	font-size: 20px;
 	color: white;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .links a:hover {
@@ -101,9 +103,27 @@ footer {
 	width: 10vw;
 }
 
+.dubvelopers {	
+	background: #352762;
+	display: block;
+	height: 60px;
+	text-align: center;
+}
+
+.dubvelopers p {
+	background: #634ab5;
+	font-size: 20px;
+	color: white;
+	padding: 7px;
+	margin: auto;
+	width: 40%;
+	min-width: 400px;
+	border: 8px outset #826ec4;
+}
+
 /* Media Queries */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
   .links a {
     display: block;
     text-align: center;
@@ -112,7 +132,12 @@ footer {
   }
 
   .links img {
-  	margin: 20px 20vw;
+  	height: 50px;
+  	padding: 0px 5vw;
+  	margin: 15px 15vw;
+  	border: 5px outset grey;
+		border-radius: 8px;
+		/*background: #778b48;*/
   }
 
   .links button {
@@ -121,8 +146,23 @@ footer {
   }
 
   .links {
-  	height: 360px;
-  }
+  	height: 380px;
+  } 
+
+	.newsletter-container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.dubvelopers {
+		width: 100%;
+	}
+
+	.dubvelopers p {
+		width: 100%;
+	}
 
   footer {
   	display: block;
@@ -130,7 +170,7 @@ footer {
 
   .address, .contact {
   	display: block;
-  	width: 100vw;
+  	width: 100%;
   }
 
   .address p, .contact p {
@@ -143,7 +183,7 @@ footer {
   	height: 10px;
   }
 
-  html {
+  /*html, body {
   	overflow-x: hidden;
-  }
+  } */
 }

@@ -21,6 +21,10 @@
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
     <title> Percussion Farms </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+    </style>
 </head>
 <body>
     <nav>
@@ -39,7 +43,6 @@
     </div>
     </nav>
     <content>
-    <!-- Make test changes here -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -48,17 +51,28 @@
         </ol>
         <div class="carousel-inner">
         <div class="carousel-item active">
+            <div class="background-fade"></div>
             <img class="d-block w-1 00 pic" src="img/temp_veg1.jpg" alt="First slide">
             <div class="overlap-text carousel-caption">
-            <h2>March Newsletter</h2>
-            <p>blurb about the news,blurb about the news,blurb about the news,blurb about the news</p>
+                <h2> March Newsletter </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus porttitor auctor. Proin ullamcorper et lacus nec cursus. Nulla a magna est. Mauris porta arcu dui, et condimentum augue tempus ut. Vestibulum cursus egestas consectetur. Nam lobortis metus suscipit nulla sodales dictum. Nunc porta enim felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
         </div>
         <div class="carousel-item">
+            <div class="background-fade"></div>
             <img class="d-block w-100 pic" src="img/temp_veg2.jpg" alt="Second slide">
+            <div class="overlap-text carousel-caption">
+                <h2> April Newsletter </h2>
+                <p> Donec placerat porttitor quam eget venenatis. Vivamus sit amet ex nisi. Vestibulum eget ipsum vitae enim tempor ornare. Sed ac libero sed magna sagittis tempor a quis diam. Quisque sed urna vehicula, dignissim orci sit amet, aliquet nisl. Sed suscipit id urna a interdum. Duis aliquet ut odio sit amet congue. </p>
+            </div>
         </div>
         <div class="carousel-item">
+            <div class="background-fade"></div>
             <img class="d-block w-100 pic" src="img/temp_veg3.jpg" alt="Third slide">
+            <div class="overlap-text carousel-caption">
+                <h2> May Newsletter </h2>
+                <p> Donec consequat ultrices mi eget sodales. Suspendisse non posuere nibh. Nulla arcu nibh, ullamcorper a mauris in, rhoncus consequat sapien. Morbi condimentum justo quis quam gravida placerat. Sed vitae lectus quis risus egestas tincidunt et eleifend eros. Ut aliquet erat nec dignissim vestibulum. Phasellus rhoncus rhoncus leo, in dapibus tellus fringilla ac. In hac habitasse platea dictumst. </p>
+            </div>
         </div>
         </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,27 +88,27 @@
     <!-- Mission Statement -->
     <div class="mission-statement text-center">
         <h2>Catchphrase/Shorted Mission Statement</h2>
-        <p>Short blurb about the percussion farms, short blurb about the organization,
-        short blurb about the organization, short blurb about the organization</p>
+        <p> Sed euismod, velit sit amet laoreet volutpat, felis turpis malesuada magna, ac aliquam lectus velit sit amet nibh. Phasellus porta ornare massa, vitae efficitur massa. Aenean pulvinar orci ligula, in volutpat lacus vehicula efficitur. Etiam placerat eleifend quam finibus scelerisque. Nunc faucibus, justo in convallis molestie, leo mauris posuere nibh, sit amet convallis quam ligula at libero. </p>
         <button type="button" class="btn" onclick="location.href='about-us.html'">Learn More</button>
     </div>
 
     <!-- Series of Images -->
     <div class="pictures">
         <img src="img/temp_collage.jpg" alt="img-1">
-        <img src="img/temp_collage.jpg" alt="img-2">
-        <img src="img/temp_collage.jpg" alt="img-3">
-        <img src="img/temp_collage.jpg" alt="img-4">
+        <img src="img/temp_collage.jpg" alt="img-1">
+        <img src="img/temp_collage.jpg" alt="img-1">
+        <img src="img/temp_collage.jpg" alt="img-1">
     </div>
 
     <!-- Product Order -->
     <div class="order text-center">
         <h2>Order Fresh Produce from the farm!</h2>
-        <img src="img/menu.png" alt="list of products and prices">
+        <div class="fresh-sheet">
+            <img src="img/menu.png" alt="list of products and prices">
+        </div>
         <div class="place-order">
-        <p>description of spread sheet, some description of spread sheet, description of
-          spread sheet, description of spread sheet.
-        </p>
+        <!-- DESCRIPTION OF FRESH SHEET -->
+        <p> Morbi tempor, libero in bibendum ultrices, justo quam consequat turpis, molestie accumsan tortor arcu vitae urna. Pellentesque risus erat, lobortis ut faucibus id, condimentum ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ac porttitor urna, non porttitor odio. Nullam vehicula nec nulla quis suscipit. Pellentesque a diam dapibus, accumsan leo vitae, vulputate risus. </p>
         <button type="button" class="btn">Place Order</button>
         </div>
     </div>
@@ -108,11 +122,21 @@
                 <img src="img/temp_hands.jpg" class="img-fluid" alt="image of donation">
             </div>
             <div class="item-content">
-                <h3>Donate</h3>
-                <p>What donations are used for, why we appreciate donations, what donations
-                  are used for, why we appreciate donations.
+                <h3> Donate </h3>
+                <!-- WHAT DONATIONS ARE USED FOR -->
+                <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In consequat hendrerit mi, vel accumsan dui pharetra eget. Proin a urna sollicitudin, lacinia sapien id, mattis ex. Donec nisl felis, facilisis id hendrerit ac, iaculis sed metus. Nullam lacus odio, dictum at tincidunt ut, volutpat at magna. 
                 </p>
-                <p>disclaimers</p>
+                <p> DISCLAIMERS: Nulla in metus sapien. Cras faucibus justo at eros pretium vestibulum. Sed non rhoncus eros. Nulla lobortis mattis leo, eget sollicitudin dolor posuere sed. Cras lacinia tempor velit eu congue. Sed ligula enim, aliquet eget dapibus vel, ultricies sit amet tellus.
+                </p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="business" value="LCWFM2RVM8ZEL" />
+                    <input type="hidden" name="no_recurring" value="20" />
+                    <input type="hidden" name="item_name" value="to help percussion farm grow" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+
                 <button type="button" class="btn item-button" data-open="#donate">Donate</button>
             </div>
         </div>
@@ -121,12 +145,13 @@
                 <img src="img/temp_hands.jpg" class="img-fluid" alt="image of donation">
             </div>
             <div class="item-content">
-                <h3>Volunteer</h3>
-                <p>why we need volunteers, why volunteers are a huge help, why we need volunteers,
-                  why volunteers are a huge help.
+                <h3> Volunteer </h3>
+                <!-- WHY WE NEED VOLUNTEERS -->
+                <p>Morbi fermentum ante a ante consectetur interdum ac commodo purus. Mauris nisl purus, volutpat id lacus non, posuere feugiat velit. Duis quis tellus aliquet, aliquam risus et, laoreet ipsum. Vestibulum ut rutrum purus. Donec posuere sapien quam, dictum hendrerit est venenatis at. Proin vel dui quis lorem mattis tempus vitae eget enim. Cras dignissim ullamcorper fermentum. 
                 </p>
-                <p>disclaimers</p>
-                <button type="button" class="btn item-button" onclick="location.href='get-involved.html'"">Volunteer</button>
+                <p> DISCLAIMERS: Phasellus laoreet sagittis dui quis accumsan. Donec vel dolor id tellus auctor interdum porttitor eget sapien. Ut egestas tellus ut dolor porta ultricies. Vivamus in aliquet ipsum. Praesent vel elit nulla. Nam sed pharetra mauris, non facilisis nisl.
+                </p>
+                <button type="button" class="btn item-button" onclick="location.href='get-involved.html'">Volunteer</button>
             </div>
         </div>
         </div>
@@ -135,10 +160,7 @@
     <form action="action_page.php" class="newsletter text-center">
         <div class="newsletter-container">
             <h3>Subscribe to Our Newsletter!</h3>
-            <p class="text-left">text about why you should subscribe to our newsletter, text about why you should
-              subscribe to our newsletter, text about why you should subscribe to our newsletter.
-              text about why you should subscribe to our newsletter, text about why you should
-              subscribe to our newsletter, text about why you should subscribe to our newsletter.
+            <p class="text-left"> Maecenas id ante a justo mattis imperdiet. Etiam at dolor erat. Donec nunc purus, scelerisque ac risus sagittis, tincidunt blandit lectus. Duis vitae consequat magna. Aliquam a efficitur arcu. Sed placerat enim placerat eros gravida, in hendrerit risus dignissim. Aliquam pharetra et risus ac condimentum. Sed neque sem, porta at posuere in, elementum eget leo. 
             </p>
         </div>
 
@@ -175,6 +197,9 @@
             <p>Phone: xxx-xxx-xxxx</p>
         </div>
     </footer>
+    <div class="dubvelopers">
+        <p> Created with <3 by DUBvelopers </p>
+    </div>
 
     <!-- Donation Overlay -->
     <div id="overlay"></div>
