@@ -107,7 +107,6 @@
 
 .item {
     display: flex;
-	flex-basis: 25px;
 	gap: 3vw;
 	margin: 5vh 5vw;
 }
@@ -182,7 +181,6 @@
 }
 
 @media screen and (max-width: 576px) {
-
 	.item {
 		flex-direction: column;
 
@@ -190,14 +188,6 @@
 
 	.item-image {
 		width: auto;
-	}
-
-	.pictures {
-		display: block;
-	}
-
-	.pictures img {
-		width: 100%;
 	}
 	
 	head, body, html {
