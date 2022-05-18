@@ -118,12 +118,15 @@ footer {
 	margin: auto;
 	width: 40%;
 	min-width: 400px;
+	max-width: 1000px;
 	border: 8px outset #826ec4;
+	display: inline-block;
 }
 
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
+
   .links a {
     display: block;
     text-align: center;
@@ -156,14 +159,6 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-	.dubvelopers {
-		width: 100%;
-	}
-
-	.dubvelopers p {
-		width: 100%;
-	}
-
   footer {
   	display: block;
   }
@@ -186,4 +181,22 @@ footer {
   /*html, body {
   	overflow-x: hidden;
   } */
+}
+
+@media only screen and (max-width: 420px) {
+
+	.dubvelopers p {
+		min-width: 10px;
+		width: 90vw;
+		padding: 12px 0px;
+		overflow-wrap: break-word;
+		overflow: hidden;
+	}
+
+	.dubvelopers {
+		height: auto;
+		min-width: 10px;
+		overflow: hidden;
+	}
+
 }
