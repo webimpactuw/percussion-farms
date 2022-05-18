@@ -226,6 +226,19 @@
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
             </div>        
             <button id="submit-donate" class="donate-submit">Donate</button>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	            <input type="hidden" name="item_name_1" value="Donation">
+	            <input type="hidden" name="amount_1" value="1">
+	            <input type="hidden" name="quantity_1" value="1">
+	            <input type="hidden" name="item_number_1" value="">
+	        <input type="hidden" name="shipping_1" value="0.00"><input type="hidden" name="no_shipping" value="2"><input type="image" src="https://percussionfarms.org/wp-content/plugins/wordpress-simple-paypal-shopping-cart/images/paypal_checkout_EN.png" name="submit" class="wp_cart_checkout_button wp_cart_checkout_button_1" style="" alt="Make payments with PayPal - it\'s fast, free and secure!"><input type="hidden" name="return" value="https://percussionfarms.org/thank-you/?reset_wp_cart=1"><input type="hidden" name="cancel_return" value="https://percussionfarms.org/donate/"><input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1">
+            <input type="hidden" name="business" value="percussionfarms@gmail.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="upload" value="1">
+            <input type="hidden" name="rm" value="2">
+            <input type="hidden" name="charset" value="utf-8">
+            <input type="hidden" name="bn" value="TipsandTricks_SP"><input type="hidden" name="custom" value="wp_cart_id%3D3002%26ip%3D205.175.106.85"></form>
         </div>
     </div>
     <!-- End of Overlay -->
@@ -248,6 +261,13 @@
 
     </div>
     <!-- End of Overlay -->
+
+    <script>
+        var ele = document.getElementById("amount");
+
+        
+
+    </script>
 
 </body>
 
