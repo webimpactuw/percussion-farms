@@ -38,7 +38,8 @@
       <a href="support-us.html">Support Us</a>
       <a href="get-involved.html">Get Involved</a>
       <a href="contact-us.html">Contact Us</a>
-      <img data-open="#cart" src="img/cart.png"></img>
+      <!-- data-open="#cart"  -->
+      <img onclick="openCart()" src="img/cart.png"></img>
       <button data-open="#donate">Donate</button>
     </div>
     </nav>
@@ -174,8 +175,9 @@
 
     </form>
 
-    <!-- Page Footer -->
     </content>
+
+    <!-- Page Footer -->
     <footer>
         <div class="address">
             <p>#1: Address Line</p>
@@ -231,21 +233,16 @@
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div class="popup-body cart-body" id="cart">
-        <button data-close="#cart" class="close-button">&times;</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total">TOTAL: </p> 
-        <div class="cart-footer">        
-            <button data-id="1">Add Tote Bag to Cart</button>
-            <button data-id="2">Add T-Shirt to Cart</button>
-            <button data-id="3">Add Water Bottle to Cart</button>
-            <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-            <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
-        </div>
-
-        <!-- MISCELLANOUS TESTING BUTTONS -->
-
+        <button data-id="1">Add Tote Bag to Cart</button>
+        <button data-id="2">Add T-Shirt to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button>
+        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
+        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
     </div>
     <!-- End of Overlay -->
 

@@ -37,22 +37,35 @@ $(document).keydown(function(e) {
     }
 });
 
+// Open popup
 function open(element) {
   if (element == null) return;
   element.classList.add('popup');
   overlay.classList.add('popup');
 };
 
+// Close popup
 function close(element) {
   if (element == null) return;
   element.classList.remove('popup');
   overlay.classList.remove('popup');
 };
 
+// Set donation value in donation popup
 function setValue(num) {
   clearInput();
   document.getElementById("amount").dataset.amount = num;
   checkInput();
+}
+
+// Open cart sidebar
+function openCart() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+// Close cart sidebar
+function closeCart() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 
 // Checks for valid keypresses
