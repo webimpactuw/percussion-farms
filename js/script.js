@@ -49,6 +49,12 @@ function close(element) {
   overlay.classList.remove('popup');
 };
 
+function setValue(num) {
+  clearInput();
+  document.getElementById("amount").dataset.amount = num;
+  checkInput();
+}
+
 // Checks for valid keypresses
 function filterKeys(event) {
   var charCode = (event.which) ? event.which : event.keyCode;
