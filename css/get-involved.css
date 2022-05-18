@@ -28,7 +28,7 @@
 	text-align: center;
 	width: 60%;
 	margin: auto;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .Volunteer button {
@@ -126,9 +126,13 @@
 }
 
 .DonateContent {
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 	width: 60%;
 	margin: auto;
+}
+
+.DonateContent p {
+	padding-bottom: 20px;
 }
 
 .Donate button {
