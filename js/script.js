@@ -58,14 +58,9 @@ function setValue(num) {
   checkInput();
 }
 
-// Open cart sidebar
-function openCart() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-// Close cart sidebar
-function closeCart() {
-  document.getElementById("mySidenav").style.width = "0";
+// Open and close cart sidebar
+function toggleCart() {
+  document.getElementById("cart-sidebar").classList.toggle("opened");
 }
 
 // Checks for valid keypresses

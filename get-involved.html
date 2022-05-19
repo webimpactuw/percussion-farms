@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- BOOTSTRAP LINKS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -15,29 +17,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
     <link rel="stylesheet" type="text/css" href="css/get-involved.css">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+
+    <!-- SCRIPT LINKS -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script defer src="js/paypal.js"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
+
     <title> Percussion Farms </title>
 </head>
 <body>
     <nav>
-    <div class="head">
-      <img src="img/favicon.ico"> <!-- Will replace w/ logo.png -->
-      <p>Percussion Farms</p>
-    </div>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="support-us.html">Support Us</a>
-      <a class="current">Get Involved</a>
-      <a href="contact-us.html">Contact Us</a>
-      <img data-open="#cart" src="img/cart.png"></img>
-      <button data-open="#donate">Donate</button>
-    </div>
+        <div class="head">
+          <img src="img/favicon.ico">
+          <p>Percussion Farms</p>
+        </div>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="support-us.html">Support Us</a>
+          <a class="current">Get Involved</a>
+          <a href="contact-us.html">Contact Us</a>
+          <img onclick="toggleCart()" src="img/cart.png"></img>
+          <button data-open="#donate">Donate</button>
+        </div>
     </nav>
+    
     <content>
         <!-- Make test changes here -->
         <div class = "imgRow">
@@ -58,7 +68,8 @@
                 Aliquam quis ullamcorper quam, et hendrerit ante. Integer a posuere leo.
                 Aenean euismod magna magna, interdum malesuada turpis tincidunt cursus.
             </p>
-            <button> Sign Up </button>
+            <!-- INCLUDE LINK TO VOLUNTEER GOOGLE FORM -->
+            <button class="btn" onclick="location.href='https://www.google.com'"> Sign Up </button>
         </div>
 
         <div class = "project">
@@ -115,7 +126,7 @@
                 pretium augue nec porttitor. Nam arcu lectus, fermentum sed est sit amet, tempor consectetur
                 dolor. In eu turpis pulvinar, mollis felis a, viverra lectus.
             </p>
-            <button>Donate</button>
+            <button class="btn" data-open="#donate">Donate</button>
         </div>
 
     </content>
@@ -195,19 +206,21 @@
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <div id="cart-sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleCart()">&times;</a>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total">TOTAL: </p> 
+        <p value=0 id="cart-total"></p> 
         <button data-id="1">Add Tote Bag to Cart</button>
         <button data-id="2">Add T-Shirt to Cart</button>
         <button data-id="3">Add Water Bottle to Cart</button>
         <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
         <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
+
+        <div id="smart-button-container"><div style="text-align: center;">
+        <div id="paypal-button-container"></div></div></div>
     </div>
     <!-- End of Overlay -->
-
 </body>
 
 </html>

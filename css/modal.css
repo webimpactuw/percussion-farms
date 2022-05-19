@@ -78,6 +78,38 @@
 
 /* Cart Popup */
 
+.sidebar.opened {
+  width: 250px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar button {
+	padding: 5px;
+	margin: 5px 20px;
+}
+
 .cart-head {
 	font-weight: bold;
 	font-size: 25px;
@@ -134,34 +166,6 @@
 .cart-footer .small {
 	width: 30%;
 	padding: 5px 0px;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: black;
-  text-decoration: none;
-}
-
-.sidenav button {
-	padding: 5px;
-	margin: 5px 20px;
 }
 
 /* General Popup Styling */
