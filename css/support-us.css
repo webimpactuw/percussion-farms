@@ -62,9 +62,11 @@
 
 .item-image {
 	width: 500px;
+	max-width: 100%;
 }
 
 .item-content {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -224,6 +226,15 @@ p {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
+	}
+
+	.item-content {
+		align-items: center;
+	}
+
+	.item-content img {
+		width: 100%;
 	}
 
 	.option {
