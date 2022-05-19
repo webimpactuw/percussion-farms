@@ -3,10 +3,8 @@ body {
 }
 
 #rowpics {
-	height: 400px;
-	background-color: #778b48;
+	height: auto;
 	display: flex;
-	flex-flow: row nowrap;
 }
 
 #rowpics img {
@@ -41,10 +39,8 @@ body {
 #values {
 	background-color: #352762;
 	display: flex;
-	flex-direction: row nowrap;
 	justify-content: space-evenly;
 	color: white;
-	height: auto;
 }
 
 .value {
@@ -102,23 +98,56 @@ body {
 
 #teamblock {
 	flex-direction: column;
-  height: auto;
 }
+
+@media screen and (max-width: 768px) {
+	#rowpics {
+		flex-wrap: wrap;
+	}
+
+	#rowpics img {
+		width: 50%;
+	}
+
+	#values {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#values > .value {
+		width: 100%;
+		padding-bottom: 5%;
+	}
+
+	.member {
+		flex-direction: column;
+	}
+
+	.member-image {
+		width: auto;
+	}
+
+	.newsletter-container {
+		width: 80%;
+	}
+}
+
+/* @media screen and (max-width: 576px) {
+
+} */
 
 .member {
-	flex-direction: row;
-	height: 50%;
+	gap: 3vw;
+	margin: 5vh 5vw;
 }
 
-.member img {
-  height: 400px;
-  padding: 30px 0px 30px 30px;
+.member-image {
+	flex: 0 0 30%;
 }
 
 .member .text-container {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #mission button, #history h2 {
@@ -196,6 +225,3 @@ body {
 
 /* Media Queries */
 
-@media only screen and (max-width: 850px) {
-
-}
