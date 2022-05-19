@@ -9,6 +9,7 @@
 
 .overlap-text h2 {
 	font-size: 3rem;
+	font-weight: bold;
 }
 
 .overlap-text p {
@@ -174,6 +175,7 @@
 
 	.pictures img {
 		width: 50%;
+		height: 200px;
 	}
 
 	.newsletter-container {
@@ -188,6 +190,11 @@
 
 	.item-image {
 		width: auto;
+	}
+
+	.pictures img {
+		width: 100%;
+		height: 150px;
 	}
 	
 	head, body, html {

@@ -144,28 +144,19 @@
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-	.imgRow {
-		flex-wrap: wrap;
-	}
-
 	.imgRow img {
 		width: 50%;
-		height: 50%;
+		height: 200px;
 	}
 
 @media only screen and (max-width: 576px) {
 	.imgRow {
 		display: block;
 	}
+
 	.imgRow img {
 		width: 100%;
-		height: 25%;
-	}
-	.project1 {
-		flex-direction: column;
-	}
-	.project1inner{
-		width: auto;
+		height: 150px;
 	}
 
 }
