@@ -222,27 +222,68 @@
                 placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()" 
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
             </div>        
-            <button id="submit-donate" class="donate-submit">Donate</button>
+            
+            <!-- CHECKOUT BUTTOM -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="item_name_1" value="Donation"/>
+                <input id="donate-amount" type="hidden" name="amount_1" value='0.00'/>
+                <input type="hidden" name="quantity_1" value="1"/>
+
+                <button id="donate-submit" alt="Checkout Button">Donate</button>
+
+                <!-- THANK YOU PAGE RETURN LINK -->
+                <input type="hidden" name="return" value="https://www.google.com" />
+                <!-- CANCEL ORDER RETURN LINK -->
+                <input type="hidden" name="cancel_return" value="https://www.google.com" />
+
+                <input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1" />
+                <input type="hidden" name="business" value="percussionfarms@gmail.com" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="hidden" name="cmd" value="_cart" />
+                <input type="hidden" name="upload" value="1" />
+                <input type="hidden" name="rm" value="2" />
+                <input type="hidden" name="charset" value="utf-8" />
+            </form>
         </div>
     </div>
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleCart()">&times;</a>
+        <button class="close-button" onclick="toggleCart()">&times;</button>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total"></p> 
         <button data-id="1">Add Tote Bag to Cart</button>
         <button data-id="2">Add T-Shirt to Cart</button>
         <button data-id="3">Add Water Bottle to Cart</button>
-        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
+        <button onclick="pf_cart.clear()">CLEAR CART</button>
 
-        <div id="smart-button-container"><div style="text-align: center;">
-        <div id="paypal-button-container"></div></div></div>
+        <!-- CHECKOUT BUTTOM -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="item_name_1" value="Donation"/>
+            <input type="hidden" name="amount_1" value='10.00'/>
+            <input type="hidden" name="quantity_1" value="1"/>
+
+            <button id="cart-submit" name="submit" alt="Checkout Button">CHECKOUT</button>
+
+            <!-- THANK YOU PAGE RETURN LINK -->
+            <input type="hidden" name="return" value="https://www.google.com"/>
+            <!-- CANCEL ORDER RETURN LINK -->
+            <input type="hidden" name="cancel_return" value="https://www.google.com"/>
+
+            <input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1" />
+            <input type="hidden" name="business" value="percussionfarms@gmail.com"/>
+            <input type="hidden" name="currency_code" value="USD"/>
+            <input type="hidden" name="cmd" value="_cart"/>
+            <input type="hidden" name="upload" value="1"/>
+            <input type="hidden" name="rm" value="2"/>
+            <input type="hidden" name="charset" value="utf-8"/>
+        </form>
+
     </div>
     <!-- End of Overlay -->
+
 </body>
 
 </html>
