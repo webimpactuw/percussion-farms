@@ -3,7 +3,7 @@ body {
 }
 
 #rowpics {
-	height: auto;
+	height: 300px;
 	display: flex;
 }
 
@@ -15,6 +15,8 @@ body {
 #mission {
 	height: auto;
 	padding: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #mission, #team h2, #history {
@@ -56,7 +58,7 @@ body {
 .value-header {
   display: flex;
   flex-flow: row nowrap;
-  height: 100px;
+  height: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -68,6 +70,8 @@ body {
 .value-header h3 {
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .value .text-container {
@@ -145,9 +149,15 @@ body {
 	flex: 0 0 30%;
 }
 
+#team h3 {
+  font-size: 1.2rem;
+  font-size: 18px;
+}
 .member .text-container {
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 #mission button, #history h2 {
@@ -155,26 +165,28 @@ body {
 }
 
 #history {
-	height: 680px;
+	height: 500px;
 	position: relative;
 }
 
-#history h2 {
+#history h2, #team h2 {
 	height: 80px;
 	padding: 20px;
 }
 
 #history img {
 	width: 100%;
-	height: 600px;
+	height: 420px;
 	object-fit: cover;
 }
 
-#history p {
+#history .text-container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+  word-break: break-all;
+  height: 50%;
 }
 
 .btn, .newsletter-submit {
