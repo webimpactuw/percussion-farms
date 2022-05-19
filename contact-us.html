@@ -43,7 +43,7 @@
           <a href="support-us.html">Support Us</a>
           <a href="get-involved.html">Get Involved</a>
           <a class="current">Contact Us</a>
-          <img onclick="toggleCart()" src="img/cart.png"></img>
+          <img onclick="openCart()" src="img/cart.png"></img>
           <button data-open="#donate">Donate</button>
         </div>
     </nav>
@@ -198,7 +198,7 @@
 
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
-        <button class="close-button" onclick="toggleCart()">&times;</button>
+        <button class="close-button" onclick="closeCart()">&times;</button>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total"></p> 

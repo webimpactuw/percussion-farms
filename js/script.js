@@ -59,8 +59,12 @@ function setValue(num) {
 }
 
 // Open and close cart sidebar
-function toggleCart() {
-  document.getElementById("cart-sidebar").classList.toggle("opened");
+function closeCart() {
+  document.getElementById("cart-sidebar").classList.remove("opened");
+}
+
+function openCart() {
+  document.getElementById("cart-sidebar").classList.add("opened");
 }
 
 // Checks for valid keypresses

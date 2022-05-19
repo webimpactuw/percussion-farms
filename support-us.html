@@ -43,7 +43,7 @@
           <a class="current">Support Us</a>
           <a href="get-involved.html">Get Involved</a>
           <a href="contact-us.html">Contact Us</a>
-          <img onclick="toggleCart()" src="img/cart.png"></img>
+          <img onclick="openCart()" src="img/cart.png"></img>
           <button data-open="#donate">Donate</button>
         </div>
     </nav>
@@ -233,7 +233,7 @@
 
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
-        <button class="close-button" onclick="toggleCart()">&times;</button>
+        <button class="close-button" onclick="closeCart()">&times;</button>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
         <p value=0 id="cart-total"></p> 
@@ -246,7 +246,7 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="item_name_1" value="Donation"/>
             <input type="hidden" name="amount_1" value='10.00'/>
-            <input type="hidden" name="quantity_1" value="1"/>
+            <input type="hidden" name="quantity_1" value="4"/>
 
             <button id="cart-submit" name="submit" alt="Checkout Button">CHECKOUT</button>
 

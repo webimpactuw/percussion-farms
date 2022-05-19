@@ -6,6 +6,7 @@ const addItem = document.querySelectorAll('[data-id]');
 addItem.forEach(button => {
   button.addEventListener('click', () => {
     pf_cart.add(button.dataset.id);
+    openCart();
   });
 });
 
@@ -13,12 +14,12 @@ var products = {
   1: {
     name: 'Tote Bag', 
     desc: 'Black Percussion Farms Tote Bag', 
-    price: 15
+    price: 10
   }, 
   2: {
     name: 'T-Shirt',
     desc: 'We appreciate your donation!', 
-    price: 10
+    price: 12
   }, 
   3: {
     name: 'Water Bottle',
