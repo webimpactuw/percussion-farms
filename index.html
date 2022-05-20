@@ -250,12 +250,15 @@
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
         <button class="close-button" onclick="closeCart()">&times;</button>
-        <p class="cart-head"> YOUR CART </p>
+        <p class="cart-head"> CART </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total"></p> 
-        <button data-id="1">Add Tote Bag to Cart</button>
+        <div class="total">
+            <p value=0 id="cart-total"></p> 
+            <p value=0 id="cart-total"></p> 
+        </div>
+        <!-- <button data-id="1">Add Tote Bag to Cart</button>
         <button data-id="2">Add T-Shirt to Cart</button>
-        <button data-id="3">Add Water Bottle to Cart</button>
+        <button data-id="3">Add Water Bottle to Cart</button> -->
         <button onclick="pf_cart.clear()">CLEAR CART</button>
 
         <!-- CHECKOUT BUTTOM -->
