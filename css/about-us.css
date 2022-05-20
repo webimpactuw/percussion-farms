@@ -15,7 +15,14 @@ body {
 
 #mission {
 	height: auto;
-	padding: 30px;
+  padding-top:40px;
+  padding-bottom: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#mission h2 {
+  padding-bottom: 15px;
 }
 
 #mission, #team h2, #history {
@@ -24,7 +31,6 @@ body {
 }
 
 #mission p {
-	margin-bottom: 0;
 	font-size: 18px;
 }
 
@@ -42,6 +48,7 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	color: white;
+  height: 350px;
 }
 
 .value {
@@ -57,7 +64,7 @@ body {
 .value-header {
   display: flex;
   flex-flow: row nowrap;
-  height: 100px;
+  height: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,9 +76,12 @@ body {
 .value-header h3 {
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .value .text-container {
+  margin-top: 20px;
   width: 100%;
   word-wrap: break-word;
   height: 50%;
@@ -89,7 +99,6 @@ body {
 #team h2 {
 	background-color: #768C4A;
   height: 80px;
-  padding: 20px;
   justify-content: center;
 }
 
@@ -99,6 +108,8 @@ body {
 
 #teamblock {
 	flex-direction: column;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,16 +151,38 @@ body {
 
 .member {
 	gap: 3vw;
-	margin: 5vh 5vw;
+	margin: 0vw 5vw;
+  height: 33%;
 }
 
+/*
 .member-image {
 	flex: 0 0 30%;
+  height: 100%;
+}
+*/
+.member h2 {
+  font-size: 18px;
+}
+.member-image img {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 80%;
+  width: auto;
 }
 
+#team .member h3, .member em h3 {
+  font-size: 1.2rem;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+
 .member .text-container {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 #mission button, #history h2 {
@@ -157,27 +190,34 @@ body {
 }
 
 #history {
-	height: 680px;
-	position: relative;
+	height: 500px;
 }
 
-#history h2 {
+#history h2, #team h2 {
 	height: 80px;
 	padding: 20px;
 }
 
+#history #history-content {
+  height: 420px;
+  position: relative;
+}
+
 #history img {
 	width: 100%;
-	height: 600px;
+	height: 420px;
 	object-fit: cover;
 }
 
-#history p {
-	font-size: 32px;
+#history #history-content .text-container {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+  top: 50%;
+  left: 50%;
 	transform: translate(-50%, -50%);
+  word-break: break-all;
+  height: 50%;
+  width: 80%;
+
 }
 
 .btn, .newsletter-submit {
