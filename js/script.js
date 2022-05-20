@@ -1,7 +1,6 @@
 const openPopup = document.querySelectorAll('[data-open]');
 const closePopup = document.querySelectorAll('[data-close]');
 const overlay = document.getElementById('overlay');
-const calculate = document.getElementById('submit-donate');
 
 // Open donation popup
 openPopup.forEach(button => {
@@ -55,17 +54,17 @@ function close(element) {
 function setValue(num) {
   clearInput();
   document.getElementById("amount").dataset.amount = num;
+  document.getElementById("donate-amount").value = num;
   checkInput();
 }
 
-// Open cart sidebar
-function openCart() {
-  document.getElementById("mySidenav").style.width = "250px";
+// Open and close cart sidebar
+function closeCart() {
+  document.getElementById("cart-sidebar").classList.remove("opened");
 }
 
-// Close cart sidebar
-function closeCart() {
-  document.getElementById("mySidenav").style.width = "0";
+function openCart() {
+  document.getElementById("cart-sidebar").classList.add("opened");
 }
 
 // Checks for valid keypresses
@@ -86,7 +85,8 @@ function checkInput() {
 
   // Store value into input data field as string
   amount = amount.toFixed(2);
-  document.getElementById("amount").dataset.amount = amount;
+  document.getElementById("amount").dataset.amount = amount;  
+  document.getElementById("donate-amount").value = amount;
   let temp = parseFloat(amount);
 
   // Format amount output onto input value field
@@ -98,12 +98,3 @@ function checkInput() {
 function clearInput() {
   document.getElementById("amount").value = "";
 }
-
-// Obtain input value, send to PayPal
-calculate.addEventListener('click', () => {
-  let final = document.getElementById('amount').dataset.amount;
-
-  let output = final.replace(/\d(?=(\d{3})+\.)/g, '$&,'); 
-  alert("You will be donating " + output);
-  console.log(output + " is of type " + typeof output);
-});
