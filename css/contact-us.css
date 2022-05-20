@@ -14,7 +14,6 @@
 }
 
 .overlap-text h2 {
-	font-size: 36px;
 	font-size: 3rem;
 }
 
@@ -66,8 +65,6 @@
 #fcontact {
 	width: fit-content;
 }
-
-
 
 /* success message pop up */
 #success-message {
@@ -297,9 +294,11 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 576px) {
-	head, body, html {
-		font-size: 12px;
+@media screen and (max-width: 800px) {
+	.overlap-text {
+		height: inherit;
+		top: 10%;
+		overflow-y: scroll;
 	}
 }
 
@@ -308,6 +307,7 @@ footer {
 	#fcomment {
 		width: 100%;
 	}
+
 }
 
 @media (max-width: 525px) {

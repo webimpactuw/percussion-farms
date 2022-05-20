@@ -4,7 +4,8 @@
 	top: 25%;
 	left: 15%;
 	text-align: left;
-	height: fit-content;
+	height: inherit;	
+	overflow-y: auto;
 }
 
 .overlap-text h2 {
@@ -13,6 +14,7 @@
 
 .overlap-text p {
 	font-size: 1.5rem;
+	
 }
 
 /* fade background */
@@ -166,7 +168,14 @@
 
 
 /* Media Queries @768px and @ 576px*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+	.overlap-text {
+		height: inherit;
+		top: 10%;
+		overflow-y: scroll;
+		bottom: 10%;
+	}
+
 	.pictures {
 		flex-wrap: wrap;
 	}
@@ -178,9 +187,7 @@
 	.newsletter-container {
 		width: 80%;
 	}
-}
 
-@media screen and (max-width: 576px) {
 	.item {
 		flex-direction: column;
 
@@ -188,9 +195,5 @@
 
 	.item-image {
 		width: auto;
-	}
-	
-	head, body, html {
-		font-size: 12px;
-	}
+	}	
 }
