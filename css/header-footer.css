@@ -125,6 +125,12 @@ footer {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1200px) {
+	.newsletter-container {
+		width: 80%;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 
   .links a {
