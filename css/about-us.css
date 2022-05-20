@@ -3,7 +3,7 @@ body {
 }
 
 #rowpics {
-	height: 300px;
+	height: auto;
 	display: flex;
 }
 
@@ -20,6 +20,7 @@ body {
   margin-left: 15%;
   margin-right: 15%;
 }
+
 #mission h2 {
   padding-bottom: 15px;
 }
@@ -170,7 +171,7 @@ body {
   width: auto;
 }
 
-#team .member h3 {
+#team .member h3, .member em h3 {
   font-size: 1.2rem;
   font-size: 18px;
   margin-bottom: 0px;
@@ -208,12 +209,7 @@ body {
 	object-fit: cover;
 }
 
-<<<<<<< HEAD
 #history #history-content .text-container {
-=======
-#history p {
-	font-size: 32px;
->>>>>>> 5cacdeef4edd1af6bd3cd0f40a528424b55bb26f
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -221,6 +217,7 @@ body {
   word-break: break-all;
   height: 50%;
   width: 80%;
+
 }
 
 .btn, .newsletter-submit {
