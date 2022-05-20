@@ -4,15 +4,18 @@
 	top: 25%;
 	left: 15%;
 	text-align: left;
-	height: fit-content;
+	height: inherit;	
+	overflow-y: auto;
 }
 
 .overlap-text h2 {
 	font-size: 3rem;
+	font-weight: bold;
 }
 
 .overlap-text p {
 	font-size: 1.5rem;
+	
 }
 
 /* fade background */
@@ -69,6 +72,7 @@
 .pictures img {
 	object-fit: cover;
 	width: 25%;
+	height: 400px;
 }
 
 .order {
@@ -166,28 +170,38 @@
 
 
 /* Media Queries @768px and @ 576px*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+	.overlap-text {
+		height: inherit;
+		top: 10%;
+		overflow-y: scroll;
+		bottom: 10%;
+	}
+
 	.pictures {
 		flex-wrap: wrap;
 	}
 
 	.pictures img {
 		width: 50%;
+		height: 200px;
 	}
 
 	.newsletter-container {
 		width: 80%;
 	}
-}
 
-@media screen and (max-width: 576px) {
 	.item {
 		flex-direction: column;
-
 	}
 
 	.item-image {
 		width: auto;
+	}
+
+	.pictures img {
+		width: 100%;
+		height: 150px;
 	}
 	
 	head, body, html {

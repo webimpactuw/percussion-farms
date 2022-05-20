@@ -9,6 +9,7 @@ body {
 
 #rowpics img {
 	width: 25%;
+	height: 400px;
 	object-fit: cover;
 }
 
@@ -117,6 +118,7 @@ body {
 
 	#rowpics img {
 		width: 50%;
+		object-fit: cover;
 	}
 
 	#values {
@@ -206,7 +208,12 @@ body {
 	object-fit: cover;
 }
 
+<<<<<<< HEAD
 #history #history-content .text-container {
+=======
+#history p {
+	font-size: 32px;
+>>>>>>> 5cacdeef4edd1af6bd3cd0f40a528424b55bb26f
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -264,3 +271,20 @@ body {
 
 /* Media Queries */
 
+@media screen and (max-width: 768px) {
+	#rowpics img {
+		width: 50%;
+		height: 200px;
+	}
+
+@media only screen and (max-width: 576px) {
+	.imgRow {
+		display: block;
+	}
+
+	#rowpics img {
+		width: 100%;
+		height: 150px;
+	}
+
+}

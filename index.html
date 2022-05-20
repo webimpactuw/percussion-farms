@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- BOOTSTRAP LINKS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -15,33 +17,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+
+    <!-- SCRIPT LINKS -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script defer src="js/paypal.js"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
-    <title> Percussion Farms </title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
-    </style>
+    <title> Percussion Farms </title>
 </head>
 <body>
     <nav>
-    <div class="head">
-      <img src="img/favicon.ico"> <!-- Will replace w/ logo.png -->
-      <p>Percussion Farms</p>
-    </div>
-    <div class="links">
-      <a class="current">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="support-us.html">Support Us</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="contact-us.html">Contact Us</a>
-      <!-- data-open="#cart"  -->
-      <img onclick="openCart()" src="img/cart.png"></img>
-      <button data-open="#donate">Donate</button>
-    </div>
+        <div class="head">
+          <img src="img/favicon.ico">
+          <p>Percussion Farms</p>
+        </div>
+        <div class="links">
+          <a class="current">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="support-us.html">Support Us</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="contact-us.html">Contact Us</a>
+          <img onclick="openCart()" src="img/cart.png"></img>
+          <button data-open="#donate">Donate</button>
+        </div>
     </nav>
     <content>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -129,15 +133,6 @@
                 </p>
                 <p> DISCLAIMERS: Nulla in metus sapien. Cras faucibus justo at eros pretium vestibulum. Sed non rhoncus eros. Nulla lobortis mattis leo, eget sollicitudin dolor posuere sed. Cras lacinia tempor velit eu congue. Sed ligula enim, aliquet eget dapibus vel, ultricies sit amet tellus.
                 </p>
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="business" value="LCWFM2RVM8ZEL" />
-                    <input type="hidden" name="no_recurring" value="20" />
-                    <input type="hidden" name="item_name" value="to help percussion farm grow" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-
                 <button type="button" class="btn item-button" data-open="#donate">Donate</button>
             </div>
         </div>
@@ -227,37 +222,68 @@
                 placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()" 
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
             </div>        
-            <button id="submit-donate" class="donate-submit">Donate</button>
+            
+            <!-- CHECKOUT BUTTOM -->
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	            <input type="hidden" name="item_name_1" value="Donation">
-	            <input type="hidden" name="amount_1" value="1">
-	            <input type="hidden" name="quantity_1" value="1">
-	            <input type="hidden" name="item_number_1" value="">
-	        <input type="hidden" name="shipping_1" value="0.00"><input type="hidden" name="no_shipping" value="2"><input type="image" src="https://percussionfarms.org/wp-content/plugins/wordpress-simple-paypal-shopping-cart/images/paypal_checkout_EN.png" name="submit" class="wp_cart_checkout_button wp_cart_checkout_button_1" style="" alt="Make payments with PayPal - it\'s fast, free and secure!"><input type="hidden" name="return" value="https://percussionfarms.org/thank-you/?reset_wp_cart=1"><input type="hidden" name="cancel_return" value="https://percussionfarms.org/donate/"><input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1">
-            <input type="hidden" name="business" value="percussionfarms@gmail.com">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="cmd" value="_cart">
-            <input type="hidden" name="upload" value="1">
-            <input type="hidden" name="rm" value="2">
-            <input type="hidden" name="charset" value="utf-8">
-            <input type="hidden" name="bn" value="TipsandTricks_SP"><input type="hidden" name="custom" value="wp_cart_id%3D3002%26ip%3D205.175.106.85"></form>
+                <input type="hidden" name="item_name_1" value="Donation"/>
+                <input id="donate-amount" type="hidden" name="amount_1" value='0.00'/>
+                <input type="hidden" name="quantity_1" value="1"/>
+
+                <button id="donate-submit" alt="Checkout Button">Donate</button>
+
+                <!-- THANK YOU PAGE RETURN LINK -->
+                <input type="hidden" name="return" value="https://www.google.com" />
+                <!-- CANCEL ORDER RETURN LINK -->
+                <input type="hidden" name="cancel_return" value="https://www.google.com" />
+
+                <input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1" />
+                <input type="hidden" name="business" value="percussionfarms@gmail.com" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="hidden" name="cmd" value="_cart" />
+                <input type="hidden" name="upload" value="1" />
+                <input type="hidden" name="rm" value="2" />
+                <input type="hidden" name="charset" value="utf-8" />
+            </form>
         </div>
     </div>
     <!-- End of Overlay -->
 
     <!-- Cart Overlay -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <div id="cart-sidebar" class="sidebar">
+        <button class="close-button" onclick="closeCart()">&times;</button>
         <p class="cart-head"> YOUR CART </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total">TOTAL: </p> 
+        <p value=0 id="cart-total"></p> 
         <button data-id="1">Add Tote Bag to Cart</button>
         <button data-id="2">Add T-Shirt to Cart</button>
         <button data-id="3">Add Water Bottle to Cart</button>
-        <button class="small" onclick="pf_cart.clear()">CLEAR CART</button>
-        <button class="small" onclick="pf_cart.checkout()">CHECKOUT</button>
+        <button onclick="pf_cart.clear()">CLEAR CART</button>
+
+        <!-- CHECKOUT BUTTOM -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="item_name_1" value="Donation"/>
+            <input type="hidden" name="amount_1" value='10.00'/>
+            <input type="hidden" name="quantity_1" value="1"/>
+
+            <button id="cart-submit" name="submit" alt="Checkout Button">CHECKOUT</button>
+
+            <!-- THANK YOU PAGE RETURN LINK -->
+            <input type="hidden" name="return" value="https://www.google.com"/>
+            <!-- CANCEL ORDER RETURN LINK -->
+            <input type="hidden" name="cancel_return" value="https://www.google.com"/>
+
+            <input type="hidden" name="notify_url" value="https://percussionfarms.org/?simple_cart_ipn=1" />
+            <input type="hidden" name="business" value="percussionfarms@gmail.com"/>
+            <input type="hidden" name="currency_code" value="USD"/>
+            <input type="hidden" name="cmd" value="_cart"/>
+            <input type="hidden" name="upload" value="1"/>
+            <input type="hidden" name="rm" value="2"/>
+            <input type="hidden" name="charset" value="utf-8"/>
+        </form>
+
     </div>
     <!-- End of Overlay -->
+
 </body>
 
 </html>
