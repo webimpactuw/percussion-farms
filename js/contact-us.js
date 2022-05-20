@@ -6,13 +6,10 @@
 window.onload = function() {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
         emailjs.sendForm('service_bph6ztr', 'template_t6gbcim', this)
             .then(function() {
+                console.log("SUCCESS");
                 let ele = document.getElementById("success-message");
-
                 ele.style.display = "block";
                 fadeOutEffect("success-message"); 
             }, function(error) {
@@ -24,13 +21,18 @@ window.onload = function() {
 }
 
 // function temp() {
-//     document.getElementById("contact-form").addEventListener("submit", function(event) {
-//         event.preventDefault();
-//         let ele = document.getElementById("success-message");
-//         ele.style.display = "block";
-//         fadeOutEffect("success-message");
-//         document.getElementById("contact-form").reset();
-//     });
+//     alert("gello");
+    // document.getElementById("testsbt").addEventListener("submit", function(event) {
+    //     console.log("hello success");
+    //     alert("helo");
+    // });
+    // document.getElementById("testsbt").addEventListener("submit", function(event) {
+    //     event.preventDefault();
+    //     let ele = document.getElementById("success-message");
+    //     ele.style.display = "block";
+    //     fadeOutEffect("success-message");
+    //     document.getElementById("testsbt").reset();
+    // });
 // } 
 
 function fadeOutEffect(ID) {
