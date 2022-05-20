@@ -7,6 +7,7 @@
   max-height: 80vh;
   min-width: 20vh;
   min-height: 40vh;
+  overflow-y: scroll;
 }
 
 .donate-body.popup {
@@ -90,9 +91,11 @@
   z-index: 1;
   top: 0;
   right: 0;
+  transition: 0.3s;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.3s;
+  /* UNSTABLE - OVERRIDE */
+  overflow-y: hidden;
 }
 
 .sidebar .close-button {
@@ -133,8 +136,6 @@
 
 .cart-item img {
 	display: inline-block;
-	position: relative;
-	top: 0;
 	width: 125px;
 	height: 125px;
 	object-fit: cover;
@@ -143,7 +144,7 @@
 
 .cart-item .right {
 	display: inline-block;
-	width: 187px;
+	width: 180px;
 	height: 125px;
 }
 
@@ -153,30 +154,18 @@
 
 .cart-item .item-name {
 	font-weight: bold;
+	margin: 0;
 }
 
 .cart-item .item-desc {
 	color: grey;
-	height: 50px;
-}
-
-.cart-item .item-remove {
-	font-weight: bold;
-	color: red;
-	padding: 5px 10px;
-	margin-left: 5px;
-	border-radius: 10px;
-}
-
-.cart-item .item-remove:hover {
-	font-weight: bold;
-	background: red;
-	color: white;
+	height: 65px;
+	margin: 0;
 }
 
 .cart-item .cart-row {
 	height: 30px;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 .cart-item span:hover {
@@ -199,10 +188,24 @@
 	user-select: none;
 }
 
+.cart-item .item-remove {
+	font-weight: bold;
+	color: red;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+.cart-item .item-remove:hover {
+	font-weight: bold;
+	background: red;
+	color: white;
+}
+
 .total * {
 	font-size: 20px;
 	display: inline-block;
-	height: 50px;
+	height: 40px;
 	width: 80px;
 	padding: 10px 10px 0;
 	float: right;
@@ -255,8 +258,9 @@
   color: red;
   float: right;
   border: none;
-  font-size: 40px;
-  padding: 0px 15px;
+  font-size: 30px;
+  height: 40px;
+  padding: 0px 10px;
   font-weight: bold;
 }
 
@@ -276,4 +280,8 @@
 
 .hide {
 	display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 1em;
 }
