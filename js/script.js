@@ -1,6 +1,7 @@
 const openPopup = document.querySelectorAll('[data-open]');
 const closePopup = document.querySelectorAll('[data-close]');
 const overlay = document.getElementById('overlay');
+const addItem = document.querySelectorAll('[data-id]');
 
 // Open donation popup
 openPopup.forEach(button => {
@@ -58,23 +59,31 @@ function setValue(num) {
   checkInput();
 }
 
-// Open and close cart sidebar
+// Open cart sidebar
 function closeCart() {
   document.getElementById("cart-sidebar").classList.remove("opened");
 }
 
+// Close cart sidebar
 function openCart() {
   document.getElementById("cart-sidebar").classList.add("opened");
 }
 
-// Checks for valid keypresses
+// Add an item to the cart
+addItem.forEach(button => {
+  button.addEventListener('click', () => {
+    pf_cart.add(button.dataset.id);
+  });
+});
+
+// Check for valid keypresses
 function filterKeys(event) {
   var charCode = (event.which) ? event.which : event.keyCode;
   return !(charCode != 46 && charCode > 31 && 
     (charCode < 48 || charCode > 57));
 };
 
-// Checks for valid inputs
+// Check for valid inputs
 function checkInput() {
   // Obtain input value, or stored amount if empty
   let amount = document.getElementById("amount").value;
@@ -94,7 +103,7 @@ function checkInput() {
   document.getElementById("amount").value = amount;
   };
 
-// Clears input on click
+// Clear input on click
 function clearInput() {
   document.getElementById("amount").value = "";
 }

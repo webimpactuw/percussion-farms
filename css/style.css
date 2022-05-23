@@ -1,7 +1,7 @@
 /* carousel caption */
 .overlap-text{
 	color: white;
-	top: 25%;
+	top: 20%;
 	left: 15%;
 	text-align: left;
 	height: inherit;	
@@ -167,9 +167,6 @@
 	background-color: #768C4A;
 }
 
-
-
-/* Media Queries @768px and @ 576px*/
 @media screen and (max-width: 800px) {
 	.overlap-text {
 		height: inherit;

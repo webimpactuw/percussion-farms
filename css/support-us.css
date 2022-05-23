@@ -48,16 +48,7 @@
 	justify-content: left;
 	gap: 3vw;
 	height: fit-content;
-	margin: 5vh 5vw;
-}
-
-.item {
-    display: flex;
-	/* padding: 1rem; */
-	justify-content: left;
-	gap: 3vw;
-	height: fit-content;
-	margin: 5vh 5vw;
+	margin: 15px;
 }
 
 .item-image {
@@ -70,6 +61,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.item-content img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 /* carousel pictures */
@@ -94,7 +91,7 @@ p {
 }
 
 .option {
-	width: 350px;
+	width: 40%;
 	height: 100%;
 }
 
@@ -130,6 +127,15 @@ p {
 	text-align: center;
 }
 
+.support-options p {
+	font-size: 18px;
+}
+
+.linkbar {
+	display: block;
+	width: 100%;
+}
+
 .center-support {
 	display: flex;
 	flex-direction: row;
@@ -143,7 +149,7 @@ p {
 	/* text-align: center; */
 }
 
-.clickable-banner {
+.clickable-banner div{
 	border: none;
 	text-align: left;
 	color: white;
@@ -160,6 +166,7 @@ p {
 
 .green {
 	background-color: #768C4A;
+	font-size: 30px;
 }
 
 .purple {
@@ -173,7 +180,7 @@ p {
 }
 
 .fresh-sheet {
-	height: 600px;
+	height: 600px; 
 	overflow: auto;
 }
 
@@ -234,7 +241,9 @@ p {
 	}
 
 	.item-content img {
+		height: 100%;
 		width: 100%;
+		object-fit: fill;
 	}
 
 	.option {
@@ -247,4 +256,14 @@ p {
 		justify-content: center;
 		align-items: center;
 	}
+
+	.fresh-sheet {
+		height: 400px; 
+		overflow: auto;
+	}
+
+	.clickable-banner div {
+		width: 100%;
+	}
+
 }

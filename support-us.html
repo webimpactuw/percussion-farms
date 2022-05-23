@@ -70,30 +70,29 @@
             </div>
         </div>
         <div class="support-options">
-            <br/>
             <!-- STATEMENT ABOUT APPRECIATING SUPPORT -->
-            <p style="padding: 2vh"> Integer in interdum ex. Ut ac aliquam nisl. Donec lobortis cursus est et commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla egestas, porttitor lacus eu, aliquet erat. Aliquam mattis accumsan ante, ut bibendum ante. Nulla non accumsan lorem. Nulla eget est eget mauris accumsan sollicitudin id sit amet felis. Vivamus ut efficitur sapien. Aenean vel feugiat dui. Phasellus neque lacus, dapibus non metus quis, bibendum tristique magna. Aliquam sodales, massa eget vehicula gravida, tortor neque varius quam, ac maximus augue massa a turpis. Pellentesque at felis odio. Suspendisse vitae sollicitudin nunc. Aliquam consectetur est ut finibus scelerisque.
+            <p style="padding: 30px"> Integer in interdum ex. Ut ac aliquam nisl. Donec lobortis cursus est et commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla egestas, porttitor lacus eu, aliquet erat. Aliquam mattis accumsan ante, ut bibendum ante. Nulla non accumsan lorem. Nulla eget est eget mauris accumsan sollicitudin id sit amet felis. Vivamus ut efficitur sapien. Aenean vel feugiat dui. Phasellus neque lacus, dapibus non metus quis, bibendum tristique magna. Aliquam sodales, massa eget vehicula gravida, tortor neque varius quam, ac maximus augue massa a turpis. Pellentesque at felis odio. Suspendisse vitae sollicitudin nunc. Aliquam consectetur est ut finibus scelerisque.
             </p>
             <div class="options"><!-- TODO: fix the sizing for this for small width screen size -->
                 <div class="item center-support">
                     <div class="item-content option">
-                        <img src="img/temp_hands.jpg" alt="image placeholder" style="height: 30vh">
-                            <button class="purple clickable-banner">
-                                <div>
-                                    <p style="display: inline-block; padding-top: 1vh;">GoFundMe</p>
+                        <img src="img/temp_hands.jpg" alt="image placeholder" style="height: 30vh">  
+                            <a class="purple clickable-banner">
+                                <div class="linkbar">
+                                    <p style="display: inline-block; padding: 1vh;">GoFundMe</p>
                                     <p style="float: right; font-size: x-large; margin: 0;">&gt;</p>
                                 </div>
-                            </button>
+                            </a>
                             <p class="description"> Mauris auctor eleifend nisi eget volutpat. Nunc vehicula turpis at lacus venenatis, et viverra quam molestie. Nam maximus odio lectus, a vehicula turpis dignissim eget. Curabitur imperdiet ac ex sit amet facilisis. Phasellus gravida nulla vel nisi dapibus, vel rutrum tortor vehicula. Morbi sed sapien sit amet felis lacinia ultricies ac vel neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. </p>
                     </div>
                     <div class="item-content option">
                         <img src="img/temp_hands.jpg" alt="image placeholder" style="height: 30vh">
-                        <button class="purple clickable-banner">
-                            <div>
-                                <p style="display: inline-block; padding-top: 1vh;">Amazon Wishlist</p>
+                        <a class="purple clickable-banner">
+                            <div class="linkbar">
+                                <p style="display: inline-block; padding: 1vh;">Amazon Wishlist</p>
                                 <p style="float: right; font-size: x-large; margin: 0;">&gt;</p>
                             </div>
-                        </button>
+                        </a>
                         <p class="description"> Aenean fermentum turpis vitae nibh fermentum, vel faucibus diam malesuada. Aenean dapibus semper tempor. Nam at suscipit turpis. Vivamus at ultricies ante, sit amet porta libero. Donec posuere ultrices ex vitae volutpat. Aenean mattis, risus eu pulvinar egestas, nibh dolor ultricies quam, nec interdum eros erat porta urna. Nullam id lectus est. Sed eget vestibulum enim, nec vulputate massa.
                         </p>
                     </div>
@@ -109,12 +108,12 @@
                 <!-- DESCRIPTION OF FRESH SHEET -->
                 <p class="fresh-desc">Sed ac dolor ac dolor lobortis pretium eget ut mi. Vivamus semper orci felis, interdum congue sapien dapibus in. Aenean efficitur sagittis porta. Nulla aliquet dignissim urna sed sodales. Aenean dolor quam, volutpat a egestas quis, rhoncus ut elit. Ut viverra augue nunc, a mattis ligula laoreet ac. Quisque vulputate orci nec lorem sollicitudin, in feugiat ipsum laoreet. Donec non lobortis est. Aenean orci metus, pharetra et pulvinar nec, tristique eu dui. Duis blandit lorem ornare eros sodales, vitae placerat ex semper.</p>
                 <br>
-                <button class="btn btn-outline-light">Add To Cart</button>
+                <button class="btn btn-outline-light">Place Order</button>
                 <br>
             </div>
         </div>
         <div class="shop">
-            <p class="green banner text-center" style="font-weight: bold;">Shop</p>
+            <p class="green banner text-center">Shop</p>
             <div class="support">
                 <div class="support-container">
                 <div class="item">
@@ -128,7 +127,7 @@
                         <p>Price: $10.00</p>
                         <p>Size - XX</p>
                         <p>Color - XX</p>
-                        <button data-id="1" type="button" class="btn red-button">Place Order</button>
+                        <button data-id="1" type="button" class="btn red-button">Add To Cart</button>
                     </div>
                 </div>
                 </div>
@@ -234,13 +233,8 @@
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
         <button class="close-button" onclick="closeCart()">&times;</button>
-        <p class="cart-head"> YOUR CART </p>
+        <p class="cart-head"> Cart </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total"></p> 
-        <button data-id="1">Add Tote Bag to Cart</button>
-        <button data-id="2">Add T-Shirt to Cart</button>
-        <button data-id="3">Add Water Bottle to Cart</button>
-        <button onclick="pf_cart.clear()">CLEAR CART</button>
 
         <!-- CHECKOUT BUTTOM -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -248,7 +242,7 @@
             <input type="hidden" name="amount_1" value='10.00'/>
             <input type="hidden" name="quantity_1" value="4"/>
 
-            <button id="cart-submit" name="submit" alt="Checkout Button">CHECKOUT</button>
+            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.google.com"/>
@@ -263,6 +257,13 @@
             <input type="hidden" name="rm" value="2"/>
             <input type="hidden" name="charset" value="utf-8"/>
         </form>
+        
+        <!-- TESTING BUTTONS, REMOVE -->
+        <h3 style="display: block; margin:10px" data-id="1"> Testing Buttons Below </h3>
+        <button style="display: block; margin:10px" data-id="1">Add Tote Bag to Cart</button>
+        <button style="display: block; margin:10px" data-id="2">Add T-Shirt to Cart</button>
+        <button style="display: block; margin:10px" data-id="3">Add Water Bottle to Cart</button>
+        <button style="display: block; margin:10px" onclick="pf_cart.clear()">CLEAR CART</button>
 
     </div>
     <!-- End of Overlay -->

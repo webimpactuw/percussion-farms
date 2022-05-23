@@ -25,7 +25,6 @@
 
     <!-- SCRIPT LINKS -->
     <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script defer src="js/paypal.js"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
 
@@ -63,31 +62,31 @@
     <section id="values">
       <div class="value">
         <div class="value-header">
-          <img src="img/number.png" alt="number">
+          <img src="img/number_1.png" alt="number">
           <h3> VALUE </h3>
         </div>
         <div class="text-container">
-          <p> Etiam vestibulum ante quis auctor vehicula. Ut auctor ex neque, porttitor tincidunt odio mollis at. Pellentesque a nisl mi. In a tincidunt libero, eu volutpat libero.
+          <p> 1Etiam vestibulum ante quis auctor vehicula. Ut auctor ex neque, porttitor tincidunt odio mollis at. Pellentesque a nisl mi. In a tincidunt libero, eu volutpat libero.
           </p>
       </div>
       </div>
        <div class="value">
         <div class="value-header">
-          <img src="img/number.png" alt="number">
+          <img src="img/number_2.png" alt="number">
           <h3> VALUE </h3>
         </div>
         <div class="text-container">
-          <p> Etiam vestibulum ante quis auctor vehicula. Ut auctor ex neque, porttitor tincidunt odio mollis at. Pellentesque a nisl mi. In a tincidunt libero, eu volutpat libero.
+          <p> 2Etiam vestibulum ante quis auctor vehicula. Ut auctor ex neque, porttitor tincidunt odio mollis at. Pellentesque a nisl mi. In a tincidunt libero, eu volutpat libero.
           </p>
       </div>
       </div>
       <div class="value">
         <div class="value-header">
-          <img src="img/number.png" alt="number">
+          <img src="img/number_3.png" alt="number">
           <h3> VALUE </h3>
         </div>
         <div class="text-container">
-        <p> Aenean accumsan lacinia sapien, sit amet porta turpis mollis iaculis. Nunc nibh lectus, placerat vitae ultrices ac, hendrerit sed neque. </p>
+        <p> 3Aenean accumsan lacinia sapien, sit amet porta turpis mollis iaculis. Nunc nibh lectus, placerat vitae ultrices ac, hendrerit sed neque. </p>
       </div>
       </div>
     </section>
@@ -189,7 +188,7 @@
         </div>
     </footer>
     <div class="dubvelopers">
-        <p> Created with <3 by DUBvelopers </p>
+        <p> Created with &lt3 by DUBvelopers </p>
     </div>
 
     <!-- Donation Overlay -->
@@ -216,7 +215,6 @@
                 placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()"
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
             </div>
-
             <!-- CHECKOUT BUTTOM -->
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="item_name_1" value="Donation"/>
@@ -245,21 +243,16 @@
     <!-- Cart Overlay -->
     <div id="cart-sidebar" class="sidebar">
         <button class="close-button" onclick="closeCart()">&times;</button>
-        <p class="cart-head"> YOUR CART </p>
+        <p class="cart-head"> Cart </p>
         <div class="cart-mid"></div>
-        <p value=0 id="cart-total"></p>
-        <button data-id="1">Add Tote Bag to Cart</button>
-        <button data-id="2">Add T-Shirt to Cart</button>
-        <button data-id="3">Add Water Bottle to Cart</button>
-        <button onclick="pf_cart.clear()">CLEAR CART</button>
 
         <!-- CHECKOUT BUTTOM -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="item_name_1" value="Donation"/>
             <input type="hidden" name="amount_1" value='10.00'/>
-            <input type="hidden" name="quantity_1" value="1"/>
+            <input type="hidden" name="quantity_1" value="4"/>
 
-            <button id="cart-submit" name="submit" alt="Checkout Button">CHECKOUT</button>
+            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.google.com"/>
@@ -274,6 +267,13 @@
             <input type="hidden" name="rm" value="2"/>
             <input type="hidden" name="charset" value="utf-8"/>
         </form>
+
+        <!-- TESTING BUTTONS, REMOVE -->
+        <h3 style="display: block; margin:10px" data-id="1"> Testing Buttons Below </h3>
+        <button style="display: block; margin:10px" data-id="1">Add Tote Bag to Cart</button>
+        <button style="display: block; margin:10px" data-id="2">Add T-Shirt to Cart</button>
+        <button style="display: block; margin:10px" data-id="3">Add Water Bottle to Cart</button>
+        <button style="display: block; margin:10px" onclick="pf_cart.clear()">CLEAR CART</button>
 
     </div>
     <!-- End of Overlay -->
