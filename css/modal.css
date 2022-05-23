@@ -105,7 +105,7 @@
 }
 
 .empty {
-	margin: 35vh 0;
+	margin: 40vh 0;
 	font-style: italic;
 	width: 100%;
 	text-align: center;
@@ -282,6 +282,14 @@
 	display: none;
 }
 
-body::-webkit-scrollbar-thumb {
+/*body::-webkit-scrollbar-thumb {
 	width: 1em;
+}*/
+
+
+@media screen and (max-width: 800px) {
+	.donate-body p {
+		margin: 0px 0px 5px;
+	}
+
 }

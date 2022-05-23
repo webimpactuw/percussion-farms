@@ -274,6 +274,11 @@ body {
 		height: 200px;
 	}
 
+	#values {
+		height: auto;
+		padding: 40px 0;
+	}
+
 @media only screen and (max-width: 576px) {
 	.imgRow {
 		display: block;
