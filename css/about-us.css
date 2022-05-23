@@ -73,7 +73,7 @@ body {
   height: 100%;
 }
 
-.value-header h3 {
+.value-header > h3 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 24px;
@@ -171,12 +171,11 @@ body {
   width: auto;
 }
 
-#team .member h3, .member em h3 {
+#team .member h3, #team em h3 {
   font-size: 1.2rem;
   font-size: 18px;
   margin-bottom: 0px;
 }
-
 
 .member .text-container {
   margin-top: 5%;
@@ -209,14 +208,14 @@ body {
 	height: 420px;
 	object-fit: cover;
   transition: 200ms ease-in-out;
-  z-index: 0;
 }
 
 .background-fade {
 	background-color: rgba(0, 0, 0, .4);
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 420px;
+  z-index: 2;
 }
 
 #history #history-content .text-container {
@@ -227,7 +226,7 @@ body {
   word-break: break-all;
   height: 50%;
   width: 80%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .btn, .newsletter-submit {
