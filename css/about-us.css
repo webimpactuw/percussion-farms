@@ -69,7 +69,7 @@
   height: 100%;
 }
 
-.value-header h3 {
+.value-header > h3 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 24px;
@@ -175,15 +175,12 @@
   margin-bottom: 0px;
 }
 
-#teambock * {
-	font-size: max(18px, 5vw);
-}
 
 .member .text-container {
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 18px;
-}
+ }
 
 #mission button, #history h2 {
 	background-color: #D8AD2A;
@@ -204,9 +201,19 @@
 }
 
 #history img {
+  position: relative;
 	width: 100%;
 	height: 420px;
 	object-fit: cover;
+  transition: 200ms ease-in-out;
+}
+
+.background-fade {
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	width: 100%;
+	height: 420px;
+  z-index: 2;
 }
 
 #history #history-content .text-container {
@@ -217,7 +224,7 @@
   word-break: break-all;
   height: 50%;
   width: 80%;
-
+  z-index: 4;
 }
 
 .btn, .newsletter-submit {

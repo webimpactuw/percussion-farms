@@ -98,8 +98,8 @@
                     <img src="img/profile_pic.png" class="img-fluid" alt="Profile Pic">
                 </div>
                 <div class="text-container">
-                    <h3> FIRST NAME, LAST NAME </h3>
-                    <h3 style="font-style: italic;"> ROLE </h3>
+                    <h3> First Last </h3>
+                    <h3><em> Role</em> </h3>
                     <br>
                     <!-- DESCRIPTION -->
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dignissim ullamcorper auctor. Cras efficitur volutpat ornare. Quisque dignissim eu enim in iaculis. Pellentesque nulla ante, pharetra vitae dictum sit amet, dapibus id nibh.
@@ -111,8 +111,8 @@
                     <img src="img/profile_pic.png" class="img-fluid" alt="Profile Pic">
                 </div>
                 <div class="text-container">
-                    <h3> FIRST NAME, LAST NAME </h3>
-                    <h3 style="font-style: italic;"> ROLE </h3>
+                    <h3> First Last </h3>
+                    <h3><em> Role</em> </h3>
                     <br>
                     <!-- DESCRIPTION -->
                     <p> Cras nec tincidunt diam, a posuere tellus. Vivamus ullamcorper ut lacus dapibus lacinia. Aenean est turpis, consequat sed vehicula ut, faucibus a dui. Ut ornare, ex vel sagittis mollis, est eros blandit elit, et luctus ligula mauris in metus. Nulla commodo iaculis est, et ultrices nibh feugiat a. Morbi viverra scelerisque est eget vulputate.
@@ -124,8 +124,8 @@
                   <img src="img/profile_pic.png" class="img-fluid" alt="Profile Pic">
               </div>
               <div class="text-container">
-                  <h3> FIRST NAME, LAST NAME </h3>
-                  <h3 style="font-style: italic;"> ROLE </h3>
+                  <h3> First Last </h3>
+                  <h3><em> Role</em> </h3>
                   <br>
                   <!-- DESCRIPTION -->
                   <p> Cras nec tincidunt diam, a posuere tellus. Vivamus ullamcorper ut lacus dapibus lacinia. Aenean est turpis, consequat sed vehicula ut, faucibus a dui. Ut ornare, ex vel sagittis mollis, est eros blandit elit, et luctus ligula mauris in metus. Nulla commodo iaculis est, et ultrices nibh feugiat a. Morbi viverra scelerisque est eget vulputate.
@@ -136,6 +136,7 @@
     </section>
     <section id="history">
         <h2>History of Percussion Farms</h2>
+        <div class="background-fade"></div>
         <div id="history-content">
             <img src="img/temp_veg2.jpg" alt="Background pic">
             <div class="text-container">
@@ -196,11 +197,11 @@
         <button data-close="#donate" class="close-button">&times;</button>
         <div class="donate-mid">
             <p class="donate-head"> We appreciate your support! </p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Fusce tincidunt, nisl vel ultricies aliquam, lacus felis 
-            posuere turpis, sit amet varius nunc diam at ipsum. Nam ac 
-            commodo purus. Donec at orci rhoncus, iaculis ipsum gravida, 
-            eleifend magna. 
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce tincidunt, nisl vel ultricies aliquam, lacus felis
+            posuere turpis, sit amet varius nunc diam at ipsum. Nam ac
+            commodo purus. Donec at orci rhoncus, iaculis ipsum gravida,
+            eleifend magna.
             </p>
             <div class="amounts">
                 <button class="num" value="5" onclick="setValue(5)">$5</button>
@@ -211,10 +212,9 @@
             <div class="donate-field">
                 <p class="dollar">$</p>
                 <input type="text" inputmode="numeric" class="donate-input"
-                placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()" 
+                placeholder="0.00" id="amount" data-amount = "0.00" onblur="checkInput()"
                 onkeypress="return filterKeys(event)" onclick="clearInput()"></input>
-            </div>        
-            
+            </div>
             <!-- CHECKOUT BUTTOM -->
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="item_name_1" value="Donation"/>
@@ -267,7 +267,7 @@
             <input type="hidden" name="rm" value="2"/>
             <input type="hidden" name="charset" value="utf-8"/>
         </form>
-        
+
         <!-- TESTING BUTTONS, REMOVE -->
         <h3 style="display: block; margin:10px" data-id="1"> Testing Buttons Below </h3>
         <button style="display: block; margin:10px" data-id="1">Add Tote Bag to Cart</button>
