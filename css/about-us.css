@@ -290,6 +290,35 @@
 		width: 80vw;
 		margin: 0 5vw;
 	}
+  #history {
+    height: 650px;
+  }
+
+  #history h2, #team h2 {
+    height: 80px;
+    padding: 20px;
+  }
+
+  #history #history-content {
+    height: 500px;
+    position: relative;
+  }
+
+  #history img {
+    position: relative;
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+  }
+
+  .background-fade {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    z-index: 2;
+  }
+}
 
 @media only screen and (max-width: 576px) {
 	.imgRow {
@@ -301,7 +330,37 @@
 		height: 150px;
 	}
 
+  #history {
+    height: 880px;
+  }
+
+  #history h2, #team h2 {
+    height: 80px;
+    padding: 20px;
+  }
+
+  #history #history-content {
+    height: 800px;
+    position: relative;
+  }
+
+  #history img {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .background-fade {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: 2;
+  }
+
 }
+
 
 @media only screen and (max-width: 800px) {
 
