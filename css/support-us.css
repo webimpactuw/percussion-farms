@@ -64,7 +64,7 @@
 }
 
 .item-content img {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	object-fit: cover;
 }
@@ -131,6 +131,11 @@ p {
 	font-size: 18px;
 }
 
+.support-container {
+	width: 94%;
+	margin: 3%;
+}
+
 .linkbar {
 	display: block;
 	width: 100%;
@@ -141,6 +146,7 @@ p {
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
+	margin-bottom: 40px;
 }
 
 .banner {
@@ -154,9 +160,7 @@ p {
 	text-align: left;
 	color: white;
 	width: 100%;
-	padding: 1vh;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 15px;
   	cursor: pointer;
 }
 
@@ -229,11 +233,24 @@ p {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
+	.overlap-text {
+		height: inherit;
+		top: 10%;
+		overflow-y: scroll;
+		bottom: 10%;
+	}
+
 	.item {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.description {
+		width: 80%;
+		margin: 10px 10%;
+		text-align: center;
 	}
 
 	.item-content {
@@ -263,6 +280,10 @@ p {
 	}
 
 	.clickable-banner div {
+		width: 100%;
+	}
+
+	a.purple.clickable-banner {
 		width: 100%;
 	}
 

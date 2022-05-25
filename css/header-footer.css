@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
 
+html {
+   width:1600px;
+   max-width: 100vw;
+   margin:0 auto;
+   background: #778b48;
+   overflow-y: overlay;
+}
+
 * {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 15px;
@@ -64,7 +72,7 @@
 
 .links img {	
 	height: 40px;
-	margin: 0px 25px 0px 0px;
+	margin: 0px 35px 0px 0px;
 	float: right;
 	font-size: 20px;
 	color: white;
