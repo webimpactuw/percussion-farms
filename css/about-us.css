@@ -334,8 +334,8 @@
     height: 880px;
   }
 
-  #history h2, #team h2 {
-    height: 80px;
+  #history h2 {
+    height: 90px;
     padding: 20px;
   }
 
