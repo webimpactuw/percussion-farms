@@ -28,6 +28,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script defer src="js/contact-us.js"></script>
     <script defer src="js/cart.js"></script>
+    <script defer src="js/script.js"></script>
 
     <title> Percussion Farms </title>
 </head>
@@ -69,7 +70,7 @@
     <div class="form-container">
         <form id="contact-form">
             <div class="form-group">
-                <label for="fname" class="control-label">Name</label>
+                <label for="fname" class="control-label"><span style="font-weight: bold">Name</span> (required)</label>
                 <input name="fname" id="fname" class="form-control" type="text" value="" required>
             </div>
             <div class="form-group">
@@ -79,19 +80,22 @@
             <div class="form-group">
                 <label for="ftopic" class="control-label">What is this regarding?</label>
                 <select name="ftopic" id="ftopic" class="form-control" required>
-                    <option value=""></option>
-                    <option value="a">a</option>
-                    <option vaue="b">b</option>
-                    <option value="c">c</option>
+                    <option value="Volunteer opportunities">Volunteer opportunities</option>
+                    <option vaue="Schedule an in-kind donation pick-up">Schedule an in-kind donation pick-up</option>
+                    <option value="Request more information about Percussion Farms">Request more information about Percussion Farms</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="fnotice" class="control-label">How did you hear about us?</label>
                 <select name="fnotice" id="fnotice" class="form-control" required>
-                    <option value=""></option>
-                    <option value="a">a</option>
-                    <option value="b">b</option>
-                    <option value="c">c</option>
+                    <option value="Please select an option"></option>
+                    <option value="seattle-magazine">Seattle Magazine</option>
+                    <option value="south-seattle-emerald">South Seattle Emerald</option>
+                    <option value="other-media">Other media</option>
+                    <option value="friend-referral">Friend referral</option>
+                    <option value="search-engine">Search engine</option>
+                    <option value="social-media">Social media</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
             <div class="form-group">
