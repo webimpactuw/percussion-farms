@@ -20,13 +20,8 @@
 }
 
 .Volunteer p {
-	/* text-align: center;
-	width: 60%;
-	margin: auto;
-	padding-bottom: 30px;
-	font-size: 1.5rem; */
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
+	font-size: 18px;
 
 }
 
@@ -52,20 +47,21 @@
 	display: flex;
 	justify-content: left;
 	flex-basis: 25px;
-	gap: 3vw;
+	gap: 40px;
 	height: fit-content;
-	margin: 5vh 5vw;
+	margin: 40px;
 }
 
 .project1inner{
-	/* width: auto; */
-	flex: 0 0 30%;
+	width: 25vw;
+	max-width: 375px;
+	height: auto;
+	object-fit: cover;
 }
 
 .contentProj1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	width: 70vw;
+	margin: 30px 0;
 }
 
 .desProj1 {
@@ -147,6 +143,25 @@
 	.imgRow img {
 		width: 50%;
 		height: 200px;
+	}
+
+	.project1 {
+		display: block;
+		width: 100vw;
+		margin: 0;
+	}
+
+	.project1inner{
+		display: block;
+		width: 80vw;
+		max-width: 80vw;
+		margin: 30px 10vw;
+	}
+
+	.contentProj1 {
+		width: 80vw;
+		max-width: 80vw;
+		margin: 30px 10vw;
 	}
 
 @media only screen and (max-width: 576px) {
