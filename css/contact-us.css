@@ -33,7 +33,7 @@
 	height: 100%;
 }
 
-/* mission statement */
+/* contact-us */
 .contact-us {
 	background-color: #352762;
 	color: white;
@@ -41,9 +41,9 @@
 }
 
 .contact-us p {
-	margin-top: 30px;
+	/* margin-top: 0px; */
 	font-size: 18px;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 .form-container {
