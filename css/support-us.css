@@ -1,9 +1,13 @@
 /* fade background */
+
+.carousel-item {
+}
+
 .background-fade {
 	background-color: rgba(0, 0, 0, .4);
 	position: absolute;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 }
 
 /* Text overlay */
@@ -13,11 +17,12 @@
 	left: 10%;
 	text-align: left;
 	height: fit-content;
+	overflow-y: auto;
 }
 
 .description {
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 24px;
 }
 
 .overlap-text h2 {
@@ -25,7 +30,7 @@
 }
 
 .overlap-text p {
-	font-size: 1.5rem;
+	font-size: 20px;
 }
 
 .fresh-desc {
@@ -48,7 +53,6 @@
 	justify-content: left;
 	gap: 3vw;
 	height: fit-content;
-	margin: 15px;
 }
 
 .item-image {
@@ -132,8 +136,8 @@ p {
 }
 
 .support-container {
-	width: 94%;
-	margin: 3%;
+	width: 90%;
+	margin: 5%;
 }
 
 .linkbar {
@@ -166,6 +170,7 @@ p {
 
 .yellow {
 	background-color: #D8AD2A;
+	margin-bottom: 0;
 }
 
 .green {
@@ -249,7 +254,6 @@ p {
 
 	.description {
 		width: 100%;
-		margin: 10px 0;
 		text-align: center;
 	}
 
@@ -264,7 +268,7 @@ p {
 	}
 
 	.option {
-		width: 400px;
+		width: 70vw;
 		height: 100%;
 	}	
 
@@ -275,8 +279,12 @@ p {
 	}
 
 	.fresh-sheet {
-		height: 400px; 
-		overflow: auto;
+		height: 500px;
+	}
+
+	.support-container {
+		width: 80vw;
+		margin: 10vw;
 	}
 
 	.clickable-banner div {

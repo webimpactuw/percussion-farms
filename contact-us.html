@@ -35,7 +35,7 @@
 <body>
     <nav>
         <div class="head">
-          <img src="img/favicon.ico">
+          <img src="img/favicon.ico" alt="Percussion Farms Logo">
           <p>Percussion Farms</p>
         </div>
         <div class="links">
@@ -55,7 +55,7 @@
         <div class="overlap-text carousel-caption">
             <h2>Questions, Comment, or Concerns?</h2>
             <!-- TEXT TO APPRECIATE FEEDBACK -->
-            <p>Proin commodo, leo nec aliquam bibendum, arcu eros aliquet massa, eget mollis turpis libero eget felis. Donec at turpis nunc. Maecenas tristique, mi eget ultricies hendrerit, nisi nisl hendrerit est, a tempor mauris neque id sapien. Proin commodo, elit at ultricies porttitor, diam urna ultricies dolor, nec feugiat turpis est posuere ligula. Cras ultrices, libero at molestie sollicitudin, arcu ipsum sagittis turpis, sed pellentesque odio leo ultrices nisi. Donec viverra at orci sit amet cursus. In congue eget est id tincidunt. Ut nisi velit, feugiat vel porttitor auctor, facilisis in purus. Sed rhoncus libero felis, quis bibendum nibh semper ac.
+            <p>Proin commodo, leo nec aliquam bibendum, arcu eros aliquet massa, eget mollis turpis libero eget felis. Donec at turpis nunc. Maecenas tristique, mi eget ultricies hendrerit, nisi nisl hendrerit est, a tempor mauris neque id sapien. Proin commodo, elit at ultricies porttitor, diam urna ultricies dolor, nec feugiat turpis est posuere ligula. Cras ultrices, libero at molestie sollicitudin, arcu ipsum sagittis turpis, sed pellentesque odio leo ultrices nisi. 
             </p>
         </div>
     </div>
@@ -80,8 +80,9 @@
             <div class="form-group">
                 <label for="ftopic" class="control-label">What is this regarding?</label>
                 <select name="ftopic" id="ftopic" class="form-control" required>
-                    <option value="Volunteer opportunities">Volunteer opportunities</option>
-                    <option vaue="Schedule an in-kind donation pick-up">Schedule an in-kind donation pick-up</option>
+                    <option selected disabled value="">- Please choose an option -</option>
+                    <option value="Volunteer opportunities">Volunteer opportunities</option>                    
+                    <option value="Schedule an in-kind donation pick-up">Schedule an in-kind donation pick-up</option>
                     <option value="Request more information about Percussion Farms">Request more information about Percussion Farms</option>
                     <option value="Other">Other</option>
                 </select>
@@ -89,11 +90,11 @@
             <div class="form-group">
                 <label for="fnotice" class="control-label">How did you hear about us?</label>
                 <select name="fnotice" id="fnotice" class="form-control" required>
-                    <option value="Please select an option"></option>
+                    <option selected disabled value="">- Please choose an option -</option>
                     <option value="seattle-magazine">Seattle Magazine</option>
                     <option value="south-seattle-emerald">South Seattle Emerald</option>
                     <option value="other-media">Other media</option>
-                    <option value="friend-referral">Friend referral</option>
+                    <option alue="friend-referral">Friend referral</option>
                     <option value="search-engine">Search engine</option>
                     <option value="social-media">Social media</option>
                     <option value="other">Other</option>
@@ -106,7 +107,7 @@
             <div class="form-group">
                 <label for="fcontact" class="control-label">May we contact you in the future?</label>
                 <select name="fcontact" id="fcontact" class="form-control" required>
-                    <option value=""></option>
+                    <option selected disabled value=""></option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>

@@ -251,6 +251,7 @@
 
 	.member {
 		gap: 0;
+		margin: 30px 10vw;
 	}
 
 	.member img {
@@ -259,22 +260,24 @@
 		margin: 0 auto;
 	}
 
+	.member .text-container {
+		width: 100%;
+	}
+
+	.member .text-container p {
+		text-align: center;
+		margin: 0;
+	}
+
 	.member .text-container h3 {
 	  text-align: center;
-	  width: 90vw;
-	  max-width: 1350px;
+	  width: 100%;
 	  margin-bottom: 10px;
 	  font-size: 25px;
 	}
 
-	.member .text-container p {
-		width: 80vw;
-		max-width: 1200px;
-		margin: 0 5vw;
-	}
-
   #history {
-    height: 650px;
+    height: 680px;
   }
 
   #history h2, #team h2 {
@@ -283,7 +286,7 @@
   }
 
   #history #history-content {
-    height: 500px;
+    height: 600px;
     position: relative;
   }
 
@@ -336,17 +339,14 @@
 		height: 150px;
 	}
 
-  #history {
-    height: 880px;
-  }
-
   #history h2 {
-    height: 90px;
+    height: auto;
+    word-break: break-word;
     padding: 20px;
   }
 
-  #history #history-content {
-    height: 800px;
+  #history {
+    height: 680px;
     position: relative;
   }
 
