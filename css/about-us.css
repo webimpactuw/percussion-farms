@@ -329,6 +329,36 @@
 	}
 }
 
+@media only screen and (max-width: 420px) {
+  #history {
+    height: 950px;
+  }
+
+  #history h2 {
+    height: 3000px;
+    padding: 20px;
+  }
+
+  #history #history-content {
+    height: 800px;
+    position: relative;
+  }
+
+  #history img {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .background-fade {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: 2;
+  }
+}
 @media only screen and (max-width: 576px) {
 	.imgRow {
 		display: block;
