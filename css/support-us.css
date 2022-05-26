@@ -9,7 +9,7 @@
 /* Text overlay */
 .overlap-text{
 	color: white;
-	top: 25%;
+	top: 15%;
 	left: 10%;
 	text-align: left;
 	height: fit-content;
@@ -248,8 +248,8 @@ p {
 	}
 
 	.description {
-		width: 80%;
-		margin: 10px 10%;
+		width: 100%;
+		margin: 10px 0;
 		text-align: center;
 	}
 
