@@ -13,7 +13,7 @@
 	left: 15%;
 	text-align: left;
 	height: inherit;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .overlap-text h2 {
