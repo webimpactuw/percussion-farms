@@ -7,6 +7,7 @@
   max-height: 80vh;
   min-width: 20vh;
   min-height: 40vh;
+  overflow-y: scroll;
 }
 
 .donate-body.popup {
@@ -41,7 +42,7 @@
 	background: #352762;
 	border-radius: 5px;
 	color: white;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .amounts {
@@ -80,7 +81,7 @@
 /* Cart Popup */
 
 .sidebar.opened {
-	width: 300px;
+	width: 350px;
 }
 
 .sidebar {
@@ -90,10 +91,11 @@
   z-index: 1;
   top: 0;
   right: 0;
+  transition: 0.3s;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
+  /* UNSTABLE - OVERRIDE */
+  overflow-y: hidden;
 }
 
 .sidebar .close-button {
@@ -102,50 +104,119 @@
   right: 0;
 }
 
-.sidebar button {
-	margin: 5px 20px;
+.empty {
+	margin: 40vh 0;
+	font-style: italic;
+	width: 100%;
+	text-align: center;
 }
 
 .cart-head {
 	font-weight: bold;
 	font-size: 25px;
 	text-align: center;
-	margin: 1rem 0 1rem;
+	margin: 1.5rem 1.5rem 0;
+	display: inline-block;
 }
 
-.cart-mid {	
-	margin: 5%;
+.cart-mid {
+	margin: 0px 15px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	font-size: 16px;
 }
 
-.cart-mid {
-	height: 280px;
-	border: 2px solid black;
-	margin-bottom: 10px;
-}
-
 .cart-item {
 	font-size: 18px;
-	padding: 8px;
-	margin: 8px 8px 0px;	
-  border-collapse: collapse;
-	border: 3px solid grey;
-	background: lightgreen;
-	text-align: center;
+	height: 125px;
+	margin-top: 15px;
+	text-align: left;
 }
 
-.empty {
+.cart-item img {
+	display: inline-block;
+	width: 125px;
+	height: 125px;
+	object-fit: cover;
+	vertical-align: top;
+}
+
+.cart-item .right {
+	display: inline-block;
+	width: 180px;
+	height: 125px;
+}
+
+.cart-item .right * {
+	padding: 0px 5px;
+}
+
+.cart-item .item-name {
+	font-weight: bold;
+	margin: 0;
+}
+
+.cart-item .item-desc {
+	color: grey;
+	height: 65px;
+	margin: 0;
+}
+
+.cart-item .cart-row {
+	height: 30px;
+	margin-top: 5px;
+}
+
+.cart-item span:hover {
+	cursor: pointer;
 	background: lightgrey;
-	height: 100%;
-	margin: 8px;
+}
+
+.cart-item .edit * {
+	display: inline-block;
+	padding: 2px 9px;
+	font-size: 16px;
+}
+
+.cart-item .edit {
+	display: inline-block;
+	border: 2px solid grey;
+	width: auto;
+	height: 32px;
+	padding: 0;
+	user-select: none;
+}
+
+.cart-item .item-remove {
+	font-weight: bold;
+	color: red;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+.cart-item .item-remove:hover {
+	font-weight: bold;
+	background: red;
+	color: white;
+}
+
+.total * {
+	font-size: 20px;
+	display: inline-block;
+	height: 40px;
+	width: 80px;
+	padding: 10px 10px 0;
+	float: right;
+}
+
+.total h4 {
+	float: left;
+	margin: 5px 0 0;
 }
 
 #cart-total {
-	text-align: center;
-	font-size: 25px;
 }
 
 .cart-footer * {
@@ -156,19 +227,17 @@
 	font-size: 20px;
 }
 
-.cart-mid b {
-	font-size: 20px;
-}
-
 #cart-submit {
 	background: red;
 	color: white;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5px;
-	padding: 5px 10px;
+	width: 320px;
+	margin: 0px 15px;
+	border-width: 0px;
+	border-radius: 10px;
+	box-shadow: 0px 3px rgba(100, 100, 100, .5);
+	padding: 5px 0px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 /* General Popup Styling */
@@ -189,8 +258,9 @@
   color: red;
   float: right;
   border: none;
-  font-size: 40px;
-  padding: 0px 15px;
+  font-size: 30px;
+  height: 40px;
+  padding: 0px 10px;
   font-weight: bold;
 }
 
@@ -206,4 +276,20 @@
 #overlay.popup {
   opacity: 1;
   pointer-events: all;
+}
+
+.hide {
+	display: none;
+}
+
+/*body::-webkit-scrollbar-thumb {
+	width: 1em;
+}*/
+
+
+@media screen and (max-width: 800px) {
+	.donate-body p {
+		margin: 0px 0px 5px;
+	}
+
 }

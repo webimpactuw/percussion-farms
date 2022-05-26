@@ -1,7 +1,3 @@
-body {
-  font-family: verdana, sans-serif;
-}
-
 #rowpics {
 	height: auto;
 	display: flex;
@@ -73,7 +69,7 @@ body {
   height: 100%;
 }
 
-.value-header h3 {
+.value-header > h3 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 24px;
@@ -104,6 +100,10 @@ body {
 
 #teamblock, .member {
 	display: flex;
+}
+
+.member .text-container {
+	width: 65vw;
 }
 
 #teamblock {
@@ -151,28 +151,20 @@ body {
 
 .member {
 	gap: 3vw;
-	margin: 0vw 5vw;
-  height: 33%;
+	margin: 0vw 5vw 20px;
 }
 
-/*
-.member-image {
-	flex: 0 0 30%;
-  height: 100%;
-}
-*/
 .member h2 {
   font-size: 18px;
 }
+
 .member-image img {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 80%;
-  width: auto;
+  height: auto;
+  width: 30vw;
+  margin-top: 5% 0 0;
 }
 
 #team .member h3, .member em h3 {
-  font-size: 1.2rem;
   font-size: 18px;
   margin-bottom: 0px;
 }
@@ -181,9 +173,8 @@ body {
 .member .text-container {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.2rem;
   font-size: 18px;
-}
+ }
 
 #mission button, #history h2 {
 	background-color: #D8AD2A;
@@ -204,9 +195,18 @@ body {
 }
 
 #history img {
+  position: relative;
 	width: 100%;
 	height: 420px;
 	object-fit: cover;
+}
+
+.background-fade {
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	width: 100%;
+	height: 420px;
+  z-index: 2;
 }
 
 #history #history-content .text-container {
@@ -217,7 +217,7 @@ body {
   word-break: break-all;
   height: 50%;
   width: 80%;
-
+  z-index: 4;
 }
 
 .btn, .newsletter-submit {
@@ -268,11 +268,57 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	#rowpics img {
 		width: 50%;
 		height: 200px;
 	}
+
+	#values {
+		height: auto;
+		padding: 40px 0;
+	}
+
+	#team .member h3, .member em h3 {
+	  text-align: center;
+	  width: 90vw;
+	  margin-bottom: 10px;
+	  font-size: 25px;
+	}
+
+	.member .text-container p {
+		width: 80vw;
+		margin: 0 5vw;
+	}
+  #history {
+    height: 650px;
+  }
+
+  #history h2, #team h2 {
+    height: 80px;
+    padding: 20px;
+  }
+
+  #history #history-content {
+    height: 500px;
+    position: relative;
+  }
+
+  #history img {
+    position: relative;
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+  }
+
+  .background-fade {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    z-index: 2;
+  }
+}
 
 @media only screen and (max-width: 576px) {
 	.imgRow {
@@ -282,6 +328,47 @@ body {
 	#rowpics img {
 		width: 100%;
 		height: 150px;
+	}
+
+  #history {
+    height: 880px;
+  }
+
+  #history h2 {
+    height: 90px;
+    padding: 20px;
+  }
+
+  #history #history-content {
+    height: 800px;
+    position: relative;
+  }
+
+  #history img {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .background-fade {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: 2;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	.member-image img {
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  height: 80%;
+	  width: 80%;
 	}
 
 }

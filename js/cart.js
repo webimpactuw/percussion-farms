@@ -1,30 +1,21 @@
-// var h = document.getElementById('a');
-// h.onclick = dothing1;
-// h.addEventListener('click', dothing2);
-const addItem = document.querySelectorAll('[data-id]');
-
-addItem.forEach(button => {
-  button.addEventListener('click', () => {
-    pf_cart.add(button.dataset.id);
-    openCart();
-  });
-});
-
 var products = {
   1: {
     name: 'Tote Bag', 
     desc: 'Black Percussion Farms Tote Bag', 
-    price: 10
+    price: 10, 
+    image: '../img/item1.png'
   }, 
   2: {
     name: 'T-Shirt',
     desc: 'We appreciate your donation!', 
-    price: 12
+    price: 12, 
+    image: '../img/item2.png'
   }, 
   3: {
     name: 'Water Bottle',
     desc: 'Stay hydrated!', 
-    price: 8
+    price: 8, 
+    image: '../img/item3.png'
   }
 };
 
@@ -44,11 +35,6 @@ var pf_cart = {
     if (pf_cart.items == null) {
       pf_cart.items = {};
     } else {
-      // DEBUG **************************
-      // for (let i in pf_cart.items) {
-      //   console.log('Item: ' + pf_cart.items[i]);
-      // }
-
       pf_cart.items = JSON.parse(pf_cart.items);
     }
   },
@@ -72,20 +58,31 @@ var pf_cart = {
     output = '';
     let total = 0, subtotal = 0;
     if (empty) {
-      output += '<p class=\'cart-item empty\'> <em> Your cart is empty! </em> </p>';
+      output += '<p class=\' empty\'> Your cart is empty! </p>';
+      document.getElementById("cart-submit").classList.add("hide");
     } else {
       for (let i in pf_cart.items) {
-        id = products[i];
-        output += '<div class=\'cart-item\'> Item: <b>' + id.name + 
-        '</b>, Amount: <b>' + pf_cart.items[i] + '</b>, Cost: <b>' + 
-        id.price + '</b></div>';
-        subtotal = pf_cart.items[i] * id.price;
-        total += subtotal;
+        item = products[i];
+        output += `<div class=\'cart-item\'>`;
+        output += `<img src="img/item${i}.png"> <div class="right">`;
+        output += `<p class="item-name"> ${item.name} </p>`;
+        output += `<p class="item-desc"> ${item.desc} </p>`;
+
+        output += `<div class="cart-row"> <div class="edit">`
+        output += `<span onclick="pf_cart.subtract(${i})">-</span>`;
+        output += `<p> ${pf_cart.items[i]} </p>`;
+        output += `<span onclick="pf_cart.add(${i})">+</span> </div>`; 
+        output += `<span class="item-remove" onClick="pf_cart.remove(${i})"> Remove </span>`
+        output += `</div></div></div>`;
+        total += pf_cart.items[i] * item.price;
       }
+      document.getElementById("cart-submit").classList.remove("hide");
+      output += `<div class="total"><h4> Total: </h4>`;
+      output += `<p id="cart-total"></p></div>`;
     }
     this.total = total;
     $('.cart-mid').html(output);
-    $('#cart-total').html('TOTAL: $' + total);
+    $('#cart-total').html('\$' + total + '.00');
   }, 
 
   // Clear cart
@@ -104,14 +101,27 @@ var pf_cart = {
     } else {
       pf_cart.items[id] += 1;
     }
+    openCart();
     pf_cart.save();
     pf_cart.list();
   }, 
+
+  subtract: (id) => {
+    if (pf_cart.items[id] == undefined) {
+      return;
+    }
+    if (pf_cart.items[id] == 1) {
+      pf_cart.remove(id);
+    } else { 
+      pf_cart.items[id] -= 1; 
+    }
+    pf_cart.save();
+    pf_cart.list();
+  },
+
   change: (id, count) => {
     if (count <= 0) {
       delete pf_cart.items[id];
-      pf_cart.save();
-      pf_cart.list();
     } else {
       pf_cart.items[id] = count;
       let total = 0;
@@ -119,46 +129,14 @@ var pf_cart = {
         total += pf_cart.items[i] * products[i].price;
       }
       this.total = total;
-      $('#cart-total').html('TOTAL: $' + total);
+      $('#cart-total').html('TOTAL: $' + total + '.00');
     }
   }, 
+  
   remove: (id) => {
     delete pf_cart.items[id];
     pf_cart.save();
     pf_cart.list();
-  }, 
-
-  // Send data to email about purchase
-  // Send amount to PayPal about cost
-  checkout: () => {
-
-    alert('Implement CHECKOUT!');
-    /*
-    fetch('SERVER_SCRIPT') {
-  
-      resp => // promise
-    }
-    var data = new FormData();
-    data.append(‘cart’, JSON.stringify(cart.items));
-    data.append(‘products’, JSON.stringify(products));
-
-    fetch(‘SERVER-SCRIPT’, {
-      method:’POST’, body:data 
-    }).then(res => res.text()).then((res) => {
-      console.log(res);
-    }).catch((err) => {
-      console.error(err); 
-    });
-
-    var totalCost = document.querySelector('.cart-total');
-    fetch(‘SERVER-SCRIPT’, {
-      method: ‘POST’, body: totalCost
-    }).then(res => res.text()).then((res) => {
-      console.log(res);
-    }).catch((err) => {
-      console.error(err);
-    });
-    */
   }
 };
 
