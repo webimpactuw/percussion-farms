@@ -148,7 +148,7 @@
 .background-fade {
 	background-color: rgba(0, 0, 0, .5);
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	max-width: 1500px;
 	height: 450px;
   z-index: 2;
