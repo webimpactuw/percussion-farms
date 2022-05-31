@@ -100,8 +100,8 @@
   transition: 0.3s;
   background-color: white;
   overflow-x: hidden;
-  /* UNSTABLE - OVERRIDE */
-  overflow-y: hidden;
+  overflow-y: scroll;
+  box-sizing: content-box;
 }
 
 .sidebar .close-button {
@@ -127,23 +127,23 @@
 
 .cart-mid {
 	margin: 0px 15px;
+	width: 310px;
 	height: auto;
-	display: flex;
-	flex-direction: column;
 	font-size: 16px;
 }
 
 .cart-item {
 	font-size: 18px;
 	height: 125px;
+	width: inherit;
 	margin-top: 15px;
 	text-align: left;
 }
 
 .cart-item img {
 	display: inline-block;
-	width: 125px;
-	height: 125px;
+	width: 120px;
+	height: 120px;
 	object-fit: cover;
 	vertical-align: top;
 }
@@ -151,7 +151,7 @@
 .cart-item .right {
 	display: inline-block;
 	width: 180px;
-	height: 125px;
+	height: 120px;
 }
 
 .cart-item .right * {
@@ -160,18 +160,21 @@
 
 .cart-item .item-name {
 	font-weight: bold;
+	height: 25px;
+	width: inherit;
 	margin: 0;
 }
 
 .cart-item .item-desc {
 	color: grey;
 	height: 65px;
+	width: inherit;
 	margin: 0;
 }
 
 .cart-item .cart-row {
 	height: 30px;
-	margin-top: 5px;
+	width: inherit;
 }
 
 .cart-item span:hover {
@@ -181,7 +184,7 @@
 
 .cart-item .edit * {
 	display: inline-block;
-	padding: 2px 9px;
+	padding: 0px 9px;
 	font-size: 16px;
 }
 
@@ -189,7 +192,7 @@
 	display: inline-block;
 	border: 2px solid grey;
 	width: auto;
-	height: 32px;
+	height: 28px;
 	padding: 0;
 	user-select: none;
 }
@@ -197,7 +200,7 @@
 .cart-item .item-remove {
 	font-weight: bold;
 	color: red;
-	padding: 5px 10px;
+	padding: 5px;
 	margin-left: 10px;
 	border-radius: 10px;
 }

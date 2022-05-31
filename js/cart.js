@@ -7,7 +7,7 @@ var products = {
   }, 
   2: {
     name: 'T-Shirt',
-    desc: 'We appreciate your donation!', 
+    desc: 'Stylish!', 
     price: 12, 
     image: 'items/2.png'
   }, 
@@ -19,11 +19,20 @@ var products = {
   }
 };
 
-// Updates page form to contain data values
-for (let i in products.length) {
-  document.getElementById("name${i}").setAttribute('')
-}
-document.getElementById("name1")
+// Inserts product information into page data for checkout
+for (let i = 1; i < Object.keys(products).length + 1; i++) {
+  document.getElementById(`name_${i}`).setAttribute("name", `item_name_${i}`);
+  document.getElementById(`name_${i}`).setAttribute("value", products[i].name);
+  document.getElementById(`amount_${i}`).setAttribute("name", `amount_${i}`);
+  document.getElementById(`amount_${i}`).setAttribute("value", products[i].price);
+  document.getElementById(`quantity_${i}`).setAttribute("name", `quantity_${i}`);  
+};
+
+// Call to update form quantity value
+function changeQ(id) {
+  document.getElementById(`quantity_${id}`).setAttribute("value", 
+      pf_cart.items[id] == undefined ? 0 : pf_cart.items[id]);
+};
 
 var total = 0;
 var pf_cart = {
@@ -70,7 +79,7 @@ var pf_cart = {
       for (let i in pf_cart.items) {
         item = products[i];
         output += `<div class=\'cart-item\'>`;
-        output += `<img src="img/item${i}.png"> <div class="right">`;
+        output += `<img src="js/items/${i}.png"> <div class="right">`;
         output += `<p class="item-name"> ${item.name} </p>`;
         output += `<p class="item-desc"> ${item.desc} </p>`;
 
@@ -81,6 +90,7 @@ var pf_cart = {
         output += `<span class="item-remove" onClick="pf_cart.remove(${i})"> Remove </span>`
         output += `</div></div></div>`;
         total += pf_cart.items[i] * item.price;
+        changeQ(i);
       }
       document.getElementById("cart-submit").classList.remove("hide");
       output += `<div class="total"><h4> Total: </h4>`;
@@ -106,7 +116,8 @@ var pf_cart = {
       pf_cart.items[id] = 1;
     } else {
       pf_cart.items[id] += 1;
-    }
+    } 
+    changeQ(id);
     openCart();
     pf_cart.save();
     pf_cart.list();
@@ -121,26 +132,28 @@ var pf_cart = {
     } else { 
       pf_cart.items[id] -= 1; 
     }
+    changeQ(id);
     pf_cart.save();
     pf_cart.list();
   },
 
-  change: (id, count) => {
-    if (count <= 0) {
-      delete pf_cart.items[id];
-    } else {
-      pf_cart.items[id] = count;
-      let total = 0;
-      for (let i in pf_cart.items) {
-        total += pf_cart.items[i] * products[i].price;
-      }
-      this.total = total;
-      $('#cart-total').html('TOTAL: $' + total + '.00');
-    }
-  }, 
+  // change: (id, count) => {
+  //   if (count <= 0) {
+  //     delete pf_cart.items[id];
+  //   } else {
+  //     pf_cart.items[id] = count;
+  //     let total = 0;
+  //     for (let i in pf_cart.items) {
+  //       total += pf_cart.items[i] * products[i].price;
+  //     }
+  //     this.total = total;
+  //     $('#cart-total').html('TOTAL: $' + total + '.00');
+  //   }
+  // }, 
   
   remove: (id) => {
     delete pf_cart.items[id];
+    changeQ(id);
     pf_cart.save();
     pf_cart.list();
   },
