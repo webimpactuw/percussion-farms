@@ -3,21 +3,27 @@ var products = {
     name: 'Tote Bag', 
     desc: 'Black Percussion Farms Tote Bag', 
     price: 10, 
-    image: '../img/item1.png'
+    image: 'items/1.png'
   }, 
   2: {
     name: 'T-Shirt',
     desc: 'We appreciate your donation!', 
     price: 12, 
-    image: '../img/item2.png'
+    image: 'items/2.png'
   }, 
   3: {
     name: 'Water Bottle',
     desc: 'Stay hydrated!', 
     price: 8, 
-    image: '../img/item3.png'
+    image: 'items/3.png'
   }
 };
+
+// Updates page form to contain data values
+for (let i in products.length) {
+  document.getElementById("name${i}").setAttribute('')
+}
+document.getElementById("name1")
 
 var total = 0;
 var pf_cart = {
@@ -137,7 +143,13 @@ var pf_cart = {
     delete pf_cart.items[id];
     pf_cart.save();
     pf_cart.list();
+  },
+
+  // Cart data query 
+  getCount: (id) => {
+    return pf_cart.items[id];
   }
+
 };
 
 // Initialize Cart

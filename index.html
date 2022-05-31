@@ -225,7 +225,8 @@
                 <input id="donate-amount" type="hidden" name="amount_1" value='0.00'/>
                 <input type="hidden" name="quantity_1" value="1"/>
 
-                <button id="donate-submit" alt="Checkout Button">Donate</button>
+                <p class="donate-check" onclick="checkZero()">Donate</p>
+                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.google.com" />
@@ -252,9 +253,9 @@
 
         <!-- CHECKOUT BUTTOM -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="item_name_1" value="Donation"/>
-            <input type="hidden" name="amount_1" value='10.00'/>
-            <input type="hidden" name="quantity_1" value="4"/>
+            <input type="hidden" id="name_1" name="item_name_1" value="Donation"/>
+            <input type="hidden" id="amount_1" name="amount_1" value='10.00'/>
+            <input type="hidden" id="quantity_1" name="quantity_1" value="4"/>
 
             <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 

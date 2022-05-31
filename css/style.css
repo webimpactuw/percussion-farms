@@ -40,6 +40,10 @@
 	margin: 0px 7px;
 }
 
+.carousel-indicators {
+	z-index: 1;
+}
+
 /* mission statement */
 .mission-statement {
 	background-color: #352762;

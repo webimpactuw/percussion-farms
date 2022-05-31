@@ -2,12 +2,11 @@
 
 .donate-body {
   width: 400px;
-  height: 480px;
+  height: auto;
   max-width: 80vw;
   max-height: 80vh;
   min-width: 20vh;
-  min-height: 40vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .donate-body.popup {
@@ -36,8 +35,6 @@
 .donate-body .num {
 	width: 48%;
 	height: 40px;
-	/* TODO:  Implement responsive changes;
-	/* min-height: 5vh; */
 	margin: 5px 0px;
 	background: #352762;
 	border-radius: 5px;
@@ -58,24 +55,33 @@
 	font-size: 300px;
 }
 
+.dollar {
+	position: absolute;
+	left: 10px;
+	padding: 10px 5px;
+}
+
 .donate-input {
 	display: inline-block;
 	font-size: 16px;
 	background: lightgrey;
 	height: 40px;
-	width: 95%;
+	width: 100%;
 	margin-bottom: 20px;
+	border-radius: 5px;
 }
 
-#donate-submit {
+.donate-check {
 	background: #778b48;
 	color: white;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+  border: 2px outset grey;
 	border-radius: 5px;
 	padding: 7px 10px;
   cursor: pointer;
+  text-align: center;
 }
 
 /* Cart Popup */

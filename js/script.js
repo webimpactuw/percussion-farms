@@ -107,3 +107,13 @@ function checkInput() {
 function clearInput() {
   document.getElementById("amount").value = "";
 }
+
+// Check for zero value input in Donation Popup
+function checkZero() {
+  let donate = document.getElementById("donate-amount");
+  if (parseFloat(donate.value) == 0) {
+    alert("Please enter a non-zero amount");
+  } else {
+    document.getElementById("donate-submit").click();
+  }
+}
