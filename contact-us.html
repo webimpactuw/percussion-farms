@@ -184,7 +184,8 @@
                 <input id="donate-amount" type="hidden" name="amount_1" value='0.00'/>
                 <input type="hidden" name="quantity_1" value="1"/>
 
-                <button id="donate-submit" alt="Checkout Button">Donate</button>
+                <p class="donate-check" onclick="checkZero()">Donate</p>
+                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.google.com" />
@@ -211,9 +212,21 @@
 
         <!-- CHECKOUT BUTTOM -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="item_name_1" value="Donation"/>
-            <input type="hidden" name="amount_1" value='10.00'/>
-            <input type="hidden" name="quantity_1" value="4"/>
+            <input type="hidden" id="name_1"/>
+            <input type="hidden" id="amount_1"/>
+            <input type="hidden" id="quantity_1" value="0"/>
+            <input type="hidden" id="name_2"/>
+            <input type="hidden" id="amount_2"/>
+            <input type="hidden" id="quantity_2" value="0"/>
+            <input type="hidden" id="name_3"/>
+            <input type="hidden" id="amount_3"/>
+            <input type="hidden" id="quantity_3" value="0"/>
+            <input type="hidden" id="name_4"/>
+            <input type="hidden" id="amount_4"/>
+            <input type="hidden" id="quantity_4" value="0"/>
+            <input type="hidden" id="name_5"/>
+            <input type="hidden" id="amount_5"/>
+            <input type="hidden" id="quantity_5" value="0"/>
 
             <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
@@ -230,13 +243,6 @@
             <input type="hidden" name="rm" value="2"/>
             <input type="hidden" name="charset" value="utf-8"/>
         </form>
-        
-        <!-- TESTING BUTTONS, REMOVE -->
-        <h3 style="display: block; margin:10px" data-id="1"> Testing Buttons Below </h3>
-        <button style="display: block; margin:10px" data-id="1">Add Tote Bag to Cart</button>
-        <button style="display: block; margin:10px" data-id="2">Add T-Shirt to Cart</button>
-        <button style="display: block; margin:10px" data-id="3">Add Water Bottle to Cart</button>
-        <button style="display: block; margin:10px" onclick="pf_cart.clear()">CLEAR CART</button>
 
     </div>
     <!-- End of Overlay -->
