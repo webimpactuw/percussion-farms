@@ -149,7 +149,6 @@
 	background-color: rgba(0, 0, 0, .5);
 	position: absolute;
 	width: 100vw;
-	max-width: 1500px;
 	height: 450px;
   z-index: 2;
 }
@@ -178,12 +177,12 @@
 }
 
 #history-content .text-container {
-	position: absolute;
-  top: 50%;
+  position: absolute;
+  top: 60%;
   left: 50%;
-	transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   word-break: break-all;
-  height: 50%;
+  height: 90%;
   width: 80%;
   z-index: 4;
   word-break: break-word;
@@ -340,14 +339,12 @@
   }
 
   #history #history-content {
-    height: 800px;
     position: relative;
   }
 
   #history img {
     position: relative;
     width: 100%;
-    height: 800px;
     object-fit: cover;
   }
 
@@ -355,10 +352,19 @@
     background-color: rgba(0, 0, 0, .4);
     position: absolute;
     width: 100%;
-    height: 800px;
     z-index: 2;
+  }  
+
+  #history-content .text-container {
+	overflow-y: scroll;
+  }  
+
+  #history-content .text-container p {
+	font-size: 22px;	
   }
+
 }
+
 @media only screen and (max-width: 576px) {
 	.imgRow {
 		display: block;
@@ -384,15 +390,11 @@
 	  position: relative;
 		width: 100%;
 		object-fit: cover;
-	}
+  }
 
   #history-content .text-container {
-	  top: 40%;
+	  top: 300px;
 	  font-size: 12px;
-	}
-
-	#history-content .text-container p {
-	  font-size: 20px;
-	}
+  }
 
 }
