@@ -53,10 +53,11 @@
 
 .mission-statement h2 {
 	margin-bottom: 20px;
+	font-size: 40px;
 }
 
 .mission-statement p {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .btn, .newsletter-submit {

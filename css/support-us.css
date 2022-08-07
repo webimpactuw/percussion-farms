@@ -1,6 +1,7 @@
 /* fade background */
 
 .carousel-item {
+	height:  100%;
 }
 
 .background-fade {
@@ -13,10 +14,11 @@
 /* Text overlay */
 .overlap-text{
 	color: white;
-	top: 15%;
+	top: 10%;
 	left: 10%;
 	text-align: left;
 	height: fit-content;
+	max-height: 500px;
 	overflow-y: auto;
 }
 
@@ -26,11 +28,11 @@
 }
 
 .overlap-text h2 {
-	font-size: 3rem;
+	font-size: 50px;
 }
 
 .overlap-text p {
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .fresh-desc {
@@ -88,8 +90,6 @@
 	margin: 0px 7px;
 }
 
-/* ------------------ */
-
 p {
 	margin: 0;
 }
@@ -131,7 +131,8 @@ p {
 	text-align: center;
 }
 
-.support-options p {
+.support-options > p {
+	padding: 40px 15vw;
 	font-size: 18px;
 }
 
@@ -141,8 +142,10 @@ p {
 }
 
 .linkbar {
-	display: block;
+	display: flex;
 	width: 100%;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .center-support {
@@ -154,7 +157,7 @@ p {
 }
 
 .banner {
-	padding: 1.5rem;
+	padding: 40px 10vw;
 	color: white;
 	/* text-align: center; */
 }
@@ -164,6 +167,7 @@ p {
 	text-align: left;
 	color: white;
 	width: 100%;
+	height: 55px;
 	padding: 15px;
   	cursor: pointer;
 }
@@ -236,6 +240,12 @@ p {
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 1050px) {
+	.overlap-text p {
+		font-size: 20px;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	.overlap-text {

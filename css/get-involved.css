@@ -13,15 +13,19 @@
 
 .Volunteer {
 	text-align: center;
-	padding: 3rem;
+	padding: 40px 10vw;
 	background: #352762;
 	color: white;
 }
 
 .Volunteer p {
 	margin: 1rem 0;
-	font-size: 18px;
+	font-size: 22px;
 
+}
+
+.Volunteer h2 {
+	font-size: 40px;
 }
 
 .Volunteer button {
@@ -70,7 +74,7 @@
 
 .Donate {
 	text-align: center;
-	padding: 3rem;
+	padding: 40px 10vw;
 	background: #D8AD2A;
 	color: white;
 	/* height: auto; */
@@ -162,6 +166,7 @@
 		max-width: 80vw;
 		margin: 30px 10vw;
 	}
+}
 
 @media only screen and (max-width: 576px) {
 	.imgRow {

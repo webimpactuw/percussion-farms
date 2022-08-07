@@ -13,6 +13,7 @@
 	left: 15%;
 	text-align: left;
 	height: inherit;
+	max-height: 500px;
 	overflow-y: auto;
 }
 
@@ -37,13 +38,15 @@
 .contact-us {
 	background-color: #352762;
 	color: white;
-	padding: 3rem;
+	padding: 40px 10vw;
 }
 
 .contact-us p {
-	/* margin-top: 0px; */
-	font-size: 18px;
-	font-size: 1.5rem;
+	font-size: 22px;
+}
+
+.contact-us h2 {
+	font-size: 40px;
 }
 
 .form-container {
@@ -55,10 +58,26 @@
 }
 
 /* form input */
-.form-container input,
-.form-container select {
+.form-container input, .form-container select {
 	width: 400px;
 }
+
+.form-group button {
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 2px solid #333333;
+	background-color: #F0F0F0;
+	color: #333333;
+}
+
+.form-group button:hover {
+	background-color: #333333;
+	color: #F0F0F0;
+}
+
+
 
 #fcomment {
 	width: 600px;
@@ -80,10 +99,18 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {	
+	.donate-body p {
+		margin: 0px 0px 5px;
+	}
+
 	.overlap-text {
-		height: inherit;
+		height: 600px;
 		top: 10%;
+	}
+
+	.overlap-text h2 {
+		font-size: 35px;
 	}
 
 	head, body, html {
@@ -97,6 +124,18 @@
 		width: 100%;
 	}
 
+}
+
+@media screen and (max-width: 600px) {
+	.carousel-item, .background-fade, .background-img, .overlap-text {
+		height: 800px;
+	}
+
+	.overlap-text {
+		margin: 0;
+		max-height: 80%;
+		overflow-y: auto;
+	}
 }
 
 @media (max-width: 525px) {

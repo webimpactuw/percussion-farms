@@ -16,6 +16,7 @@
 
 #mission h2 {
   padding-bottom: 15px;
+  font-size: 40px;
 }
 
 #mission, #team h2, #history {
@@ -24,7 +25,7 @@
 }
 
 #mission p {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 #history, #team, #values, #history h2 {
@@ -64,7 +65,7 @@
 
 .value-header > h3 {
 	margin: auto 10px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -82,7 +83,8 @@
 
 .value p {
 	flex-flow: column;
-	line-height: 2rem;
+	line-height: 40px;
+	font-size: 20px;
 }
 
 #team h2 {
@@ -149,7 +151,7 @@
 	background-color: rgba(0, 0, 0, .5);
 	position: absolute;
 	width: 100vw;
-	height: 450px;
+	height: 500px;
   z-index: 2;
 }
 
@@ -158,27 +160,30 @@
 	color: white;
 }
 
-#history h2 {
+.history-header {
 	background-color: #D8AD2A;
 	height: 80px;
 	padding: 20px;
+	margin-bottom: 0;
+	text-align: center;
+	color: white;
 }
 
 #history img {
   position: relative;
 	width: 100%;
-	height: 450px;
+	height: 500px;
 	object-fit: cover;
 }
 
 #history #history-content {
-  height: 420px;
+  height: 500px;
   position: relative;
 }
 
 #history-content .text-container {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   word-break: break-all;
