@@ -63,11 +63,17 @@ html {
 	height: 40px;
 	margin: 0px 25px 0px 0px;
 	float: right;
+	border-color: grey;
+	border-width: 4px;
 	border-radius: 8px;
 	background: #778b48;
 	font-size: 20px;
 	color: white;
-  cursor: pointer;
+  	cursor: pointer;
+}
+
+.links button:active {
+	border-color: black;
 }
 
 .links img {	

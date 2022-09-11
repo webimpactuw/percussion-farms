@@ -93,13 +93,16 @@
 
 .fresh-sheet {
 	height: 600px;
-	overflow: auto;
+	width: 100vw;
+	margin: 0 auto;
+	background: grey;
+	overflow-y: scroll;
 }
 
 .fresh-sheet img {
-	width: 100%;
+	width: 66%;
 	height: auto;
-	overflow: scroll;
+	margin: 0 auto;
 }
 
 .place-order {
