@@ -157,7 +157,7 @@ p {
 }
 
 .banner {
-	padding: 40px 10vw;
+	padding: 1.5rem;
 	color: white;
 	/* text-align: center; */
 }
@@ -192,15 +192,51 @@ p {
 	border: none;
 }
 
+.order {
+	background-color: #D8AD2A;
+	color: white;
+}
+
+.order h2 {
+    padding: 1.5rem;
+	margin-bottom: 0;
+}
+
 .fresh-sheet {
-	height: 600px; 
-	overflow: auto;
+	/* HIDDEN DISPLAY */
+	height: 0px;
+
+	width: 100vw;
+	margin: 0 auto;
+	background: grey;
+	overflow-y: scroll;
 }
 
 .fresh-sheet img {
-	width: 100%;
+	width: 66%;
 	height: auto;
-	overflow: scroll;
+	margin: 0 auto;
+	/* HIDDEN DISPLAY */
+	display: none;
+}
+
+.place-order {
+	padding: 1rem 3rem;
+}
+
+.place-order p {
+	font-size: 1.5rem;
+}
+
+.place-order button {
+	background-color: transparent;
+	margin-top: 0;
+	border: 2px solid white;
+}
+
+.order button:hover {
+	background-color: white;
+	color: #D8AD2A;
 }
 
 .newsletter {

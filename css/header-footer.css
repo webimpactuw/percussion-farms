@@ -13,6 +13,13 @@ html {
 	margin: 0;
 }
 
+.btn {
+	color: white;
+	border-radius: 8px;
+	font-size: 18px;
+	box-shadow: 0px 3px rgba(100, 100, 100, .5);
+}
+
 /* Header Styling */
 
 .head {
@@ -117,7 +124,7 @@ footer {
 .address a {
 	color: white;
 	text-decoration: none;
-	padding: 10px;
+	padding: 10px 20px;
 	border-radius: 10px;
 }
 
@@ -152,6 +159,17 @@ footer {
 	max-width: 1000px;
 	border: 8px outset #826ec4;
 	display: inline-block;
+}
+
+.dubvelopers p a {
+	font-size: inherit;
+	color: white;
+	text-decoration: none;
+}
+
+.dubvelopers p a:hover {
+	color: blue;
+	text-decoration: underline;
 }
 
 /* Media Queries */
@@ -207,6 +225,7 @@ footer {
   .address, .contact {
   	display: block;
   	width: 100%;
+	text-align: center;
   }
 
   .address p, .contact p {

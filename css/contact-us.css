@@ -53,13 +53,14 @@
 	background-color: #F0F0F0;
 	padding: 2rem;
 	/* margin: 40px 20px; */
-	width: 90%;
-	margin: 50px auto;
+	width: 60%;
+	margin: 50px 20vw;
 }
 
 /* form input */
 .form-container input, .form-container select {
 	width: 400px;
+	max-width: 100%;
 }
 
 .form-group button {
@@ -81,6 +82,7 @@
 
 #fcomment {
 	width: 600px;
+	max-width: 100%;
 	resize: none;
 	height: 25vh;
 }
