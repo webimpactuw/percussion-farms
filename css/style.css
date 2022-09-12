@@ -60,6 +60,11 @@
 	font-size: 22px;
 }
 
+.mission-statement button:hover {
+	background-color: white;
+	color: #352762
+}
+
 .btn, .newsletter-submit {
 	margin-top: 2rem;
 	background-color: transparent;
@@ -113,6 +118,11 @@
 	font-size: 1.5rem;
 }
 
+.order button:hover {
+	background-color: white;
+	color: #D8AD2A;
+}
+
 .support h2 {
 	background-color: #768C4A;
     padding: 1.5rem;
@@ -129,6 +139,11 @@
 	flex: 0 0 30%;
 }
 
+.item-image img {
+	object-fit: cover;
+	width: 100%;
+}
+
 
 .item-content {
 	display: flex;
@@ -139,10 +154,15 @@
 	font-size: 20px;
 }
 
+.item-button:hover {
+	background-color: white;
+	color: #D8AD2A;
+}
+
 .item-button {
-	background-color: rgba(216, 173, 42, .8);
+	background-color: #D8AD2A;
 	width: fit-content;
-	border: none;
+	border: 2px solid #D8AD2A;
 	margin: 0;
 }
 
@@ -164,6 +184,12 @@
     width: 70%;
 }
 
+.newsletter-submit:hover {
+	background-color: white;
+	color: #768C4A;
+	cursor: pointer;
+}
+
 .newsletter-text {
     width: 100%;
 	height: 40px;
@@ -173,7 +199,7 @@
 }
 
 .newsletter-submit {
-	border: none;
+	border: 2px solid #768C4A;
 }
 
 .newsletter-submit {

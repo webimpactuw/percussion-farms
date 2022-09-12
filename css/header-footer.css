@@ -109,6 +109,23 @@ footer {
 	margin: 10px;
 }
 
+.address img {
+	height: 50px;
+	width: 50px;
+}
+
+.address a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.address a:hover {
+	background-color: white;
+	color: #352762;
+}
+
 .contact {
 	width: 30vw;
 }

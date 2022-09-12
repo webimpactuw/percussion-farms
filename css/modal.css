@@ -110,6 +110,10 @@
   right: 0;
 }
 
+.sidebar {
+	border-left: 4px solid #352762;
+}
+
 .empty {
 	margin: 40vh 0;
 	font-style: italic;
