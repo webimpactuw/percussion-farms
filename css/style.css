@@ -135,6 +135,10 @@
 	flex-direction: column;
 }
 
+.item-content p {
+	font-size: 20px;
+}
+
 .item-button {
 	background-color: rgba(216, 173, 42, .8);
 	width: fit-content;
@@ -227,7 +231,7 @@
 		margin: 10px 0;
 	}	
 
-	.item-content h3 {
+	.item-content h1 {
 		text-align: center;
 	}
 
