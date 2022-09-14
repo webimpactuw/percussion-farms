@@ -44,7 +44,7 @@
           <a href="get-involved.html">Get Involved</a>
           <a href="contact-us.html">Contact Us</a>
           <img onclick="openCart()" src="img/cart.png"></img>
-          <button data-open="#donate">Donate</button>
+          <button class="btn" data-open="#donate">Donate</button>
         </div>
     </nav>
 
@@ -60,44 +60,64 @@
         </div> -->
         <div class="carousel-item active">
             <div class="background-fade"></div>
-            <img class="d-block w-1 00 pic" src="img/temp_veg2.jpg" alt="temp_veg2">
+            <img class="d-block w-1 00 pic" src="img/support-us.jpg" alt="temp_veg2">
             <div class="overlap-text carousel-caption">
                 <h2>Support Us</h2>
                 <!-- WHY DONATIONS ARE VALUABLE -->
-                <p> We are currently working hard this growing season and we need your help with tools, equipment, soil, seeds and many other farming and office supplies. To make a monetary donation, please click the button below, or scroll down to find more ways to support us. 
-                <br><br>
-                We also accept in-kind donations. If you have tools, garden equipment, office supplies, or other related items, please contact us so we can schedule a pick-up by visiting the Contact Us page.
+                <p> We are currently working hard this growing season and we need your help with 
+                    tools, equipment, soil, seeds and many other farming and office supplies. 
+                    To make a monetary donation, please click the button below, or scroll down 
+                    to find more ways to support us. 
+                    <br><br>
+                    We also accept in-kind donations. If you have tools, garden equipment, office supplies, 
+                    or other related items, please contact us so we can schedule a pick-up by visiting the Contact Us page.
                 </p>
-                <button class="btn btn-outline-light" data-open="#donate">Donate</button>
+                <button class="btn" data-open="#donate">Donate</button>
             </div>
         </div>
         <div class="support-options">
             <!-- STATEMENT ABOUT APPRECIATING SUPPORT -->
-            <p> Integer in interdum ex. Ut ac aliquam nisl. Donec lobortis cursus est et commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla egestas, porttitor lacus eu, aliquet erat. Aliquam mattis accumsan ante, ut bibendum ante. Nulla non accumsan lorem. Nulla eget est eget mauris accumsan sollicitudin id sit amet felis. Vivamus ut efficitur sapien. Aenean vel feugiat dui. Phasellus neque lacus, dapibus non metus quis, bibendum tristique magna. Aliquam sodales, massa eget vehicula gravida, tortor neque varius quam, ac maximus augue massa a turpis. Pellentesque at felis odio. Suspendisse vitae sollicitudin nunc. Aliquam consectetur est ut finibus scelerisque.
+            <p> <!-- Integer in interdum ex. Ut ac aliquam nisl. Donec lobortis cursus est et commodo. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nulla egestas, 
+                porttitor lacus eu, aliquet erat. Aliquam mattis accumsan ante, ut bibendum ante. 
+                Nulla non accumsan lorem. Nulla eget est eget mauris accumsan sollicitudin id sit amet felis. 
+                Vivamus ut efficitur sapien. Aenean vel feugiat dui. Phasellus neque lacus, dapibus 
+                non metus quis, bibendum tristique magna. Aliquam sodales, massa eget vehicula gravida, 
+                tortor neque varius quam, ac maximus augue massa a turpis. Pellentesque at felis odio. 
+                Suspendisse vitae sollicitudin nunc. Aliquam consectetur est ut finibus scelerisque. -->
             </p>
             <div class="options"><!-- TODO: fix the sizing for this for small width screen size -->
                 <div class="item center-support">
                     <div class="item-content option">
-                        <img src="img/temp_hands.jpg" alt="image placeholder">  
-                            <a class="purple clickable-banner">
-                                <div class="linkbar" 
-                                onclick="location.href='https://www.gofundme.com/f/percussionfarms'">
-                                    <p style="display: inline-block;">GoFundMe</p>
-                                    <p style="float: right; font-size: x-large; margin: 0;">&gt;</p>
-                                </div>
+                        <img src="img/fund-1.jpg" alt="image placeholder">  
+                        <div class="purple clickable-banner">
+                            <a class="linkbar" target="blank"
+                            href='https://www.gofundme.com/f/percussionfarms'>
+                                <p style="display: inline-block;">GoFundMe</p>
+                                <p style="float: right; font-size: x-large; margin: 0;">&gt;</p>
                             </a>
-                            <p class="description"> Mauris auctor eleifend nisi eget volutpat. Nunc vehicula turpis at lacus venenatis, et viverra quam molestie. Nam maximus odio lectus, a vehicula turpis dignissim eget. Curabitur imperdiet ac ex sit amet facilisis. Phasellus gravida nulla vel nisi dapibus, vel rutrum tortor vehicula. Morbi sed sapien sit amet felis lacinia ultricies ac vel neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. </p>
+                        </div>
+                        <p class="description"> 
+                            Click the button above to be redirected to our GoFundMe page. 
+                            Any amount helps, so please consider making a donation to help
+                            keep our farms running. We appreciate all the support you all provide to us! 
+                        </p>
                     </div>
                     <div class="item-content option">
-                        <img src="img/temp_hands.jpg" alt="image placeholder">
-                        <a class="purple clickable-banner">
-                            <div class="linkbar"  
-                            onclick="location.href='https://www.amazon.com/hz/wishlist/ls/2LFDV7ZHJAXDU'">
+                        <img src="img/fund-2.jpg" alt="image placeholder">
+                        <div class="purple clickable-banner">
+                            <a class="linkbar" target="blank"
+                            href='https://www.amazon.com/hz/wishlist/ls/2LFDV7ZHJAXDU'>
                                 <p style="display: inline-block; ">Amazon Wishlist</p>
                                 <p style="float: right; font-size: x-large; margin: 0;">&gt;</p>
-                            </div>
-                        </a>
-                        <p class="description"> Many of you have asked how you can help besides donating money. So we created an Amazon wish list of items that we need to help keep the farm running. We totally understand if you are not comfortable using Amazon, but you can still use the list to see what we need. Our address is already set up on the page, so your donations will be sent directly to us. You can check out our list here.
+                            </a>
+                        </div>
+                        <p class="description"> 
+                            Many of you have asked how you can help besides donating money, 
+                            so we created an Amazon wish list of items that we need to help keep the farm running. 
+                            We totally understand if you are not comfortable using Amazon, but you can still use the 
+                            list to see what we need. Our address is already set up on the page, so your donations 
+                            will be sent directly to us. You can check out our list here.
                         </p>
                     </div>
                 </div>
@@ -133,8 +153,17 @@
                     </div>
                     <div class="item-content">
                         <h3>Tote bag</h3>
-                        <p> Quisque eu feugiat ligula. Morbi accumsan eleifend eros vitae varius. Phasellus tempor nisi vitae risus laoreet, sed fringilla nibh blandit. Sed eros justo, fringilla eget sollicitudin vitae, lobortis finibus lacus. Nulla volutpat nibh vel consequat cursus. Proin pretium nulla risus, eu pharetra purus luctus a. Duis magna quam, sodales in aliquam quis, laoreet ac ex. </p>
-                        <p>Details:</p>
+                        <!--
+                        <p> 
+                            Quisque eu feugiat ligula. Morbi accumsan eleifend eros vitae varius. 
+                            Phasellus tempor nisi vitae risus laoreet, sed fringilla nibh blandit. 
+                            Sed eros justo, fringilla eget sollicitudin vitae, lobortis finibus lacus. 
+                            Nulla volutpat nibh vel consequat cursus. Proin pretium nulla risus, 
+                            eu pharetra purus luctus a. Duis magna quam, sodales in aliquam quis, 
+                            laoreet ac ex. 
+                        </p>
+                        -->
+                        <p>Details: Coming Soon... </p>
                         <p>Price: $10.00</p>
                         <p>Size - XX</p>
                         <p>Color - XX</p>
@@ -184,8 +213,8 @@
         </div>
         <div class="filler"></div>
         <div class="contact">
-            <p style="font-size: 30px"> Reach out to us at: </p>
-            <p>percussionfarms@gmail.com</p>
+            <p> Reach out to us at: </p>
+            <a href="mailto:percussionfarms@gmail.com"> percussionfarms@gmail.com </a>
             <!-- <p>Phone: xxx-xxx-xxxx</p> -->
         </div>
     </footer>
@@ -225,7 +254,7 @@
                 <input type="hidden" name="quantity_1" value="1"/>
 
                 <p class="donate-check" onclick="checkZero()">Donate</p>
-                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
+                <button hidden id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.percussionfarms.org" />
@@ -268,7 +297,7 @@
             <input type="hidden" id="amount_5"/>
             <input type="hidden" id="quantity_5" value="0"/>
 
-            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
+            <button type="submit" class="hide btn" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.percussionfarms.org" />

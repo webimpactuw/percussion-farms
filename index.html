@@ -43,7 +43,7 @@
           <a href="get-involved.html">Get Involved</a>
           <a href="contact-us.html">Contact Us</a>
           <img onclick="openCart()" src="img/cart.png"></img>
-          <button data-open="#donate">Donate</button>
+          <button class="btn" data-open="#donate">Donate</button>
         </div>
     </nav>
     <content>
@@ -56,7 +56,7 @@
         <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="background-fade"></div>
-            <img class="d-block w-1 00 pic" src="img/cc_produce.jpg" alt="First slide">
+            <img class="d-block w-1 00 pic" src="img/newsletter-1.jpg" alt="First slide">
             <div class="overlap-text carousel-caption">
                 <h2> March Newsletter </h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus porttitor auctor. Proin ullamcorper et lacus nec cursus. Nulla a magna est. Mauris porta arcu dui, et condimentum augue tempus ut. Vestibulum cursus egestas consectetur. Nam lobortis metus suscipit nulla sodales dictum. Nunc porta enim felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
@@ -64,7 +64,7 @@
         </div>
         <div class="carousel-item">
             <div class="background-fade"></div>
-            <img class="d-block w-100 pic" src="img/temp_veg2.jpg" alt="Second slide">
+            <img class="d-block w-100 pic" src="img/newsletter-2.jpg" alt="Second slide">
             <div class="overlap-text carousel-caption">
                 <h2> April Newsletter </h2>
                 <p> Donec placerat porttitor quam eget venenatis. Vivamus sit amet ex nisi. Vestibulum eget ipsum vitae enim tempor ornare. Sed ac libero sed magna sagittis tempor a quis diam. Quisque sed urna vehicula, dignissim orci sit amet, aliquet nisl. Sed suscipit id urna a interdum. Duis aliquet ut odio sit amet congue. </p>
@@ -72,7 +72,7 @@
         </div>
         <div class="carousel-item">
             <div class="background-fade"></div>
-            <img class="d-block w-100 pic" src="img/temp_veg3.jpg" alt="Third slide">
+            <img class="d-block w-100 pic" src="img/newsletter-3.jpg" alt="Third slide">
             <div class="overlap-text carousel-caption">
                 <h2> May Newsletter </h2>
                 <p> Donec consequat ultrices mi eget sodales. Suspendisse non posuere nibh. Nulla arcu nibh, ullamcorper a mauris in, rhoncus consequat sapien. Morbi condimentum justo quis quam gravida placerat. Sed vitae lectus quis risus egestas tincidunt et eleifend eros. Ut aliquet erat nec dignissim vestibulum. Phasellus rhoncus rhoncus leo, in dapibus tellus fringilla ac. In hac habitasse platea dictumst. </p>
@@ -196,8 +196,8 @@
         </div>
         <div class="filler"></div>
         <div class="contact">
-            <p style="font-size: 30px"> Reach out to us at: </p>
-            <p>percussionfarms@gmail.com</p>
+            <p> Reach out to us at: </p>
+            <a href="mailto:percussionfarms@gmail.com"> percussionfarms@gmail.com </a>
             <!-- <p>Phone: xxx-xxx-xxxx</p> -->
         </div>
     </footer>
@@ -237,7 +237,7 @@
                 <input type="hidden" name="quantity_1" value="1"/>
 
                 <p class="donate-check" onclick="checkZero()">Donate</p>
-                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
+                <button hidden id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.percussionfarms.org" />
@@ -280,7 +280,7 @@
             <input type="hidden" id="amount_5"/>
             <input type="hidden" id="quantity_5" value="0"/>
 
-            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
+            <button type="submit" class="hide btn" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.percussionfarms.org" />

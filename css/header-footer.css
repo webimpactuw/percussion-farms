@@ -20,6 +20,28 @@ html {
 	box-shadow: 0px 3px rgba(100, 100, 100, .5);
 }
 
+.btn:hover {
+	background-color: white;
+	color: transparent;
+}
+
+.overlap-text .btn:hover {
+	color: rgb(53, 53, 53);
+}
+
+.newsletter-submit {
+	margin: 0;
+	padding: 6px 52px;
+	border: 2px solid #768C4A;
+	background-color: #768C4A;
+}
+
+.newsletter-submit:hover {
+	background-color: white;
+	color: #768C4A;
+	cursor: pointer;
+}
+
 /* Header Styling */
 
 .head {
@@ -69,18 +91,20 @@ html {
 .links button {
 	height: 40px;
 	margin: 0px 25px 0px 0px;
+	padding: 0px 10px;
 	float: right;
-	border-color: grey;
-	border-width: 4px;
+	border: 4px solid #778b48;
 	border-radius: 8px;
 	background: #778b48;
 	font-size: 20px;
 	color: white;
   	cursor: pointer;
+	text-align: start;
 }
 
-.links button:active {
-	border-color: black;
+.links button:hover {
+	color: #778b48;
+	background-color: white;
 }
 
 .links img {	
@@ -89,7 +113,16 @@ html {
 	float: right;
 	font-size: 20px;
 	color: white;
-  cursor: pointer;
+	cursor: pointer;
+	border-radius: 8px;
+	transition-property: color, background-color, border-color, box-shadow;
+	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+	transition-delay: 0s, 0s, 0s, 0s;
+}
+
+.links img:hover {
+	background-color: rgb(175, 175, 175);
 }
 
 .links a:hover {
@@ -126,6 +159,10 @@ footer {
 	text-decoration: none;
 	padding: 10px 20px;
 	border-radius: 10px;
+	transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
 }
 
 .address a:hover {
@@ -135,6 +172,21 @@ footer {
 
 .contact {
 	width: 30vw;
+}
+
+.contact p {
+	font-size: 25px;
+	margin-bottom: 1rem;
+}
+
+.contact a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.contact a:hover {
+	text-decoration: underline;
 }
 
 .filler {
@@ -168,7 +220,6 @@ footer {
 }
 
 .dubvelopers p a:hover {
-	color: blue;
 	text-decoration: underline;
 }
 

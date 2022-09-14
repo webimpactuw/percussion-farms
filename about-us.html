@@ -43,7 +43,7 @@
           <a href="get-involved.html">Get Involved</a>
           <a href="contact-us.html">Contact Us</a>
           <img onclick="openCart()" src="img/cart.png"></img>
-          <button data-open="#donate">Donate</button>
+          <button class="btn" data-open="#donate">Donate</button>
         </div>
     </nav>
     <content>
@@ -133,7 +133,7 @@
     <section id="history">
         <div class="background-fade"></div>
         <div id="history-content">
-            <img src="img/temp_veg2.jpg" alt="Background pic">
+            <img src="img/history.jpg" alt="Background pic">
             <div class="text-container">
               <p> We are Percussion Farms, an urban farm in Central Seattle and Auburn whose mission is to reconnect People of Color to the land and help them harvest their right to healthy lives. We do this by providing gardening and food preservation classes, employment and volunteer programs for people leaving the prison system, and growing and giving healthy food to the community. </p>
             </div>
@@ -144,14 +144,19 @@
     class="newsletter text-center validate" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
         <div class="newsletter-container">
             <h3>Subscribe to Our Newsletter!</h3>
-            <p class="text-left"> Maecenas id ante a justo mattis imperdiet. Etiam at dolor erat. Donec nunc purus, scelerisque ac risus sagittis, tincidunt blandit lectus. Duis vitae consequat magna. Aliquam a efficitur arcu. Sed placerat enim placerat eros gravida, in hendrerit risus dignissim. Aliquam pharetra et risus ac condimentum. Sed neque sem, porta at posuere in, elementum eget leo. 
+            <p class="text-center"> 
+                Click the button below to sign up via <strong> Mailchimp </strong><br>
+                Simply enter your email and you will be registered to receive our newsletter! <br>
+                Our monthly newsletters will go out to you through email
             </p>
         </div>
+        <!--
         <div class="newsletter-container">
             <input class="newsletter-text" type="text" name="EMAIL"  id="mce-EMAIL" placeholder="Email" required>
         </div>
+        -->
         <div class="newsletter-container">
-            <input type="submit" class="newsletter-submit btn" name="subscribe" id="mc-embedded-subscribe"  value="Subscribe">
+            <input type="submit" class="btn newsletter-submit" name="subscribe" id="mc-embedded-subscribe"  value="Subscribe">
         </div>
     </form>
 
@@ -173,8 +178,8 @@
         </div>
         <div class="filler"></div>
         <div class="contact">
-            <p style="font-size: 30px"> Reach out to us at: </p>
-            <p>percussionfarms@gmail.com</p>
+            <p> Reach out to us at: </p>
+            <a href="mailto:percussionfarms@gmail.com"> percussionfarms@gmail.com </a>
             <!-- <p>Phone: xxx-xxx-xxxx</p> -->
         </div>
     </footer>
@@ -214,7 +219,7 @@
                 <input type="hidden" name="quantity_1" value="1"/>
 
                 <p class="donate-check" onclick="checkZero()">Donate</p>
-                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
+                <button hidden id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.percussionfarms.org" />
@@ -257,7 +262,7 @@
             <input type="hidden" id="amount_5"/>
             <input type="hidden" id="quantity_5" value="0"/>
 
-            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
+            <button type="submit" class="hide btn" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.percussionfarms.org" />

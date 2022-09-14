@@ -45,17 +45,21 @@
           <a href="get-involved.html">Get Involved</a>
           <a class="current">Contact Us</a>
           <img onclick="openCart()" src="img/cart.png"></img>
-          <button data-open="#donate">Donate</button>
+          <button class="btn" data-open="#donate">Donate</button>
         </div>
     </nav>
 
     <div class="carousel-item active">
         <div class="background-fade"></div>
-        <img src="img/temp_veg1.jpg" class="background-img" alt="questions, comments, or concerns">
+        <img src="img/contact.jpg" class="background-img" alt="questions, comments, or concerns">
         <div class="overlap-text carousel-caption">
-            <h2>Questions, Comment, or Concerns?</h2>
+            <h2>Questions, Comments, or Concerns?</h2>
             <!-- TEXT TO APPRECIATE FEEDBACK -->
-            <p>Proin commodo, leo nec aliquam bibendum, arcu eros aliquet massa, eget mollis turpis libero eget felis. Donec at turpis nunc. Maecenas tristique, mi eget ultricies hendrerit, nisi nisl hendrerit est, a tempor mauris neque id sapien. Proin commodo, elit at ultricies porttitor, diam urna ultricies dolor, nec feugiat turpis est posuere ligula. Cras ultrices, libero at molestie sollicitudin, arcu ipsum sagittis turpis, sed pellentesque odio leo ultrices nisi. 
+            <p>                
+                We want to hear from you! Here, you can give us feedback or schedule an in-person donation. 
+                You can also inquire about various volunteering opportunities, request information 
+                to learn more about our organization, or ask any questions that you may have. 
+                Fill out our form below, and we will do our best to get back to you as soon as possible. 
             </p>
         </div>
     </div>
@@ -120,7 +124,7 @@
                 </p>
             </div>
             <div class="form-group">
-                <button name="fsubmit">Submit</button>
+                <button class="btn" name="fsubmit">Submit</button>
             </div>
         </form>
         <!-- <button id="testsbt" onclick="temp()">Submit</button> -->
@@ -144,8 +148,8 @@
     </div>
     <div class="filler"></div>
     <div class="contact">
-        <p style="font-size: 30px"> Reach out to us at: </p>
-        <p>percussionfarms@gmail.com</p>
+        <p> Reach out to us at: </p>
+        <a href="mailto:percussionfarms@gmail.com"> percussionfarms@gmail.com </a>
         <!-- <p>Phone: xxx-xxx-xxxx</p> -->
     </div>
     </footer>
@@ -185,7 +189,7 @@
                 <input type="hidden" name="quantity_1" value="1"/>
 
                 <p class="donate-check" onclick="checkZero()">Donate</p>
-                <button style="display: none" id="donate-submit" alt="Checkout Button">Donate</button>
+                <button hidden id="donate-submit" alt="Checkout Button">Donate</button>
 
                 <!-- THANK YOU PAGE RETURN LINK -->
                 <input type="hidden" name="return" value="https://www.percussionfarms.org" />
@@ -228,7 +232,7 @@
             <input type="hidden" id="amount_5"/>
             <input type="hidden" id="quantity_5" value="0"/>
 
-            <button class="hide" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
+            <button type="submit" class="hide btn" id="cart-submit" name="submit" alt="Checkout Button">Check Out</button>
 
             <!-- THANK YOU PAGE RETURN LINK -->
             <input type="hidden" name="return" value="https://www.percussionfarms.org" />
