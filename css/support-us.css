@@ -1,7 +1,7 @@
 /* fade background */
 
 .carousel-item {
-	height:  100%;
+	height: auto;
 }
 
 .background-fade {
@@ -328,6 +328,10 @@ p {
 		object-fit: fill;
 	}
 
+	.item-content div {
+		width: 100%;
+	}
+
 	.option {
 		width: 70vw;
 		height: 100%;
@@ -339,9 +343,9 @@ p {
 		align-items: center;
 	}
 
-	.fresh-sheet {
+	/* .fresh-sheet {
 		height: 500px;
-	}
+	} */
 
 	.support-container {
 		width: 80vw;

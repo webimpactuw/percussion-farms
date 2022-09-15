@@ -155,7 +155,7 @@ footer {
 }
 
 .address img {
-	height: 50px;
+	height: auto;
 	width: 50px;
 }
 
@@ -272,6 +272,13 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 875px) {
+	.address a {
+		display: block;
+		margin-top: 20px;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 
   footer {
@@ -290,6 +297,11 @@ footer {
   	display: block;
   	margin-bottom: 20px;
   	margin-right: 20px;
+  }
+
+  .address a {
+	display: inline;
+	margin-left: 10px;
   }
 
   .filler {

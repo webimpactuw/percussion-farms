@@ -202,7 +202,7 @@
 @media screen and (max-width: 768px) {
 
 	.carousel, .carousel-inner, .carousel-item, .background-fade, .pic {
-		height: 100vh;
+		height: 70vh;
 	}
 
 	.carousel-control-next, .carousel-control-prev {
@@ -213,7 +213,7 @@
 		height: 80%;
 		width: 75%;
 		top: 10%;
-		overflow-y: scroll;
+		overflow-y: auto;
 		bottom: 10%;
 	}
 
