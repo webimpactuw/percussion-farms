@@ -236,32 +236,39 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 875px) {
+	.address a {
+		display: block;
+		margin-top: 20px;
+	}
+}
 
-  .links a {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-  }
+@media only screen and (max-width: 800px) {
 
-  .links img {
-  	height: 40px;
-  	padding: 0px 13vw;
-  	margin: 20px 7vw;
-  	border: 3px outset grey;
+	.links a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	}
+
+	.links img {
+	height: 40px;
+	padding: 0px 18vw;
+	margin: 20px 5vw;
+	border: 3px outset grey;
 	border-radius: 8px;
 	/*background: #778b48;*/
-  }
+	}
 
-  .links button {
-  	width: 45%;
-  	margin: 20px 0px;
-  }
+	.links button {
+	width: 45%;
+	margin: 20px 0px;
+	}
 
-  .links {
-  	height: 380px;
-  } 
+	.links {
+	height: 380px;
+	} 
 
 	.newsletter-container {
 		width: 100%;
@@ -270,46 +277,36 @@ footer {
 	.newsletter-submit {
 		width: 100%;
 	}
-}
 
-@media only screen and (max-width: 875px) {
-	.address a {
-		display: block;
-		margin-top: 20px;
+	footer {
+	display: block;
 	}
-}
 
-@media only screen and (max-width: 768px) {
-
-  footer {
-  	display: block;
-  }
-
-  .address, .contact {
-  	display: block;
-  	width: 50%;
+	.address, .contact {
+	display: block;
+	width: 50%;
 	text-align: left;
 	margin-left: 30vw;
 	margin-bottom: 20px;
-  }
+	}
 
-  .address p, .contact p {
-  	display: block;
-  	margin-bottom: 20px;
-  	margin-right: 20px;
-  }
+	.address p, .contact p {
+	display: block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	}
 
-  .address a {
+	.address a {
 	display: inline;
 	margin-left: 10px;
-  }
+	}
 
-  .filler {
-  	height: 10px;
-  }
+	.filler {
+	height: 10px;
+	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 520px) {
 
 	.head img {
 		width: 60px;
@@ -326,24 +323,29 @@ footer {
 		text-align: center;
 	}
 
-  .links {
-  	height: 440px;
-  }
+	.links {
+		height: 440px;
+	}
 
-  .links img {
-    display: block;
-    float: none;
-    width: 80%;
-    object-fit: contain;
-    margin: 20px 10vw;
-  }
+	.links img {
+		display: block;
+		float: none;
+		width: 80%;
+		object-fit: contain;
+		margin: 20px 10vw;
+	}
 
-  .links button {
-    display: block;
-    float: none;
-    width: 80vw;
-    margin: 0vw 10vw;
-  }
+	.links button {
+		display: block;
+		float: none;
+		width: 80vw;
+		margin: 0vw 10vw;
+	}
+
+	.address, .contact {
+		width: 80%;
+		margin-left: 10vw;
+	}
 
 	.dubvelopers p {
 		min-width: 10px;
@@ -359,9 +361,9 @@ footer {
 		overflow: hidden;
 	}
 
-  html, body {
-  	overflow-x: hidden;
-  } 
+	html, body {
+		overflow-x: hidden;
+	} 
 
 }
 

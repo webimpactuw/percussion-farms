@@ -130,9 +130,9 @@
 }
 
 @media screen and (max-width: 600px) {
-	.carousel-item, .background-fade, .background-img, .overlap-text {
+	/* .carousel-item, .background-fade, .background-img, .overlap-text {
 		height: 800px;
-	}
+	} */
 
 	.overlap-text {
 		margin: 0;
@@ -141,9 +141,10 @@
 	}
 }
 
-@media (max-width: 525px) {
-	.form-container input,
-	.form-container select {
-		width: 100%;
+@media (max-width: 700px) {
+
+	.form-container {
+		width: 90vw;
+		margin: 20px 5vw;
 	}
 }
