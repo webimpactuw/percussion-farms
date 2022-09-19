@@ -1,16 +1,12 @@
-const api_key = "IP_OQb5-0fXNXSRKO";
-const service = "service_bph6ztr";
-const template = "template_t6gbcim";
-
 (function() {
     // https://dashboard.emailjs.com/admin/account
-    emailjs.init(api_key);
+    emailjs.init(config.API_KEY);
 })();
 
 window.onload = function() {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        emailjs.sendForm(service, template, this)
+        emailjs.sendForm(config.SERVICE, config.TEMPLATE, this)
             .then(function() {
                 console.log("SUCCESS");
                 let ele = document.getElementById("success-message");

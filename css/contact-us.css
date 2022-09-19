@@ -102,7 +102,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 800px) {	
+@media only screen and (max-width: 800px) {	
 	.donate-body p {
 		margin: 0px 0px 5px;
 	}
@@ -119,32 +119,22 @@
 	head, body, html {
 		font-size: 12px;
 	}
-}
 
-/* media queries */
-@media (max-width: 750px) {
-	#fcomment {
-		width: 100%;
+	.form-container {
+		width: 90vw;
+		margin: 20px 5vw;
 	}
 
+	.form-container input, .form-container select, #fcomment {
+		width: 100%;
+	}
 }
 
-@media screen and (max-width: 600px) {
-	/* .carousel-item, .background-fade, .background-img, .overlap-text {
-		height: 800px;
-	} */
+@media only screen and (max-width: 600px) {
 
 	.overlap-text {
 		margin: 0;
 		max-height: 80%;
 		overflow-y: auto;
-	}
-}
-
-@media (max-width: 700px) {
-
-	.form-container {
-		width: 90vw;
-		margin: 20px 5vw;
 	}
 }

@@ -139,7 +139,7 @@
 .item {
     display: flex;
 	gap: 3vw;
-	margin: 5vh 5vw;
+	margin: 5vh 10vw;
 }
 
 .item-image {
