@@ -1,10 +1,10 @@
 /* Donate Popup */
 
 .donate-body {
-  width: 400px;
+  width: 450px;
   height: auto;
   max-width: 80vw;
-  max-height: 80vh;
+  max-height: 600px;
   min-width: 20vh;
   overflow-y: auto;
 }
@@ -14,7 +14,7 @@
 }
 	
 .donate-mid {
-	margin: 8%;
+	margin: 7%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -22,14 +22,15 @@
 }
 
 .donate-mid p:not(.donate-head) {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.3;
+	margin-bottom: 10px;
 }
 
 .donate-head {
 	font-weight: bold;
-	font-size: 24px;
-	margin-bottom: 20px;
+	font-size: 26px;
+	margin-bottom: 10px;
 }
 
 .donate-body .num {
@@ -41,10 +42,8 @@
 	border-radius: 5px;
 	color: white;
   	cursor: pointer;
-	transition-property: color, background-color, border-color, box-shadow;
-	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	transition-delay: 0s, 0s, 0s, 0s;
+	transition: all 0.15s ease-in-out;
+	font-size: 20px;
 }
 
 .donate-body .num:hover {
@@ -69,12 +68,13 @@
 .dollar {
 	position: absolute;
 	left: 10px;
-	padding: 10px 5px;
+	padding: 7px 5px 0 5px;
 }
 
 .donate-input {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
+	padding: 0 0 0 7px;
 	background: lightgrey;
 	height: 40px;
 	width: 100%;
@@ -93,10 +93,7 @@
 	padding: 7px 10px;
 	cursor: pointer;
 	text-align: center;
-	transition-property: color, background-color, border-color, box-shadow;
-	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	transition-delay: 0s, 0s, 0s, 0s;
+	transition: all 0.15s ease-in-out;
 }
 
 .donate-check:hover {
@@ -234,10 +231,7 @@
 	padding: 2px 7px;
 	float: right;
 	border-radius: 8px;
-	transition-property: color, background-color, border-color, box-shadow;
-	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-	transition-delay: 0s, 0s, 0s, 0s;
+	transition: all 0.15s ease-in-out;
 }
 
 .cart-item .item-remove:hover {
@@ -308,10 +302,7 @@
   padding: 0 15px 0 18px;
   font-weight: bold;
   border-radius: 0px 0px 0px 20px;
-  transition-property: color, background-color, border-color, box-shadow;
-  transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-  transition-delay: 0s, 0s, 0s, 0s;
+  transition: all 0.15s ease-in-out;
 }
 
 .close-button:hover {
@@ -343,6 +334,6 @@
 
 @media screen and (max-width: 1100px) {
 	.overlap-text p {
-		font-size: 20px;
+		font-size: 30px;
 	}
 }
