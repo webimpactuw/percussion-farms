@@ -1,7 +1,21 @@
+.title-container {
+	height: 600px;
+	min-height: 50vh;
+	display: block;
+	text-align: center;
+	background-color: #D8AD2A;
+}
+
+.title-container img {
+	height: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
 .imgRow {
 	font-size: 0;
 	/* flex-flow: row nowrap; */
-  /* max-width: 10%; */
+	/* max-width: 10%; */
 	/* height: 200px; */
 }
 
@@ -50,7 +64,7 @@
 	background: #778b48;
 	color: white;
 	/* height: 100px; */
-	padding:1.5rem;
+	padding: 1.5rem;
 }
 
 .project1 {
@@ -62,7 +76,7 @@
 	margin: 40px;
 }
 
-.project1inner{
+.project1inner {
 	width: 25vw;
 	max-width: 375px;
 	height: auto;
@@ -77,6 +91,11 @@
 .desProj1 {
 	flex: 1;
 	padding-top: 10px;
+	margin-right: 15vw;
+}
+
+.desProj1 p {
+	font-size: 20px;
 }
 
 .Donate {
@@ -101,7 +120,7 @@
 	border: 2px solid white;
 	background-color: transparent;
 	cursor: pointer;
-	margin-top:2rem;
+	margin-top: 2rem;
 }
 
 .Donate button:hover {
@@ -110,7 +129,7 @@
 }
 
 .newsletter {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	background-color: rgb(198, 198, 198, .3);
@@ -123,16 +142,16 @@
 }
 
 .newsletter-container {
-    margin: auto;
-    width: 60%;
+	margin: auto;
+	width: 60%;
 }
 
 .newsletter-text {
-    width: 100%;
+	width: 100%;
 	height: 40px;
 	padding: 1rem;
 	border-width: 1px;
-    background-color: rgb(202, 164, 164, .5);
+	background-color: rgb(202, 164, 164, .5);
 }
 
 /* Media Queries */
@@ -149,7 +168,7 @@
 		margin: 0;
 	}
 
-	.project1inner{
+	.project1inner {
 		display: block;
 		width: 80vw;
 		max-width: 80vw;

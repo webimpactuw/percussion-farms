@@ -5,14 +5,14 @@
 }
 
 .background-fade {
-	background-color: rgba(0, 0, 0, .4);
+	background-color: rgba(0, 0, 0, .5);
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
 /* Text overlay */
-.overlap-text{
+.overlap-text {
 	color: white;
 	top: 10%;
 	left: 10%;
@@ -45,7 +45,8 @@
 	font-size: 18px;
 }
 
-.btn, .newsletter-submit {
+.btn,
+.newsletter-submit {
 	margin-top: 2rem;
 	background-color: transparent;
 	border: 2px solid white;
@@ -53,7 +54,7 @@
 }
 
 .item {
-    display: flex;
+	display: flex;
 	/* padding: 1rem; */
 	justify-content: left;
 	gap: 3vw;
@@ -119,26 +120,26 @@ p {
 }
 
 .top-image-text {
-    position: relative;
-    text-align: left;
+	position: relative;
+	text-align: left;
 	background-image: url("../img/temp_veg2.jpg");
-    position: relative;
-	width:100%;
+	position: relative;
+	width: 100%;
 	height: 70vh;
 }
 
 .text {
-	color:white;
-    padding-left: 25vh;
+	color: white;
+	padding-left: 25vh;
 	padding-top: 25vh;
-    /* transform: translate(-175%, -175%); */
+	/* transform: translate(-175%, -175%); */
 }
 
 .support-options {
 	text-align: center;
 }
 
-.support-options > p {
+.support-options>p {
 	padding: 40px 15vw;
 	font-size: 18px;
 }
@@ -169,14 +170,14 @@ p {
 	/* text-align: center; */
 }
 
-.clickable-banner a{
+.clickable-banner a {
 	border: none;
 	text-align: left;
-	color: white!important;
+	color: white !important;
 	width: 100%;
 	height: 55px;
 	padding: 15px;
-  	cursor: pointer;
+	cursor: pointer;
 }
 
 .clickable-banner a:hover {
@@ -213,7 +214,7 @@ p {
 }
 
 .order h2 {
-    padding: 1.5rem;
+	padding: 1.5rem;
 	margin-bottom: 0;
 	border-bottom: 4px solid rgb(253, 242, 177);
 }
@@ -256,7 +257,7 @@ p {
 }
 
 .newsletter {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	background-color: rgb(198, 198, 198, .3);
@@ -269,16 +270,16 @@ p {
 }
 
 .newsletter-container {
-    margin: auto;
-    width: 60%;
+	margin: auto;
+	width: 60%;
 }
 
 .newsletter-text {
-    width: 100%;
+	width: 100%;
 	height: 40px;
 	padding: 1rem;
 	border-width: 1px;
-    background-color: rgb(202, 164, 164, .5);
+	background-color: rgb(202, 164, 164, .5);
 }
 
 .newsletter-submit {
@@ -336,7 +337,7 @@ p {
 	.option {
 		width: 70vw;
 		height: 100%;
-	}	
+	}
 
 	.center-support {
 		flex-direction: column;

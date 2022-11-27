@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
 
 html {
-   width: 100vw;
-   margin: 0 auto;
-   background: #778b48;
-   overflow-y: overlay;
+	width: 100vw;
+	margin: 0 auto;
+	background: #778b48;
+	overflow-y: overlay;
 }
 
 * {
@@ -76,11 +76,12 @@ html {
 
 .links a {
 	position: relative;
-	top: 10px;
+	top: 8px;
 	padding: 15px;
 	font-size: 20px;
 	transition: 0.3s;
 	font-size: 20px;
+	z-index: 0;
 }
 
 .links a:not(.current) {
@@ -102,7 +103,7 @@ html {
 	background: #778b48;
 	font-size: 20px;
 	color: white;
-  	cursor: pointer;
+	cursor: pointer;
 	text-align: start;
 }
 
@@ -111,7 +112,7 @@ html {
 	background-color: white;
 }
 
-.links img {	
+.links img {
 	height: 40px;
 	margin: 0px 35px 0px 0px;
 	float: right;
@@ -148,7 +149,8 @@ footer {
 	padding: 30px;
 }
 
-.address, .contact {
+.address,
+.contact {
 	width: 30vw;
 	height: 70%;
 	margin: 10px 0px 10px 10px;
@@ -165,9 +167,9 @@ footer {
 	padding: 10px 20px;
 	border-radius: 10px;
 	transition-property: color, background-color, border-color, box-shadow;
-    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
-    transition-delay: 0s, 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+	transition-delay: 0s, 0s, 0s, 0s;
 }
 
 .address a:hover {
@@ -198,7 +200,7 @@ footer {
 	width: 10vw;
 }
 
-.dubvelopers {	
+.dubvelopers {
 	background: #352762;
 	display: block;
 	height: 60px;
@@ -246,29 +248,29 @@ footer {
 @media only screen and (max-width: 800px) {
 
 	.links a {
-	display: block;
-	text-align: center;
-	width: 100%;
-	margin: auto;
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin: auto;
 	}
 
 	.links img {
-	height: 40px;
-	padding: 0px 18vw;
-	margin: 20px 5vw;
-	border: 3px outset grey;
-	border-radius: 8px;
-	/*background: #778b48;*/
+		height: 40px;
+		padding: 0px 18vw;
+		margin: 20px 5vw;
+		border: 3px outset grey;
+		border-radius: 8px;
+		/*background: #778b48;*/
 	}
 
 	.links button {
-	width: 45%;
-	margin: 20px 0px;
+		width: 45%;
+		margin: 20px 0px;
 	}
 
 	.links {
-	height: 380px;
-	} 
+		height: 380px;
+	}
 
 	.newsletter-container {
 		width: 100%;
@@ -279,30 +281,32 @@ footer {
 	}
 
 	footer {
-	display: block;
+		display: block;
 	}
 
-	.address, .contact {
-	display: block;
-	width: 50%;
-	text-align: left;
-	margin-left: 30vw;
-	margin-bottom: 20px;
+	.address,
+	.contact {
+		display: block;
+		width: 50%;
+		text-align: left;
+		margin-left: 30vw;
+		margin-bottom: 20px;
 	}
 
-	.address p, .contact p {
-	display: block;
-	margin-bottom: 20px;
-	margin-right: 20px;
+	.address p,
+	.contact p {
+		display: block;
+		margin-bottom: 20px;
+		margin-right: 20px;
 	}
 
 	.address a {
-	display: inline;
-	margin-left: 10px;
+		display: inline;
+		margin-left: 10px;
 	}
 
 	.filler {
-	height: 10px;
+		height: 10px;
 	}
 }
 
@@ -342,7 +346,8 @@ footer {
 		margin: 0vw 10vw;
 	}
 
-	.address, .contact {
+	.address,
+	.contact {
 		width: 80%;
 		margin-left: 10vw;
 	}
@@ -361,9 +366,10 @@ footer {
 		overflow: hidden;
 	}
 
-	html, body {
+	html,
+	body {
 		overflow-x: hidden;
-	} 
+	}
 
 }
 

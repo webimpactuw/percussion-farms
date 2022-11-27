@@ -1,10 +1,10 @@
 /* carousel caption */
-.overlap-text{
+.overlap-text {
 	color: white;
 	top: 20%;
 	left: 15%;
 	text-align: left;
-	height: inherit;	
+	height: inherit;
 	overflow-y: auto;
 }
 
@@ -18,12 +18,17 @@
 }
 
 .overlap-text a {
-	padding: 0 7px;
+	padding: 3px 7px;
 	font-size: 30px;
 	text-decoration: none;
 	border-radius: 10px;
 	color: white;
+	transition: 0.1s all ease-in-out;
 	background: rgb(100, 100, 100);
+}
+
+.overlap-text a:hover {
+	background: rgb(150, 150, 150);
 }
 
 /* fade background */
@@ -57,7 +62,7 @@
 .mission-statement {
 	background-color: #352762;
 	color: white;
-	padding: 40px 5rem;
+	padding: 40px 10vw;
 }
 
 .mission-statement h2 {
@@ -67,6 +72,8 @@
 
 .mission-statement p {
 	font-size: 22px;
+	margin-bottom: 35px;
+	line-height: 40px;
 }
 
 .mission-statement button:hover {
@@ -79,7 +86,7 @@
 	background-color: transparent;
 }
 
-.pictures {	
+.pictures {
 	height: auto;
 	background-color: #778b48;
 	display: flex;
@@ -97,7 +104,7 @@
 }
 
 .order h2 {
-    padding: 1.5rem;
+	padding: 1.5rem;
 	margin-bottom: 0;
 	border-bottom: 4px solid rgb(255, 225, 56);
 }
@@ -141,12 +148,12 @@
 
 .support h2 {
 	background-color: #768C4A;
-    padding: 1.5rem;
+	padding: 1.5rem;
 	color: white;
 }
 
 .item {
-    display: flex;
+	display: flex;
 	gap: 3vw;
 	margin: 5vh 10vw;
 }
@@ -173,7 +180,7 @@
 
 .item-button:hover {
 	background-color: white;
-	color: #D8AD2A!important;
+	color: #D8AD2A !important;
 }
 
 .item-button {
@@ -184,7 +191,7 @@
 }
 
 .newsletter {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	background-color: rgb(198, 198, 198, .3);
 	padding: 3rem;
@@ -196,26 +203,31 @@
 }
 
 .newsletter-container {
-    margin: auto;
-    width: 70%;
- 	padding: 10px 30px;
+	margin: auto;
+	width: 70%;
+	padding: 10px 30px;
 }
 
 .newsletter-text {
-    width: 100%;
+	width: 100%;
 	height: 40px;
 	padding: 1rem;
 	border-width: 1px;
-    background-color: rgb(202, 164, 164, .5);
+	background-color: rgb(202, 164, 164, .5);
 }
 
 @media only screen and (max-width: 800px) {
 
-	.carousel, .carousel-inner, .carousel-item, .background-fade, .pic {
+	.carousel,
+	.carousel-inner,
+	.carousel-item,
+	.background-fade,
+	.pic {
 		height: 70vh;
 	}
 
-	.carousel-control-next, .carousel-control-prev {
+	.carousel-control-next,
+	.carousel-control-prev {
 		width: 10%;
 	}
 
@@ -256,7 +268,7 @@
 	.item-button {
 		width: 100%;
 		margin: 10px 0;
-	}	
+	}
 
 	.item-content h1 {
 		text-align: center;
