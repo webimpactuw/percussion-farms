@@ -93,6 +93,16 @@
 	font-size: 20px;
 }
 
+content>p {
+	font-size: 22px;
+	line-height: 40px;
+	color: white;
+	background-color: #352762;
+	padding: 50px 8vw;
+	margin-bottom: 0;
+	text-align: center;
+}
+
 #team h2 {
 	background-color: #768C4A;
 	height: 80px;
@@ -138,8 +148,8 @@
 }
 
 .member .text-container p {
-	font-size: 18px;
-	line-height: 40px;
+	font-size: 22px;
+	line-height: 36px;
 }
 
 .member .text-container h3:nth-child(1) {
