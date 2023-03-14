@@ -169,6 +169,7 @@ content>p {
 	background-color: rgba(0, 0, 0, .5);
 	position: absolute;
 	width: 100vw;
+	max-width: 2100px;
 	height: 500px;
 	z-index: 2;
 }

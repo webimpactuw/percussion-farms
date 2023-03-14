@@ -1,3 +1,8 @@
+body {
+	max-width: 2100px;
+	margin: 0 auto !important;
+}
+
 /* Donate Popup */
 
 .donate-body {

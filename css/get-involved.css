@@ -1,5 +1,6 @@
 .title-container {
 	width: 100vw;
+	max-width: 2100px;
 	display: block;
 	text-align: center;
 	background-color: #D8AD2A;
