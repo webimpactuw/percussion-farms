@@ -29,6 +29,8 @@
         data-sdk-integration-source="button-factory"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/cart.js"></script>
+    <script src="content/env.js"></script>
+    <script defer src="content/load-a.js"></script>
 
     <title> Percussion Farms </title>
 </head>
@@ -61,33 +63,24 @@
                     <div class="background-fade"></div>
                     <img class="d-block w-1 00 pic" src="img/carousel-1.jpg" alt="First slide">
                     <div class="overlap-text carousel-caption">
-                        <h2> Organization Updates </h2>
-                        <p> Our first event of the 2023 year is here! We're holding
-                            a Spring Jumpstart for gardening supplies in April. Click
-                            <a href="get-involved.html">here</a>
-                            to learn more about upcoming events. 
-                        </p>
+                        <h2 id="t1"></h2>
+                        <p id="d1"></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="background-fade"></div>
                     <img class="d-block w-100 pic" src="img/carousel-2.jpg" alt="Second slide">
                     <div class="overlap-text carousel-caption">
-                        <h2> Seasonal Updates </h2>
-                        <p> Volunteer Opportunities are limited due to the winter season. Please contact
-                            <a href="mailto:percussionfarms@gmail.com" target="blank">percussionfarms@gmail.com</a>
-                            for more information on winter support.
-                        </p>
+                        <h2 id="t2"></h2>
+                        <p id="d2"></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="background-fade"></div>
                     <img class="d-block w-100 pic" src="img/carousel-3.jpg" alt="Third slide">
                     <div class="overlap-text carousel-caption">
-                        <h2> Support Percussion Farms </h2>
-                        <p> Order Fresh Produce from the Farm in 2023! Keep an eye out for updates on our social
-                            media. You can find our social media links at the bottom of our website.
-                        </p>
+                        <h2 id="t3"></h2>
+                        <p id="d3"></p>
                     </div>
                 </div>
             </div>
@@ -103,11 +96,8 @@
 
         <!-- Mission Statement -->
         <div class="mission-statement text-center">
-            <h2> Who We Are </h2>
-            <p> We are Percussion Farms, an urban farm in Central Seattle and Auburn whose mission is to reconnect
-                People of Color to the land and help them harvest their right to healthy lives. We do this by providing
-                gardening and food preservation classes, employment and volunteer programs for people leaving the prison
-                system, and growing and giving healthy food to the community. </p>
+            <h2 id="t4"></h2>
+            <p id="d4"></p>
             <button type="button" class="btn" onclick="location.href='about-us.html'">Learn More</button>
         </div>
 
@@ -142,12 +132,11 @@
                         <img src="img/home-1.jpg" class="img-fluid" alt="Percussion Farms Stand">
                     </div>
                     <div class="item-content">
-                        <h1> Donate </h1>
-                        <p> We are currently working hard this growing season and we need your help with tools,
-                            equipment, soil, seeds and many other farming and office supplies. To make a monetary
-                            donation, please click the button below, or scroll down to find more ways to support us.
-                        </p>
-                        <button type="button" class="btn item-button" data-open="#donate"> Support </button>
+                        <h1 id="t5"></h1>
+                        <p id="d5"></p>
+                        <button type="button" class="btn item-button" data-open="#donate"> 
+                            Support 
+                        </button>
                     </div>
                 </div>
                 <div class="item">
@@ -155,14 +144,12 @@
                         <img src="img/home-2.jpg" class="img-fluid" alt="Volunteers hard at work!">
                     </div>
                     <div class="item-content">
-                        <h1> Volunteer </h1>
-                        <p> Volunteers keep our little farms running! Please consider volunteering with us. If you are
-                            interested in volunteering for Percussion Farms, please click the button below to fill out
-                            the registration form. </p>
-
-                        <a href="https://forms.gle/irkfmXAwvSiyGYxm7" target="_blank"><button type="button"
-                                class="btn item-button">
-                                Volunteer</button>
+                        <h1 id="t6"></h1>
+                        <p id="d6"></p>
+                        <a href="https://forms.gle/irkfmXAwvSiyGYxm7" target="_blank">
+                        <button type="button" class="btn item-button">
+                            Volunteer
+                        </button>
                         </a>
                     </div>
                 </div>
