@@ -11,9 +11,9 @@ function init() {
             .then(rep => {
                 console.log(rep);
                 if (JSON.parse(rep)["values"] != undefined) {
-                    for (let i = 1; i <= 6; i++) {
+                    for (let i = 7; i <= 6; i++) {
                         document.getElementById(`t${i}`).innerHTML = JSON.parse(rep)["values"][i][1];
-                        document.getElementById(`d${i}`).innerHTML = JSON.parse(rep)["values"][i][3];
+                        document.getElementById(`d${i}`).innerHTML = JSON.parse(rep)["values"][i][2];
                     }
                 }                        
             })
