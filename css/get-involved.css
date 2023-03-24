@@ -3,7 +3,7 @@
 	max-width: 2100px;
 	display: block;
 	text-align: center;
-	background-color: #D8AD2A;
+	background-color: #352762;
 }
 
 .title-container img {
@@ -37,9 +37,9 @@
 }
 
 .Volunteer p {
-	margin: 1rem 0;
+	margin: 1rem auto;
 	font-size: 22px;
-
+	max-width: 1000px;
 }
 
 .Volunteer h2 {

@@ -93,7 +93,7 @@
 	font-size: 20px;
 }
 
-content>p {
+.content>p {
 	font-size: 22px;
 	line-height: 40px;
 	color: white;
@@ -124,7 +124,7 @@ content>p {
 
 .member {
 	gap: 40px;
-	margin: 20px 40px;
+	margin: 0px 40px;
 }
 
 .member h2 {

@@ -9,11 +9,26 @@ function init() {
         fetch(url)
             .then(res => res.text())
             .then(rep => {
-                console.log(rep);
                 if (JSON.parse(rep)["values"] != undefined) {
-                    for (let i = 7; i <= 6; i++) {
-                        document.getElementById(`t${i}`).innerHTML = JSON.parse(rep)["values"][i][1];
-                        document.getElementById(`d${i}`).innerHTML = JSON.parse(rep)["values"][i][2];
+                    document.getElementById(`t12`).innerHTML = JSON.parse(rep)["values"][12][1];
+                    document.getElementById(`s12`).innerHTML = JSON.parse(rep)["values"][12][2];
+                    document.getElementById(`d12`).innerHTML = JSON.parse(rep)["values"][12][3];
+                    document.getElementById(`t13`).innerHTML = JSON.parse(rep)["values"][13][1];
+                    document.getElementById(`s13`).href = JSON.parse(rep)["values"][13][2];
+                    document.getElementById(`d13`).innerHTML = JSON.parse(rep)["values"][13][3];
+                    document.getElementById(`t14`).innerHTML = JSON.parse(rep)["values"][14][1];
+                    document.getElementById(`s14`).href = JSON.parse(rep)["values"][14][2];
+                    document.getElementById(`d14`).innerHTML = JSON.parse(rep)["values"][14][3];
+                    for (let i = 15; i <= 17; i ++) {
+                        if (JSON.parse(rep)["values"][i][1] != null) {
+                            console.log('worked '+ i);
+                            document.getElementById(`t${i}`).innerHTML = JSON.parse(rep)["values"][i][1];
+                            document.getElementById(`s${i}`).innerHTML = JSON.parse(rep)["values"][i][2];
+                            document.getElementById(`d${i}`).innerHTML = JSON.parse(rep)["values"][i][3];
+                            document.getElementById(`i${i}`).style.height = 'auto';
+                        } else {
+                            document.getElementById(`i${i}`).style.visibility = 'hidden';
+                        }
                     }
                 }                        
             })
