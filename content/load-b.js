@@ -5,15 +5,16 @@ var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + SHEET_ID +
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+    let start_b = 7;
     try {
         fetch(url)
             .then(res => res.text())
             .then(rep => {
                 if (JSON.parse(rep)["values"] != undefined) {
-                    document.getElementById(`t7`).innerHTML = JSON.parse(rep)["values"][7][1];
-                    document.getElementById(`s7`).innerHTML = JSON.parse(rep)["values"][7][2];
-                    document.getElementById(`d7`).innerHTML = JSON.parse(rep)["values"][7][3];
-                    for (let i = 8; i <= 10; i ++) {
+                    document.getElementById(`t${start_b}`).innerHTML = JSON.parse(rep)["values"][start_b][1];
+                    document.getElementById(`s${start_b}`).innerHTML = JSON.parse(rep)["values"][start_b][2];
+                    document.getElementById(`d${start_b}`).innerHTML = JSON.parse(rep)["values"][start_b][3];
+                    for (let i = start_b + 1; i < start_b + 4; i++) {
                         if (JSON.parse(rep)["values"][i][1] != null) {
                             document.getElementById(`t${i}`).innerHTML = JSON.parse(rep)["values"][i][1];
                             document.getElementById(`s${i}`).innerHTML = JSON.parse(rep)["values"][i][2];
@@ -23,8 +24,8 @@ function init() {
                             document.getElementById(`mem${i}`).style.visibility = 'hidden';
                         }
                     }
-                    document.getElementById(`t11`).innerHTML = JSON.parse(rep)["values"][11][1];
-                    document.getElementById(`d11`).innerHTML = JSON.parse(rep)["values"][11][3];
+                    document.getElementById(`t${start_b + 4}`).innerHTML = JSON.parse(rep)["values"][start_b + 4][1];
+                    document.getElementById(`d${start_b + 4}`).innerHTML = JSON.parse(rep)["values"][start_b + 4][3];
                 }                        
             })
     } catch (err) {
