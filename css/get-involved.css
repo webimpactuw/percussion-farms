@@ -74,12 +74,11 @@
 .project {
 	display: flex;
 	justify-content: left;
-	max-width: 1600px;
-	flex-basis: 25px;
+	flex-direction: row-reverse;
+	width: 1200px;
+	max-width: 80vw;
 	gap: 40px;
-	height: fit-content;
 	margin: 40px auto;
-	padding: 0 40px;
 }
 
 .project-inner {
@@ -96,7 +95,6 @@
 
 .contentProj1 * {
 	width: 100%;
-	text-align: center;
 }
 
 .desProj1 {
@@ -187,20 +185,16 @@
 	.project {
 		display: block;
 		width: 100vw;
-		margin: 0;
 	}
 
-	.project-inner {
+	.project-inner, .contentProj1 {
 		display: block;
-		width: 80vw;
-		max-width: 80vw;
-		margin: 30px 10vw;
+		width: 70vw;
+		margin: 30px auto;
 	}
 
-	.contentProj1 {
-		width: 80vw;
-		max-width: 80vw;
-		margin: 30px 10vw;
+	.contentProj1 * {
+		text-align: center;
 	}
 }
 

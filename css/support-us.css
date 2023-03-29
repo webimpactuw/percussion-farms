@@ -55,7 +55,7 @@
 
 .item {
 	display: flex;
-	margin: 0px 20%;
+	margin: 36px 20% 0 20%;
 	justify-content: left;
 	gap: 3vw;
 }
@@ -119,7 +119,7 @@ p {
 
 .support-container {
 	width: 90%;
-	margin: 5%;
+	margin: 4%;
 }
 
 .linkbar {
