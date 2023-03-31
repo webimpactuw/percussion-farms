@@ -51,20 +51,19 @@ html {
 .head {
 	height: 80px;
 	width: 100%;
+	padding: 0 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
-.head * {
-	display: inline-block;
-	height: 60px;
-	margin: 10px 0px;
-	padding: 0;
-	vertical-align: text-top;
+.head p {
 	font-size: 35px;
+	margin: 0;
 }
 
 .head img {
-	width: auto;
-	margin: 10px 10px;
+	width: 60px;
 }
 
 .links {
