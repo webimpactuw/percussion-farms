@@ -6,15 +6,22 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init() {
     let start_e = 23;
+    let img_start = 51;
     try {
         fetch(url)
             .then(res => res.text())
             .then(rep => {
-                if (JSON.parse(rep)["values"] != undefined) {
+                sheet_data = JSON.parse(rep)["values"];
+                if (sheet_data != undefined) {
+                    // Load text
                     for (let i = start_e; i < start_e + 2; i++) {
-                        document.getElementById(`t${i}`).innerHTML = JSON.parse(rep)["values"][i][1];
-                        document.getElementById(`d${i}`).innerHTML = JSON.parse(rep)["values"][i][3];
+                        document.getElementById(`t${i}`).innerHTML = sheet_data[i][1];
+                        document.getElementById(`d${i}`).innerHTML = sheet_data[i][3];
                     }
+
+                    // Load images
+                    document.getElementById('img-25').src = sheet_data[img_start][3];
+                    document.getElementById('img-25').alt = sheet_data[img_start][1];
                 }
             })
     } catch (err) {
