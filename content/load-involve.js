@@ -29,5 +29,7 @@ function init() {
             })
     } catch (err) {
         console.log(err);
+        document.body.remove();
+        alert("Error loading page!");
     }
 }

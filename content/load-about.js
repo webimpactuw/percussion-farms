@@ -3,7 +3,6 @@ const query = encodeURIComponent("Select *");
 var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + SHEET_ID + 
     '/values/' + SHEET_NAME + '?alt=json&key=' + API_KEY;
 document.addEventListener('DOMContentLoaded', init);
-
 function init() {
     let start_b = 7;
     try {
@@ -26,9 +25,11 @@ function init() {
                     }
                     document.getElementById(`t${start_b + 4}`).innerHTML = JSON.parse(rep)["values"][start_b + 4][1];
                     document.getElementById(`d${start_b + 4}`).innerHTML = JSON.parse(rep)["values"][start_b + 4][3];
-                }                        
+                }
             })
     } catch (err) {
         console.log(err);
+        document.body.remove();
+        alert("Error loading page!");
     }
 }
