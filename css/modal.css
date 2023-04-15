@@ -133,7 +133,14 @@ body {
 }
 
 .sidebar {
-	border-left: 4px solid #352762;
+  border-width: 0 0 0 8px;
+  border-style: solid;
+	border-image: 
+		linear-gradient(
+			to right, 
+			rgba(0, 0, 0, 0.3),
+			rgba(255, 255, 255, 1)
+		) 1 100%;
 }
 
 .empty {
