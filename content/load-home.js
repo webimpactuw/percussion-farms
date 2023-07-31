@@ -4,6 +4,8 @@ var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + SHEET_ID +
     '/values/' + SHEET_NAME + '?alt=json&key=' + API_KEY;
 document.addEventListener('DOMContentLoaded', init, ['blocking', 'responseHeaders', 'extraHeaders']);
 
+console.log(API_KEY);
+
 function init() {
     let start_a = 1;
     let length_a = 6;
