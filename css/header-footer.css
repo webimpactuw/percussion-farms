@@ -199,14 +199,14 @@ footer {
 	width: 10vw;
 }
 
-.dubvelopers {
+.webimpactuw {
 	background: #352762;
 	display: block;
 	height: 60px;
 	text-align: center;
 }
 
-.dubvelopers p {
+.webimpactuw p {
 	background: #634ab5;
 	font-size: 20px;
 	color: white;
@@ -219,13 +219,13 @@ footer {
 	display: inline-block;
 }
 
-.dubvelopers p a {
+.webimpactuw p a {
 	font-size: inherit;
 	color: white;
 	text-decoration: none;
 }
 
-.dubvelopers p a:hover {
+.webimpactuw p a:hover {
 	text-decoration: underline;
 }
 
@@ -352,7 +352,7 @@ footer {
 		margin-left: 10vw;
 	}
 
-	.dubvelopers p {
+	.webimpactuw p {
 		min-width: 10px;
 		width: 90vw;
 		padding: 5px 0px;
@@ -360,7 +360,7 @@ footer {
 		overflow: hidden;
 	}
 
-	.dubvelopers {
+	.webimpactuw {
 		height: auto;
 		min-width: 10px;
 		overflow: hidden;
