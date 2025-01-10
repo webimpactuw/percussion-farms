@@ -1,1 +1,0 @@
-echo "const API_KEY = '$1'"  >> content/env.js
