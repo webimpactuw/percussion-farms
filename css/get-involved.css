@@ -1,5 +1,5 @@
 .title-container {
-	width: 100vw;
+	width: 100%;
 	max-width: 2100px;
 	display: block;
 	text-align: center;
@@ -184,7 +184,7 @@
 
 	.project {
 		display: block;
-		width: 100vw;
+		width: 100%;
 	}
 
 	.project-inner, .contentProj1 {

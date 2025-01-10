@@ -110,6 +110,8 @@ body {
 
 .sidebar.opened {
 	width: 350px;
+  overflow-y: auto;
+  border-width: 0 0 0 4px;
 }
 
 .sidebar {
@@ -121,8 +123,7 @@ body {
   right: 0;
   transition: 0.3s;
   background-color: white;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   box-sizing: content-box;
 }
 
@@ -133,7 +134,7 @@ body {
 }
 
 .sidebar {
-  border-width: 0 0 0 8px;
+  border-width: 0;
   border-style: solid;
 	border-image: 
 		linear-gradient(

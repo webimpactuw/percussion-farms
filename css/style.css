@@ -112,7 +112,7 @@
 	/* HIDDEN DISPLAY */
 	height: 0px;
 
-	width: 100vw;
+	width: 100%;
 	margin: 0 auto;
 	background: grey;
 	overflow-y: scroll;
